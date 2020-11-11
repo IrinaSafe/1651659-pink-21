@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Irina](https://up.htmlacademy.ru/adaptive/21/user/1651659).
-* Наставник: Арсений Матыцин.
+* Наставник: Арсений Матыцин https://htmlacademy.ru/profile/id225539.
 
 ---
 
