@@ -42,200 +42,203 @@
     <main class="information">
       <div class="information__title-wrapper">
         <p class="information__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+          Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
       </div>
-      <form action="https://echo.htmlacademy.ru">
-        <div class="information-name">
-          <fieldset class="information__container-border information__container-border--hidden">
-            <ul class="information-name__list">
-              <li class="information-name__item">
-                <lable class="information-lable">Фамилия</lable>
-                <input
-                  class="information-input"
-                  type="text"
-                  name="name"
-                  placeholder="Укажите фамилию*"
-                >
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="fielsdet fielsdet--border-hidden">
+          <ul class="information-list">
+            <li class="information-item">
+              <label class="information-label">Фамилия</label>
+              <input
+                class="information-input"
+                type="text"
+                name="name"
+                placeholder="Укажите фамилию*">
+            </li>
+            <li class="information-name__item">
+              <label class="information-label">Имя</label>
+              <input
+                class="information-input"
+                type="text"
+                name="name"
+                placeholder="Введите ваше имя*">
+            </li>
+            <li class="information-name__item">
+              <label class="information-label">Отчество</label>
+              <input
+                class="information-input"
+                type="text"
+                name="name"
+                placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="fielsdet">
+          <legend class="legend legend--contacts-hidden">Контактная информация</legend>
+          <ul class="information-list contacts-list">
+            <li class="information-item contacts-item">
+              <label class="information-label">Номер телефона</label>
+                <span class="contacts-row">
+                  <input
+                    class="information-input"
+                    type="tel"
+                    name="phone"
+                    placeholder="Номер, пожалуйста">
+                  <span class="information-icon">
+                    &#10084;
+                  </span>
+                </span>
+            </li>
+            <li class="information-item contacts-item">
+              <label class="information-label">Адрес почты</label>
+                <span class="contacts-row">
+                  <input
+                    class="information-input"
+                    type="email"
+                    name="email"
+                    placeholder="Введите почту*">
+                  <span class="information-icon">
+                    &#10084;
+                  </span>
+                </span>
+            </li>
+          </ul>
+        </fieldset>
+
+
+        <fieldset class="fielsdet">
+          <legend class="legend">>Ваши безбашенные достижения в путешествии</legend>
+            <ul class="information-list progress-list">
+              <li class="information-item">
+                <label class="choice-label">
+                  <input
+                    class="information-input checkbox-input"
+                    type="checkbox"
+                    checked="checked">
+                  <span>Сделал селфи с акулой</span>
+                </label>
               </li>
-              <li class="information-name__item">
-                <lable class="information-lable">Имя</lable>
-                <input
-                  class="information-input"
-                  type="text"
-                  name="name"
-                  placeholder="Введите ваше имя*"
-                >
+              <li class="information-item">
+                <label class="choice-label">
+                  <input
+                    class="information-input checkbox-input"
+                    type="checkbox"
+                    checked="checked">
+                  <span>Обгорел на пляже</span>
+                </label>
               </li>
-              <li class="information-name__item">
-                <lable class="information-lable">Отчество</lable>
-                <input
-                  class="information-input"
-                  type="text"
-                  name="name"
-                  placeholder="Ну и отчество тоже"
-                >
+              <li class="information-item">
+                <label class="choice-label">
+                  <input
+                    class="information-input checkbox-input"
+                    type="checkbox">
+                  <span>Видел Чака Нориса</span>
+                </label>
+              </li>
+              <li class="information-item">
+                <label class="choice-label">
+                  <input
+                    class="information-input checkbox-input"
+                    type="checkbox">
+                  <span>Накупил сувениров</span>
+                </label>
+              </li>
+              <li class="information-item">
+                <label class="choice-label">
+                  <input
+                    class="information-input checkbox-input"
+                    type="checkbox"
+                    checked="checked">
+                  <span>Удержал башню</span>
+                </label>
+              </li>
+              <li class="information-item">
+                <label class="choice-label">
+                  <input
+                    class="information-input checkbox-input"
+                    type="checkbox">
+                  <span>Разгромил отель</span>
+                </label>
               </li>
             </ul>
-          </fieldset>
-        </div>
+        </fieldset>
 
-        <div class="information-contacts">
-          <fieldset class="information__container-border">
-            <legend class="information__container-title">Контактная информация</legend>
-              <ul class="information-name__list">
-                <li class="information-name__item">
-                  <lable class="information-lable">Номер телефона</lable>
-                    <span class="information__contacts-row">
-                      <input
-                        class="information-input"
-                        type="tel"
-                        name="phone"
-                        placeholder="Номер, пожалуйста"
-                      >
-                      <span class="information-icon">
-                        &#10084;
-                      </span>
-                    </span>
-                </li>
-                <li class="information-name__item">
-                  <lable class="information-lable">Адрес почты</lable>
-                    <span class="information__contacts-row">
-                      <input
-                        class="information-input"
-                        type="email"
-                        name="email"
-                        placeholder="Введите почту*"
-                      >
-                      <span class="information-icon">
-                        &#10084;
-                      </span>
-                    </span>
-                </li>
-              </ul>
-          </fieldset>
-        </div>
-
-        <div class="information-progress">
-          <fieldset class="information__container-border">
-            <legend class="information__container-title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="information-progress__list">
-                <li class="information-progress__item">
+        <fieldset class="fielsdet">
+          <legend class="legend legend--aplication-hidden">С каким приложением путешествовали?</legend>
+            <ul class="information-list">
+              <li class="information-item">
+                <label class="choice-label">
                   <input
-                    class="information-input"
-                    type="checkbox"
-                    checked="checked"
-                  >
-                  <lable class="information__lable-text">Сделал селфи с акулой</lable>
-                </li>
-                <li class="information-progress__item">
-                  <input
-                    class="information-input"
-                    type="checkbox"
-                    checked="checked"
-                  >
-                  <lable class="information__lable-text">Обгорел на пляже</lable>
-                </li>
-                <li class="information-progress__item">
-                  <input
-                    class="information-input"
-                    type="checkbox"
-                  >
-                  <lable class="information__lable-text">Видел Чака Нориса</lable>
-                </li>
-                <li class="information-progress__item">
-                  <input
-                    class="information-input"
-                    type="checkbox"
-                  >
-                  <lable class="information__lable-text">Накупил сувениров</lable>
-                </li>
-                <li class="information-progress__item">
-                  <input
-                    class="information-input"
-                    type="checkbox"
-                    checked="checked"
-                  >
-                  <lable class="information__lable-text">Удержал башню</lable>
-                </li>
-                <li class="information-progress__item">
-                  <input
-                    class="information-input"
-                    type="checkbox"
-                  >
-                  <lable class="information__lable-text">Разгромил отель</lable>
-                </li>
-              </ul>
-          </fieldset>
-        </div>
-
-        <div class="information-application">
-          <fieldset class="information__container-border">
-            <legend class="information__container-title information__container-title--hidden">С каким приложением путешествовали?</legend>
-              <ul class="information-application__list">
-                <li class="information-application__item">
-                  <input
-                    class="information-input"
+                    class="information-input radio-input"
                     type="radio"
                     name="browser"
-                    checked="checked"
-                  >
-                  <lable class="information__lable-text">Pink для iOS</lable>
-                </li>
-                <li class="information-application__item">
+                    checked="checked">
+                  <span>Pink для iOS</span>
+                </label>
+              </li>
+              <li class="information-item">
+                <label class="choice-label">
                   <input
-                    class="information-input"
+                    class="information-input radio-input"
                     type="radio"
-                    name="browser"
-                  >
-                  <lable class="information__lable-text">Pink на Android</lable>
-                </li>
-                <li class="information-application__item">
+                    name="browser">
+                  <span>Pink на Android</span>
+                </label>
+              </li>
+              <li class="information-item">
+                <label class="choice-label">
                   <input
-                    class="information-input"
+                    class="information-input radio-input"
                     type="radio"
-                    name="browser"
-                  >
-                  <lable class="information__lable-text">Windows Phone</lable>
-                </li>
-              </ul>
-          </fieldset>
-        </div>
+                    name="browser">
+                  <span>Windows Phone</span>
+                </label>
+              </li>
+            </ul>
+        </fieldset>
 
-        <div class="information-emotions">
-          <fieldset class="information__container-border">
-            <legend class="information__container-title">Опишите свои эмоции</legend>
-              <textarea class="information-textarea" name="comment" rows="5" wrap="soft" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-        </div>
+        <fieldset class="fielsdet">
+          <legend class="legend">Опишите свои эмоции</legend>
+            <textarea class="information-textarea" name="comment" rows="5" wrap="soft" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
 
         <div class="information-sending">
-          <button class="button button-form" type="submit" value="Отправить форму"></button>
-          <span class="information-sending__text"><span class="information-sending__text--icon">*</span> — Обязательные поля</span>
+          <button class="button  button--square" type="submit" value="Отправить форму"></button>
+          <span class="information-sending__text"><span class="information-sending__text--icon">*</span>&nbsp;&mdash; Обязательные поля</span>
         </div>
       </form>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo">
+        <a class="footer__logo logo">
           <img class="footer__logo-image" src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип «Pink»">
         </a>
         <div class="footer-social">
-          <a class="footer-social__link" href="https://twitter.com">
-            <img class="footer-social__link-image" src="https://via.placeholder.com/18x14" width="18" height="14" alt="twitter»">
-          </a>
-          <a class="footer-social__link" href="https://www.facebook.com">
-            <img class="footer-social__link-image" src="https://via.placeholder.com/9x18" width="9" height="18" alt="facebook»">
-          </a>
-          <a class="footer-social__link" href="https://www.youtube.com">
-            <img class="footer-social__link-image" src="https://via.placeholder.com/15x13" width="15" height="13" alt="youtube»">
-          </a>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="footer-social__link" href="https://twitter.com">
+                <img class="footer-social__link-image" src="https://via.placeholder.com/18x14" width="18" height="14" alt="twitter»">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="footer-social__link" href="https://www.facebook.com">
+                <img class="footer-social__link-image" src="https://via.placeholder.com/9x18" width="9" height="18" alt="facebook»">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="footer-social__link" href="https://www.youtube.com">
+                <img class="footer-social__link-image" src="https://via.placeholder.com/15x13" width="15" height="13" alt="youtube»">
+              </a>
+            </li>
+        </ul>
         </div>
         <div class="footer__developer">
-          <span class="footer__developer-text">Разработано</span>
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="footer__developer-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="htmlacademy logo">
-            </a>
+          <a href="https://htmlacademy.ru/intensive/adaptive"></a>
+            <span class="footer__developer-text">Разработано</span>
+            <img class="footer__developer-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="htmlacademy logo">
+          </a>
         </div>
       </div>
     </footer>
