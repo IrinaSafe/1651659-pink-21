@@ -4,8 +4,9 @@
 @import 'system/visually-hidden';
 
 //Templates
-@import 'templates/ul';
-@import 'templates/a';
+@import 'silent_classes/ul';
+@import 'silent_classes/a';
+@import 'silent_classes/p';
 
 // Blocks
 @import 'blocks/page';

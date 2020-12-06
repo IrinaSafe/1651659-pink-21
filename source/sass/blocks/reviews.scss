@@ -4,22 +4,26 @@
 
 .reviews__wrapper {
   text-align: center;
+  padding: 40px 20px 60px;
 }
 
 .reviews__list {
-  height: 364px;
+  //Nothing
 }
 
 .reviews__author-name {
   font-size: $reviews__author-name-font-size;
   font-weight: $reviews__author-name-font-weight;
   color: $reviews__author-name-color;
+  @extend %p-general-style;
+  margin-bottom: 10px;
 }
 
 .reviews__author-age-profession {
   font-size: $reviews__author-age-profession-font-size;
   font-weight: $reviews__author-age-profession-font-weight;
   color: $reviews__author-age-profession-color;
+  @extend %p-general-style;
 
   &--hidden {
     display: none;
@@ -31,15 +35,18 @@
 }
 
 .reviews__item {
-  //Nothing
+  margin: 0;
 }
 
 .reviews__author-text {
   font-size: $reviews__author-text-font-size;
   font-weight: $reviews__author-text-font-weight;
   color: $reviews__author-text-color;
+  @extend %p-general-style;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .reviews__toggles {
-  //Nothing
+  @extend %p-general-style;
 }

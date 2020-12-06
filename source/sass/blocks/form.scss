@@ -6,7 +6,6 @@
   padding: 0 20px;
   margin: 0;
   border: 0;
-  line-height: 30px;
 
   &--name {
     height: 384px;
@@ -35,6 +34,13 @@
 }
 
 .form__fielsdet-legend {
+  font-size: $form__fielsdet-legend-font-size;
+  font-weight: $form__fielsdet-legend-font-weight;
+  color: $form__fielsdet-legend-color;
+  text-transform: uppercase;
+  padding: 0 31px;
+  line-height: 18px;
+  padding-top: 42px;
   text-align: center;
 }
 

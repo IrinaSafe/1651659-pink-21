@@ -3,7 +3,9 @@
   font-size: $heading-font-size;
   font-weight: $heading-font-weight;
 
-  &--blue{
+  &--blue {
     color: $color-blue;
+    @extend %p-general-style;
+    margin-bottom: 30px;
   }
 }

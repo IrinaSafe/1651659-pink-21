@@ -16,23 +16,23 @@
       </div>
 
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
             <a>
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">
+          <li class="main-nav__item">
+            <a href="catalog.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="https://htmlacademy.ru">
               HTML Academy
             </a>
@@ -45,7 +45,7 @@
       <section class="presentation">
         <p class="heading presentation__heading">Взгляните на жизнь иначе</p>
         <div class="presentation__wrapper">
-          <button class="button" type="button">Скачать приложение</button>
+          <button class="button button--download" type="button">Скачать приложение</button>
           <ul class="presentation__list">
             <li class="presentation__item">
               <a class="presentation__logo" href="https://www.apple.com/ru/ios/app-store/">
@@ -74,6 +74,11 @@
           <p class="heading heading--blue">Устали от серости мегаполиса?</p>
           <p class="heading heading--blue">Нам есть что вам<br>предложить!</p>
         </div>
+        <ul class="advantages__list-image">
+          <li class="advantages__item-image advantages__item-image--hidden"></li>
+          <li class="advantages__item-image advantages__item-image--hidden"></li>
+          <li class="advantages__item-image"></li>
+        </ul>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
@@ -108,12 +113,12 @@
               </p>
             </blockquote>
           </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </p>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Прайс</h2>
@@ -246,8 +251,8 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p  class="heading heading--blue">Остались вопросы?<br>Свяжитесь с нами!</p>
         <div class="contacts__wrapper">
+          <p  class="heading heading--blue">Остались вопросы?<br>Свяжитесь с нами!</p>
           <div class="contacts__container">
             <div class="contacts__info">
               <h4 class="contacts__info-title">Звоните:</h4>

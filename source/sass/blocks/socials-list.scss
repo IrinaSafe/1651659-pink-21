@@ -1,9 +1,13 @@
 .socials-list {
   @extend %ul-general-style;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .socials-list__item {
-  //Nothing
+  margin: 0 5px;
 }
 
 .socials-list__link {

@@ -3,14 +3,15 @@
   flex-direction: column;
   background-color: $color-blue;
   color: $color-white;
-  height: 325px;
 }
+
 .page-header__logo {
   display: flex;
   justify-content: space-between;
-  height: 69px;
+  padding: 23px 20px;
   box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
 }
+
 .page-header__logo-image{
   position: absolute;
   width: 74px;
@@ -20,7 +21,7 @@
 }
 
 .page-header__title-wrapper {
-
+  //Nothing
 }
 
 .page-header__title {
