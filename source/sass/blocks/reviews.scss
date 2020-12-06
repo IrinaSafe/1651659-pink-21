@@ -1,0 +1,45 @@
+.reviews {
+  //Nothing
+}
+
+.reviews__wrapper {
+  text-align: center;
+}
+
+.reviews__list {
+  height: 364px;
+}
+
+.reviews__author-name {
+  font-size: $reviews__author-name-font-size;
+  font-weight: $reviews__author-name-font-weight;
+  color: $reviews__author-name-color;
+}
+
+.reviews__author-age-profession {
+  font-size: $reviews__author-age-profession-font-size;
+  font-weight: $reviews__author-age-profession-font-weight;
+  color: $reviews__author-age-profession-color;
+
+  &--hidden {
+    display: none;
+
+    @media screen and (min-width: $media-tablet) {
+      display: inline;
+    }
+  }
+}
+
+.reviews__item {
+  //Nothing
+}
+
+.reviews__author-text {
+  font-size: $reviews__author-text-font-size;
+  font-weight: $reviews__author-text-font-weight;
+  color: $reviews__author-text-color;
+}
+
+.reviews__toggles {
+  //Nothing
+}

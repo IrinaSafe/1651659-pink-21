@@ -1,0 +1,118 @@
+// Queries system
+$media-mobile: 320px;
+$media-tablet: 768px;
+$media-desktop: 1200px;
+
+// Colors system
+$color-pink: #D22856;
+$color-white: #FFFFFF;
+$color-blue: #283645;
+$color-black: #000000;
+$color-green: #3DC644;
+$color-orange: #F25B26;
+$color-lightgrey: #F2F2F2;
+$color-dark-blue: #1D2631;
+$color-grey: #E5E5E5;
+$color-darkgreen: #2AAB6D;
+
+// Fonts sytem
+$main-font-family: "Open Sans", "Arial", sans-serif;
+$main-font-size: 14px;
+$main-font-line-height: 27px;
+
+// BLocks defintion
+
+// Page header
+$page-header__title-font-size: 24px;
+$page-header__title-font-weight: 300;
+$page-header__title-color: $color-white;
+
+// Main nav
+$main-nav-background-color: $color-blue;
+$main-nav-color: $color-white;
+
+// Site list
+$site-list-font-size: 18px;
+$site-list-font-weight: bold;
+
+//Heading
+$heading-color: $color-white;
+$heading-font-size: 24px;
+$heading-font-weight: 300;
+
+// Presentation
+$presentation__text-color: $color-white;
+$presentation__text-font-size: 14px;
+$presentation__text-font-weight: 300;
+
+//Button
+$button-font-size: 18px;
+$button-font-weight: bold;
+$button-border: 3px solid $color-white;
+$button-color: $color-white;
+$button-background-color: $color-dark-blue;
+
+//Advantages
+
+$advantages__item-title-font-size: 18px;
+$advantages__item-title-font-weight: bold;
+$advantages__item-title-color: $color-black;
+$advantages__item-description-font-size: 14px;
+$advantages__item-description-font-weight: 400;
+$advantages__item-description-color: $color-dark-blue;
+
+//Reviews
+$reviews__author-name-font-size: 18px;
+$reviews__author-name-font-weight: bold;
+$reviews__author-name-color: $color-black;
+
+$reviews__author-age-profession-font-size: 14px;
+$reviews__author-age-profession-font-weight: 400;
+$reviews__author-age-profession-color: $color-dark-blue;
+
+$reviews__author-text-font-size: 14px;
+$reviews__author-text-font-weight: 400;
+$reviews__author-text-color: $color-dark-blue;
+
+//Price
+$price__wrapper-background-color: $color-lightgrey;
+
+//Contacts
+$contacts__info-title-font-size: 18px;
+$contacts__info-title-font-weight: bold;
+$contacts__info-title-color: $color-dark-blue;
+
+$contacts__link-font-size: 24px;
+$contacts__link-font-weight: 300;
+$contacts__link-color: $color-pink;
+
+//Map
+$map-background-color: $color-white;
+
+//Footer
+$footer-background-color:  $color-white;
+$footer__developer-text-font-size: 14px;
+$footer__developer-text-font-weight: 400;
+$footer__developer-text-color: $color-blue;
+
+//Main
+$page-main__title-font-size: 14px;
+$page-main__title-font-weight: 400;
+$page-main__title-color: $color-dark-blue;
+
+//Field
+$field__label-font-size: 14px;
+$field__label-font-weight: 400;
+$field__label-color: $color-pink;
+
+$field__input-font-size: 18px;
+$field__input-font-weight: 400;
+$field__input-color: $color-dark-blue;
+
+$form__fielsdet-legend-font-size: 14px;
+$form__fielsdet-legend-font-weight: 400;
+$form__fielsdet-legend-color: $color-pink;
+
+$inline-field__label-font-size: 14px;
+$inline-field__label-font-weight: 400;
+$inline-field__label-color: $color-dark-blue;

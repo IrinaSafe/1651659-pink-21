@@ -1,0 +1,11 @@
+.page {
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+  line-height: $main-font-line-height;
+  height: 100%;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  min-width: $media-mobile;
+}

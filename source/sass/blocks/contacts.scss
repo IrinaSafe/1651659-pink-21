@@ -1,0 +1,28 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__wrapper {
+  //Nothing
+}
+
+.contacts__container {
+  //Nothing
+}
+
+.contacts__info {
+  //Nothing
+}
+
+.contacts__info-title {
+  font-size: $contacts__info-title-font-size;
+  font-weight: $contacts__info-title-font-weight;
+  color: $contacts__info-title-color;
+}
+
+.contacts__link {
+  @extend %a-general-style;
+  font-size: $contacts__link-font-size;
+  font-weight: $contacts__link-font-weight;
+  color: $contacts__link-color;
+}

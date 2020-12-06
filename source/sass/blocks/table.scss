@@ -1,0 +1,66 @@
+.table {
+  height: 279px;
+  border-collapse: collapse;
+  word-break: break-all;
+  width: 100%;
+  margin: 0 auto;
+
+  &--hidden{
+    //Nothing
+  }
+}
+
+.table__tr {
+  //Nothing
+}
+
+.table__th {
+  box-sizing: border-box;
+  min-width: 276px;
+  height: 94px;
+  background-color: $color-blue;
+  text-align: center;
+  border: 2px solid $color-grey;
+}
+.table__th--border-hidden {
+  //Nothing
+}
+
+.table__th-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.table__th-price {
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-white;
+}
+
+.table__td {
+  box-sizing: border-box;
+  min-width: 276px;
+  background-color: $color-white;
+  border: 2px solid $color-grey;
+
+  &--hidden {
+    display: inline;
+    text-transform: uppercase;
+  }
+}
+
+.table__td-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-blue;
+}
+
+.table__td-wrapper {
+  //Nothing
+}
+
+.table__td-icon {
+  //Nothing
+}

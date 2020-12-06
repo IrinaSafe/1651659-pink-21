@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Приложение «Pink»">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="page-header__logo">
+        <a>
+          <img class="page-header__logo-image" src="../img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -19,7 +22,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a href="catalog.html">
               Фотографии
             </a>
           </li>
@@ -39,14 +42,14 @@
         <h1 class="page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</h1>
       </div>
     </header>
-    <main class="information">
-      <div class="information__title-wrapper">
-        <p class="information__title">
+    <main class="page-main">
+      <div class="page-main__title-wrapper">
+        <p class="page-main__title">
           Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fielsdet context-class__fielsdet form__fielsdet--border-hidden">
+        <fieldset class="form__fielsdet form__fielsdet--name context-class__fielsdet form__fielsdet--border-hidden">
           <ul class="fielsdet-list">
             <li class="field">
               <label class="field__label">Фамилия</label>
@@ -75,8 +78,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet">
-          <legend class="form__fielsdet-legend">>Ваши безбашенные достижения в путешествии</legend>
+        <fieldset class="form__fielsdet form__fielsdet--progress">
+          <legend class="form__fielsdet-legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="fielsdet-list fielsdet-list--grid">
               <li>
                 <label class="inline-field">
@@ -132,7 +135,7 @@
             </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet">
+        <fieldset class="form__fielsdet form__fielsdet--contacts">
           <legend class="form__fielsdet-legend form__fielsdet-legend--contacts-hidden">Контактная информация</legend>
           <ul class="fielsdet-list fielsdet-list--row">
             <li class="field">
@@ -154,7 +157,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet context-class__fielsdet context-class__fielsdet--app">
+        <fieldset class="form__fielsdet form__fielsdet--app context-class__fielsdet context-class__fielsdet--app">
           <legend class="form__fielsdet-legend form__fielsdet-legend--aplication-hidden">С каким приложением путешествовали?</legend>
             <ul class="fielsdet-list">
               <li>
@@ -188,13 +191,13 @@
             </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet">
+        <fieldset class="form__fielsdet form__fielsdet--emotions">
           <legend class="form__fielsdet-legend">Опишите свои эмоции</legend>
             <textarea class="form__fielsdet-textarea" name="comment" rows="5" wrap="soft" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="feedback">
-          <button class="button  button--square" type="submit" value="Отправить форму"></button>
+          <button class="button  button--square" type="submit" value="Отправить форму">Отправить форму</button>
           <span class="feedback-text"><span class="feedback-text__icon">*</span>&nbsp;&mdash; Обязательные поля</span>
         </div>
       </form>
@@ -202,31 +205,25 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="logo footer__logo">
-          <img class="footer__logo-image" src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип «Pink»">
+          <img class="footer__logo-image" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип «Pink»">
         </a>
         <div class="footer-social">
           <ul class="socials-list">
             <li class="socials-list__item">
-              <a class="socials-list__link" href="https://twitter.com">
-                <img class="socials-list__link-image" src="https://via.placeholder.com/18x14" width="18" height="14" alt="twitter»">
-              </a>
+              <a class="socials-list__link socials-list__link--twitter" href="https://twitter.com" aria-label="twitter"></a>
             </li>
             <li class="socials-list__item">
-              <a class="socials-list__link" href="https://www.facebook.com">
-                <img class="socials-list__link-image" src="https://via.placeholder.com/9x18" width="9" height="18" alt="facebook»">
-              </a>
+              <a class="socials-list__link socials-list__link--facebook" href="https://www.facebook.com" aria-label="facebook"></a>
             </li>
             <li class="socials-list__item">
-              <a class="socials-list__link" href="https://www.youtube.com">
-                <img class="socials-list__link-image" src="https://via.placeholder.com/15x13" width="15" height="13" alt="youtube»">
-              </a>
+              <a class="socials-list__link socials-list__link--youtube" href="https://www.youtube.com" aria-label="youtube"></a>
             </li>
         </ul>
         </div>
         <div class="footer__developer">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__developer-text">Разработано</span>
-            <img class="footer__developer-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="htmlacademy logo">
+            <img class="footer__developer-image" src="img/html-academy-logo.svg" width="27" height="34" alt="htmlacademy logo">
           </a>
         </div>
       </div>

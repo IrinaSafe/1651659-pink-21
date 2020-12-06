@@ -1,0 +1,15 @@
+.main-nav {
+  background-color: $main-nav-background-color;
+  color: $main-nav-color;
+}
+
+.main-nav__toggle {
+  //Nothing
+}
+.main-nav__list {
+  @extend %ul-general-style;
+}
+.main-nav__list a {
+  color: $color-white;
+  @extend %a-general-style;
+}

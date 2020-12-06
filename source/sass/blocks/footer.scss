@@ -1,0 +1,39 @@
+.footer {
+  background-color: $footer-background-color;
+}
+
+.footer__wrapper {
+  height: 284px;
+  text-align: center;
+}
+
+.footer__logo {
+  //Nothing
+}
+
+.footer__logo-image {
+  //Nothing
+}
+
+.footer-social {
+  //Nothing
+}
+
+.footer__developer {
+  //Nothing
+}
+
+.footer__developer-link{
+  @extend %a-general-style;
+}
+
+.footer__developer-text {
+  font-size: $footer__developer-text-font-size;
+  font-weight: $footer__developer-text-font-weight;
+  color: $footer__developer-text-color;
+  text-decoration: none;
+}
+
+.footer__developer-image {
+  //Nothing
+}

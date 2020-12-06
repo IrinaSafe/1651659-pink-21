@@ -1,0 +1,47 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-lightgrey;
+}
+
+.presentation__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $color-dark-blue;
+  height: 271px;
+  padding: 0 20px;
+}
+
+.presentation__heading {
+  text-align: center;
+  height: 462px;
+  margin: 0;
+  padding: 29px 22px 0px 18px;
+  background-color: $color-lightgrey;
+}
+
+.presentation__list {
+  @extend %ul-general-style;
+  display: flex;
+  justify-content: space-around;
+}
+
+.presentation__item {
+  display: flex;
+  align-items: center;
+}
+
+.presentation__logo {
+  display: block;
+  text-decoration: none;
+}
+
+.presentation__text{
+  color: $presentation__text-color;
+  font-size: $presentation__text-font-size;
+  font-weight: $presentation__text-font-weight;
+}
