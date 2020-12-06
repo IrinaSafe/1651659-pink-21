@@ -1,0 +1,48 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-lightgrey;
+}
+
+.presentation__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $color-dark-blue;
+  /*height: 271px;*/
+  padding: 23px 20px 25px;
+}
+
+.presentation__heading {
+  text-align: center;
+  margin: 0;
+  padding: 20px 20px;
+  background-color: $color-lightgrey;
+}
+
+.presentation__list {
+  @extend %ul-general-style;
+  margin: 10px 0 20px;
+}
+
+.presentation__item {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 15px;
+}
+
+.presentation__logo {
+  display: block;
+  text-decoration: none;
+}
+
+.presentation__text{
+  color: $presentation__text-color;
+  font-size: $presentation__text-font-size;
+  font-weight: $presentation__text-font-weight;
+  padding: 0;
+  margin: 0;
+}

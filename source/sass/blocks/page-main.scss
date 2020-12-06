@@ -1,0 +1,14 @@
+.page-main {
+  background-color: $color-white;
+}
+
+.page-main__title-wrapper {
+  text-align: center;
+  height: 155px;
+}
+
+.page-main__title {
+  font-size: $page-main__title-font-size;
+  font-weight: $page-main__title-font-weight;
+  color: $page-main__title-color;
+}

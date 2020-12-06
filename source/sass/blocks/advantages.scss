@@ -1,0 +1,63 @@
+.advantages {
+  background-color: $color-lightgrey;
+}
+
+.advantages__title-wrapper {
+  text-align: center;
+  background-color: $color-white;
+  padding: 42px 20px 40px 20px;
+}
+
+.advantages__heading {
+  color: $color-blue;
+}
+
+.advantages__list-image {
+  @extend %ul-general-style;
+  padding: 0 20px;
+}
+
+.advantages__item-image {
+  background-image: url(../img/iphone_3.png);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  height: 320px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+/*.advantages-image {
+}*/
+
+.advantages__list {
+  @extend %ul-general-style;
+  text-align: center;
+  padding: 0 20px;
+}
+.advantages__item {
+  //Nothing
+}
+
+.advantages__item-title {
+  font-size: $advantages__item-title-font-size;
+  font-weight: $advantages__item-title-font-weight;
+  color: $advantages__item-title-color;
+}
+
+.advantages__description {
+  @extend %p-general-style;
+}
+.advantages__item-description {
+  font-size: $advantages__item-description-font-size;
+  font-weight: $advantages__item-description-font-weight;
+  color: $advantages__item-description-color;
+}
+
+/*.advantages__list::after {
+  content: '';
+  display: block;
+  height: 330px;
+  background: url(../img/iphone_3.png) no-repeat center 50px;
+}*/

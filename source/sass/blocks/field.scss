@@ -1,0 +1,22 @@
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field__label {
+  font-size: $field__label-font-size;
+  font-weight: $field__label-font-weight;
+  color: $field__label-color;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.field__input {
+  border: 2px solid $color-grey;
+  font-size: $field__input-font-size;
+  font-weight: $field__input-font-weight;
+  color: $field__input-color;
+  padding: 17px 0px 17px 15px;
+  border-radius: 1px;
+}
+

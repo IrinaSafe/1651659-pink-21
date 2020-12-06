@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+// Globals
+@import 'config';
+@import 'fonts';
+@import 'system/visually-hidden';
+
+//Templates
+@import 'silent_classes/ul';
+@import 'silent_classes/a';
+@import 'silent_classes/p';
+
+// Blocks
+@import 'blocks/page';
+@import 'blocks/page-header';
+@import 'blocks/main-nav';
+@import 'blocks/site-list';
+@import 'blocks/presentation';
+@import 'blocks/button';
+@import 'blocks/heading';
+@import 'blocks/advantages';
+@import 'blocks/reviews';
+@import 'blocks/slider';
+@import 'blocks/price';
+@import 'blocks/table';
+@import 'blocks/contacts';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/socials-list';
+@import 'blocks/page-main';
+@import 'blocks/form';
+@import 'blocks/fielsdet-list';
+@import 'blocks/field';
+@import 'blocks/inline-field';
+@import 'blocks/feedback';
+
