@@ -43,11 +43,13 @@
   line-height: 30px;
   color: $color-blue;
   border-color: $color-lightgrey;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $main-font-family;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   margin-top: 60px;
+  outline: none;
+  padding: 0;
 }
 
 
