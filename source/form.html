@@ -15,23 +15,23 @@
         <button class="main-nav__toggle" type="button"><span class="">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="catalog.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a>
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="https://htmlacademy.ru">
               HTML Academy
             </a>
@@ -49,10 +49,10 @@
         </p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fielsdet form__fielsdet--name context-class__fielsdet form__fielsdet--border-hidden">
+        <fieldset class="form__fielsdet context-class__fielsdet form__fielsdet--border-hidden">
           <ul class="fielsdet-list">
             <li class="field">
-              <label class="field__label">Фамилия</label>
+              <label class="field__label">Фамилия:</label>
               <input
                 class="field__input"
                 type="text"
@@ -60,7 +60,7 @@
                 placeholder="Укажите фамилию*">
             </li>
             <li class="field">
-              <label class="field__label">Имя</label>
+              <label class="field__label">Имя:</label>
               <input
                 class="field__input"
                 type="text"
@@ -68,7 +68,7 @@
                 placeholder="Введите ваше имя*">
             </li>
             <li class="field">
-              <label class="field__label">Отчество</label>
+              <label class="field__label">Отчество:</label>
               <input
                 class="field__input"
                 type="text"
@@ -78,9 +78,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet form__fielsdet--progress">
+        <fieldset class="form__fielsdet form__fielsdet--background-color">
           <legend class="form__fielsdet-legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="fielsdet-list fielsdet-list--grid">
+            <ul class="fielsdet-list fielsdet-list--choice fielsdet-list--grid">
               <li>
                 <label class="inline-field">
                   <input
@@ -136,8 +136,8 @@
         </fieldset>
 
         <fieldset class="form__fielsdet form__fielsdet--contacts">
-          <legend class="form__fielsdet-legend form__fielsdet-legend--contacts-hidden">Контактная информация</legend>
-          <ul class="fielsdet-list fielsdet-list--row">
+          <legend class="form__fielsdet-legend form__fielsdet-legend--content form__fielsdet-legend--contacts-hidden">Контактная информация</legend>
+          <ul class="fielsdet-list fielsdet-list--general fielsdet-list--row">
             <li class="field">
               <label class="field__label">Номер телефона</label>
               <input
@@ -157,9 +157,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet form__fielsdet--app context-class__fielsdet context-class__fielsdet--app">
+        <fieldset class="form__fielsdet form__fielsdet--background-color  context-class__fielsdet context-class__fielsdet--app">
           <legend class="form__fielsdet-legend form__fielsdet-legend--aplication-hidden">С каким приложением путешествовали?</legend>
-            <ul class="fielsdet-list">
+            <ul class="fielsdet-list fielsdet-list--choice">
               <li>
                 <label class="inline-field">
                   <input
@@ -192,7 +192,7 @@
         </fieldset>
 
         <fieldset class="form__fielsdet form__fielsdet--emotions">
-          <legend class="form__fielsdet-legend">Опишите свои эмоции</legend>
+          <legend class="form__fielsdet-legend form__fielsdet-legend--one-row">Опишите свои эмоции</legend>
             <textarea class="form__fielsdet-textarea" name="comment" rows="5" wrap="soft" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 

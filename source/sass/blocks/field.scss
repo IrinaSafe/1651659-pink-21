@@ -1,6 +1,7 @@
 .field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .field__label {
@@ -9,6 +10,8 @@
   color: $field__label-color;
   text-transform: uppercase;
   padding-left: 15px;
+  /*margin-top: 20px;*/
+  margin-bottom: 10px;
 }
 
 .field__input {

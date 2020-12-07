@@ -3,9 +3,11 @@
 }
 
 .inline-field__input-checkbox {
-  //Nothing
+  margin-bottom: 40px;
 }
-
+.inline-field__input-radio {
+  margin-bottom: 40px;
+}
 .inline-field__label {
   font-size: $inline-field__label-font-size;
   font-weight: $inline-field__label-font-weight;
