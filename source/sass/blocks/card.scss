@@ -3,20 +3,62 @@
 }
 
 .card__link-image-area {
-
+  @extend %a-general-style;
+  padding: 0;
 }
 
 .card__image {
+  /*object-fit: cover;*/
+  width: 100%;
 
   &--panorama {
-
+    width: 100vw;
+    padding: 0;
   }
 }
 
 
 .card__description {
-
+  padding: 25px 10px 26px 17px;
   &--panorama {
 
   }
+}
+
+.card__name {
+  font-size: $name-font-size;
+  font-weight: $name-font-weight;
+  color: $name-color;
+  margin-bottom: 14px;
+}
+
+.card__time {
+  font-size: $time-font-size;
+  font-weight: $time-font-weight;
+  color: $time-color;
+  text-transform: uppercase;
+}
+
+.card__comment {
+  font-size: $comment-font-size;
+  font-weight: $comment-font-weight;
+  color: $comment-color;
+  @extend %p-general-style;
+  margin-bottom: 27px;
+}
+
+.card__like {
+
+}
+
+.card__like-button {
+
+}
+
+.card__like-icon {
+
+}
+
+.card__like-text {
+
 }
