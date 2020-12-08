@@ -3,29 +3,12 @@
 }
 
 .form__fielsdet {
-  padding: 0 20px;
+  padding: 20px;
   margin: 0;
   border: 0;
 
-  &--name {
-    height: 384px;
-  }
-
-  &--progress {
-    height: 604px;
+  &--background-color {
     background-color: $color-lightgrey;
-  }
-
-  &--contacts {
-    height: 294px;
-  }
-
-  &--app {
-    height: 340px;
-  }
-
-  &--emotions {
-    height: 326px;
   }
 
   &--border-hidden {
@@ -38,10 +21,18 @@
   font-weight: $form__fielsdet-legend-font-weight;
   color: $form__fielsdet-legend-color;
   text-transform: uppercase;
-  padding: 0 31px;
   line-height: 18px;
-  padding-top: 42px;
+  position: absolute;
+  padding: 20px 40px 0px 20px;
   text-align: center;
+
+  &--one-row {
+    padding: 20px 40px 0px 50px;
+  }
+
+  &--contacts-hidden {
+    display: none;
+  }
 }
 
 .form__fielsdet-textarea {
@@ -52,11 +43,13 @@
   line-height: 30px;
   color: $color-blue;
   border-color: $color-lightgrey;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $main-font-family;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  /*padding-left: 42px;*/
+  margin-top: 60px;
+  outline: none;
+  padding: 0;
 }
 
 

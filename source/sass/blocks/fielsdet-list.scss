@@ -1,6 +1,14 @@
 .fielsdet-list {
   @extend %ul-general-style;
 
+  &--choice {
+    margin-top: 80px;
+  }
+
+  &--general {
+    margin-top: 20px;
+  }
+
   &--grid {
     //Nothing
   }

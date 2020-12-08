@@ -1,0 +1,16 @@
+.cards-list {
+  @extend %ul-general-style;
+  padding: 20px;
+}
+
+.cards-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: $color-lightgrey;
+
+  &--panorama {
+    align-items: center;
+  }
+}
