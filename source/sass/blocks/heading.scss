@@ -4,8 +4,8 @@
   font-weight: $heading-font-weight;
 
   &--blue {
-    color: $color-blue;
     @extend %p-general-style;
+    color: $color-blue;
     margin-bottom: 30px;
   }
 }

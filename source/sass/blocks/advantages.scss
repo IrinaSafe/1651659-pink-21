@@ -18,7 +18,7 @@
 }
 
 .advantages__item-image {
-  background-image: url(../img/iphone_3.png);
+  background-image: url("../img/iphone_3.png");
   background-repeat: no-repeat;
   background-position: center 50px;
   height: 320px;
@@ -36,6 +36,7 @@
   text-align: center;
   padding: 0 20px;
 }
+
 .advantages__item {
   //Nothing
 }
@@ -49,6 +50,7 @@
 .advantages__description {
   @extend %p-general-style;
 }
+
 .advantages__item-description {
   font-size: $advantages__item-description-font-size;
   font-weight: $advantages__item-description-font-weight;

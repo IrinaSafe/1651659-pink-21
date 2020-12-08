@@ -1,5 +1,5 @@
 .card {
-
+  //Nothing
 }
 
 .card__link-image-area {
@@ -20,8 +20,9 @@
 
 .card__description {
   padding: 25px 10px 26px 17px;
-  &--panorama {
 
+  &--panorama {
+    //Nothing
   }
 }
 
@@ -40,25 +41,33 @@
 }
 
 .card__comment {
+  @extend %p-general-style;
   font-size: $comment-font-size;
   font-weight: $comment-font-weight;
   color: $comment-color;
-  @extend %p-general-style;
   margin-bottom: 27px;
 }
 
 .card__like {
-
+  //Nothing
 }
 
 .card__like-button {
-
+  width: 13px;
+  height: 12px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
 }
 
 .card__like-icon {
-
+  //Nothing
 }
 
 .card__like-text {
-
+  font-size: $like-text-font-size;
+  font-weight: $like-text-font-weight;
+  color: $like-text-color;
+  text-transform: uppercase;
+  margin-left: 20px;
 }
