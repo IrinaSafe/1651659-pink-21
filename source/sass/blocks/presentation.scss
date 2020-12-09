@@ -5,6 +5,15 @@
   background-color: $color-lightgrey;
 }
 
+.presentation::before {
+  content: "";
+  display: block;
+  height: 463px;
+  background: url("../img/phone.jpg") no-repeat 40% bottom,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: auto, cover;
+}
+
 .presentation__wrapper {
   display: flex;
   flex-direction: column;
