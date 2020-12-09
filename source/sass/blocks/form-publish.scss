@@ -38,6 +38,8 @@
 }
 
 .form-publish__button {
+  display: flex;
+  flex-direction: column;
   padding-top: 40px;
   border-top: 1px solid $color-blue;
 }
