@@ -1,0 +1,45 @@
+.form-publish {
+  //Nothing
+}
+
+.form-publish__fieldset-image {
+  margin: 0;
+  padding: 40px 20px 0;
+  border: none;
+  text-align: center;
+}
+
+.form-publish__input-hidden {
+  display: none;
+}
+
+.form-publish__fieldset-filters {
+  margin: 0;
+  padding: 20px;
+  border: none;
+  text-align: center;
+}
+
+
+.form-publish__container {
+  //Nothing
+}
+
+.form-publish__icon {
+  //Nothing
+}
+
+.form-publish__range {
+  //Nothing
+}
+
+.form-publish__range-row {
+  //Nothing
+}
+
+.form-publish__button {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  border-top: 1px solid $color-blue;
+}

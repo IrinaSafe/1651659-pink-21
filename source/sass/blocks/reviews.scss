@@ -12,18 +12,18 @@
 }
 
 .reviews__author-name {
+  @extend %p-general-style;
   font-size: $reviews__author-name-font-size;
   font-weight: $reviews__author-name-font-weight;
   color: $reviews__author-name-color;
-  @extend %p-general-style;
   margin-bottom: 10px;
 }
 
 .reviews__author-age-profession {
+  @extend %p-general-style;
   font-size: $reviews__author-age-profession-font-size;
   font-weight: $reviews__author-age-profession-font-weight;
   color: $reviews__author-age-profession-color;
-  @extend %p-general-style;
 
   &--hidden {
     display: none;
@@ -39,10 +39,10 @@
 }
 
 .reviews__author-text {
+  @extend %p-general-style;
   font-size: $reviews__author-text-font-size;
   font-weight: $reviews__author-text-font-weight;
   color: $reviews__author-text-color;
-  @extend %p-general-style;
   line-height: 30px;
   margin-bottom: 20px;
 }
