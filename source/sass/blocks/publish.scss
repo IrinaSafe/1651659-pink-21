@@ -1,0 +1,13 @@
+.publish {
+  //Nothing
+}
+
+.publish__title {
+  @extend %p-general-style;
+  text-align: center;
+  padding: 0 20px 40px;
+}
+
+.publish__form-wrapper {
+  background-color: $color-lightgrey;
+}
