@@ -8,7 +8,12 @@
 }
 
 .reviews__list {
-  //Nothing
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $media-tablet) {
+    flex-direction: column-reverse;
+  }
 }
 
 .reviews__author-name {

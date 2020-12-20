@@ -1,31 +1,123 @@
 .page-header {
-  /*display: flex;
-  flex-direction: column;*/
-  background-color: $color-blue;
   color: $color-white;
+  /*display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 67px auto;*/
+
+  /*height: 463px;*/
+  /*background: url("../img/phone_back_no.png"),
+    url("../img/screen.png"),
+    url("../img/back-mobile.jpg");
+  background-size: auto, auto, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 40% bottom, 50% 79%, 50% 20%;*/
+
+  /*@media screen and (min-width: $media-desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 110px auto;
+    /*padding: 0 210px;
+  }*/
+}
+
+.page-header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 66px 397px auto;
+  background: url("../img/phone_back_no.png"),
+    url("../img/screen.png"),
+    url("../img/back-mobile.jpg");
+  background-size: auto, auto, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 40% 40%, 50% 39.5%, 50% 20%;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 110px 309px 309px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 110px auto;
+    /*padding: 0 210px;*/
+  }
+}
+
+.page-header__wrapper--form {
+  background: url("../img/back-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  display: grid;
+  grid-template-rows: 66px 173px;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-template-rows: 110px 330px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-rows: 110px 284px;
+  }
+}
+
+.page-header__link {
+
 }
 
 .page-header__logo {
-  /*display: flex;
-  justify-content: space-between;
-  padding: 23px 20px;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);*/
-  position: relative;
-  height: 67px;
+  /*height: 67px;
+  background-color: rgba(0, 0, 0, .3);*/
+
+  /*height: 67px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;*/ /*Скрыто для теста*/
+  background-color: rgba(0, 0, 0, .3);
+  display: grid;
+  /*grid-column: 1 / 4;*/
+  grid-row: 1 / 2;
+  padding: 20px 20px 0;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-column: 1 / 4;
+    padding: 0px 20px 0;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+    /*height: 110px;*/
+    padding: 0 0 0 130px;
+    align-items: center;
+  }
 }
 
 .page-header__logo-image {
-  display: block;
+  /*display: block;
   position: absolute;
   top: 20px;
   left: 20px;
   max-width: 150px;
-  height: auto;
+  height: auto;*/
 }
 
 .page-header__title-wrapper {
   text-align: center;
   padding: 40px 20px;
+  display: grid;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-column: 1 / 4;
+  }
 }
 
 .page-header__title {

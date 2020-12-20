@@ -5,6 +5,18 @@
 .footer__wrapper {
   text-align: center;
   padding: 37px 20px 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $media-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 40px 130px;
+  }
 }
 
 .footer__logo {
@@ -13,6 +25,10 @@
 
 .footer__logo-image {
   margin-bottom: 30px;
+
+  @media screen and (min-width: $media-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-social {
@@ -35,5 +51,5 @@
 }
 
 .footer__developer-image {
-  //Nothing
+  vertical-align: middle;
 }

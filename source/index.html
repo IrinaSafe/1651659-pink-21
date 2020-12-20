@@ -8,57 +8,41 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a>
-          <img class="page-header__logo-image" src="../img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
-        </a>
-      </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__list--active">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a class="page-header__link">
+            <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
+          </a>
+        </div>
 
-      navMain.classList.remove('main-nav--nojs');
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__list--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
-    <main>
-      <h1 class="visually-hidden">Приложение «Pink»</h1>
-      <section class="presentation">
-        <p class="heading presentation__heading">Взгляните на жизнь иначе</p>
+        <p class="heading presentation__heading">Взгляните на жизнь иначе!</p>
+
         <div class="presentation__wrapper">
           <button class="button button--download" type="button">Скачать приложение</button>
           <ul class="presentation__list">
@@ -82,45 +66,97 @@
             Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8
           </p>
         </div>
-      </section>
+      </div>
+
+    </header>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+    <main>
+      <h1 class="visually-hidden">Приложение «Pink»</h1>
+      <!--<section class="presentation">
+
+
+      </section>-->
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__title-wrapper">
           <p class="heading heading--blue">Устали от серости мегаполиса?</p>
           <p class="heading heading--blue">Нам есть что вам<br>предложить!</p>
         </div>
-        <ul class="advantages__list-image">
-          <li class="advantages__item-image advantages__item-image--hidden"></li>
-          <li class="advantages__item-image advantages__item-image--hidden"></li>
-          <li class="advantages__item-image"></li>
-        </ul>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Поднимает настроение</h3>
-            <p class="advantages__item-description">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводите новых друзей</h3>
-            <p class="advantages__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
+        <div class="advantages-wrapper">
+          <ul class="advantages__list-image">
+            <li class="advantages__item-image advantages__item-image--hidden">
+              <img class="advantages-image" src="img/iphone_1.png" alt="">
+            </li>
+            <li class="advantages__item-image advantages__item-image--hidden">
+              <img class="advantages-image" src="img/iphone_2.png" alt="">
+            </li>
+            <li class="advantages__item-image">
+              <img class="advantages-image" src="img/iphone_3.png" alt="">
+            </li>
+          </ul>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Поднимает настроение</h3>
+              <p class="advantages__item-description">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводите новых друзей</h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
+
+      <section class="effect">
+        <div class="effect__wrapper">
+          <div class="effect__image">
+            <span class="effect__image-text">
+              24
+            </span>
+          </div>
+          <div class="effect__description">
+            <h2 class="effect__heading">Эффект на&nbsp;24 часа!</h2>
+
+            <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+
+            <a class="effect__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
           <div class="reviews__list slider__list">
-            <p class="reviews__author-name">Николай Петров</p>
-            <p class="reviews__author-age-profession reviews__author-age-profession--hidden">25 лет, водитель трамвая</p>
+            <span class="reviews__author-name">Николай Петров<br>
+              <span class="reviews__author-age-profession reviews__author-age-profession--hidden">25 лет, водитель трамвая</span>
+            </span>
+
             <blockquote class="reviews__item slider__item">
               <p class="reviews__author-text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -257,36 +293,39 @@
               </td>
             </tr>
           </table>
-          <p class="slider__toggles">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle slider__toggle--active" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </p>
+          <div class="slider__toggles">
+            <input class="slider__input" type="radio" name="price" id="slide1">
+            <input class="slider__input" type="radio" checked name="price" id="slide2">
+            <input class="slider__input" type="radio" name="price" id="slide3">
+            <label class="slider__toggle" for="slide1"></label>
+            <label class="slider__toggle" for="slide2"></label>
+            <label class="slider__toggle" for="slide3"></label>
+          </div>
         </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <p  class="heading heading--blue">Остались вопросы?<br>Свяжитесь с нами!</p>
-          <div class="contacts__container">
-            <div class="contacts__info">
-              <h4 class="contacts__info-title">Звоните:</h4>
-              <a class="contacts__link" href="tel:+78125556666" title="+78125556666">
-                +7(812)555-66-66
-              </a>
-            </div>
-            <div class="contacts__info">
-              <h4 class="contacts__info-title">Пишите:</h4>
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </div>
-          </div>
-          <div class="contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--title">
+            <p  class="heading heading--blue">Остались вопросы?<br>Свяжитесь с нами!</p>
+          </li>
+          <li class="contacts__item contacts__item--phone">
+            <h4 class="contacts__info-title">Звоните:</h4>
+            <a class="contacts__link" href="tel:+78125556666" title="+78125556666">
+              +7(812)555-66-66
+            </a>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            <h4 class="contacts__info-title">Пишите:</h4>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+          <li class="contacts__item contacts__item--adress">
             <h4 class="contacts__info-title">Приезжайте в гости:</h4>
             <span class="contacts__link">ул. Большая<br>Конюшенная, 19/8</span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
@@ -309,7 +348,7 @@
             <li class="socials-list__item">
               <a class="socials-list__link socials-list__link--youtube" href="https://www.youtube.com" aria-label="youtube"></a>
             </li>
-        </ul>
+          </ul>
         </div>
         <div class="footer__developer">
           <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">

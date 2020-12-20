@@ -1,8 +1,34 @@
 .price {
   //Nothing
+  overflow-x: hidden;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
 }
 
 .price__wrapper {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
   background-color: $price__wrapper-background-color;
-  height: 506px;
+  /*width: 300%;*/
+  padding: 40px 20px;
+  /*position: relative;*/
+  /*transition: transform .8s ease;*/
+  /*overflow: scroll;*/
+
+  @media screen and (min-width: $media-tablet) {
+    padding: 40px 20px;
+    /*width: 100%;*/
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 40px 130px;
+    width: auto;
+  }
+}
+
+.price__wrapper input {
+  display: none;
 }

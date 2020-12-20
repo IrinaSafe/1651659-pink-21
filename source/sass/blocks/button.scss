@@ -16,6 +16,10 @@
 
   &--download {
     margin: 0 0 20px;
+
+    @media screen and (min-width: $media-tablet) {
+      background: 0;
+    }
   }
 
   &--square {

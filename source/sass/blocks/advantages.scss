@@ -1,11 +1,49 @@
 .advantages {
-  background-color: $color-lightgrey;
+  /*background-color: $color-lightgrey;*/
+  /*display: grid;
+  grid-template-areas: "title" "image" "text";
+  grid-template-columns: 1fr;
+  /*background-image: url("../img/grey_background.svg");
+  background-repeat: no-repeat;
+  /*background-position: center -40px;
+  background-size: cover;
+  background-size: 101% auto;
+  background-position: 50% 0;*/
+/*
+  @media screen and (min-width: $media-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }*/
+}
+
+.advantages-wrapper {
+  background-image: url("../img/grey_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  display: grid;
+  grid-template-areas:"image" "text";
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 210px;
+  }
+
 }
 
 .advantages__title-wrapper {
   text-align: center;
   background-color: $color-white;
   padding: 42px 20px 40px 20px;
+  grid-area: title;
+  grid-column: 1 / 3;
 }
 
 .advantages__heading {
@@ -14,27 +52,79 @@
 
 .advantages__list-image {
   @extend %ul-general-style;
+  display: grid;
   padding: 0 20px;
-}
+  text-align: center;
+  grid-area: image;
+  /*grid-row: 3 / 4;*/
+  grid-row: 2 / 3;
+  /*background-color: $color-lightgrey;*/
 
-.advantages__item-image {
-  background-image: url("../img/iphone_3.png");
-  background-repeat: no-repeat;
-  background-position: center 50px;
-  height: 320px;
 
-  &--hidden {
-    display: none;
+  @media screen and (min-width: $media-tablet) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    /*justify-content: center;
+    align-items: center;*/
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
   }
 }
 
-/*.advantages-image {
-}*/
+.advantages__item-image {
+  display: grid;
+  justify-content: center;
+  overflow: hidden;
+  /*margin-bottom: 60px;*/
+  /*background-image: url("../img/iphone_3.png");
+  background-repeat: no-repeat;
+  background-position: center 50px;*/
+  /*height: 320px;*/
+
+  &--hidden {
+    display: none;
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
+  }
+}
+
+.advantages-image {
+  transform:translateY(45px); /*75*/
+}
 
 .advantages__list {
+  /*background: linear-gradient(-5deg,#f2f2f2 31%,#fff 31%,#fff 31%);*/
   @extend %ul-general-style;
+  display: grid;
   text-align: center;
   padding: 0 20px;
+  grid-area: text;
+  /*grid-row: 2 / 3;*/
+  grid-row: 1 / 2;
+  /*background-color: $color-lightgrey;*/
+  /*background-image: url("../img/grey_background.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;*/
+
+  @media screen and (min-width: $media-tablet) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    text-align: start;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
 }
 
 .advantages__item {

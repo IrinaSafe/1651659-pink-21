@@ -1,5 +1,11 @@
 .page-main {
   background-color: $color-white;
+  display: block;
+
+  @media screen and (min-width: $media-tablet) {
+    /*padding: 0 54px;*/
+
+  }
 }
 
 .page-main__title-wrapper {

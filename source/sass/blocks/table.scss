@@ -1,12 +1,31 @@
 .table {
-  height: 279px;
+  /*height: 279px;*/
+  /*display: flex;
+  justify-content: center;*/
   border-collapse: collapse;
   word-break: break-all;
-  width: 100%;
   margin: 0 auto;
+  text-align: center;
+  /*transform: translate(-31%);*/
+  /*table-layout: fixed;*/
+  /*transition: transform 0.8s ease;*/
+  /*position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;*/
+
+  @media screen and (min-width: $media-tablet) {
+    width: 100%;
+    transform: none;
+    display: table;
+  }
 
   &--hidden {
-    //Nothing
+    display: none;
+
+    @media screen and (min-width: $media-tablet) {
+      display: table-cell;
+    }
   }
 }
 
@@ -16,7 +35,7 @@
 
 .table__th {
   box-sizing: border-box;
-  min-width: 276px;
+  width: 276px;
   height: 94px;
   background-color: $color-blue;
   text-align: center;
@@ -42,13 +61,17 @@
 
 .table__td {
   box-sizing: border-box;
-  min-width: 276px;
+  width: 276px;
   background-color: $color-white;
   border: 2px solid $color-grey;
 
   &--hidden {
     display: inline;
     text-transform: uppercase;
+
+    @media screen and (min-width: $media-tablet) {
+      display: none;
+    }
   }
 }
 

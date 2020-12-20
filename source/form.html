@@ -8,38 +8,40 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a>
-          <img class="page-header__logo-image" src="../img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
-        </a>
-      </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a>
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__title-wrapper">
-        <h1 class="page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</h1>
+      <div class="page-header__wrapper--form">
+        <div class="page-header__logo">
+          <a class="page-header__link">
+            <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__title-wrapper">
+          <h1 class="page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</h1>
+        </div>
       </div>
     </header>
     <script>
@@ -65,9 +67,9 @@
         </p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fielsdet context-class__fielsdet form__fielsdet--border-hidden">
-          <ul class="fielsdet-list">
-            <li class="field">
+        <fieldset class="form__fieldset form__fieldset--name        context-class__fieldset form__fieldset--border-hidden">
+          <ul class="fieldset-list">
+            <li class="field field--row">
               <label class="field__label">Фамилия:</label>
               <input
                 class="field__input"
@@ -75,7 +77,7 @@
                 name="name"
                 placeholder="Укажите фамилию*">
             </li>
-            <li class="field">
+            <li class="field field--row">
               <label class="field__label">Имя:</label>
               <input
                 class="field__input"
@@ -83,7 +85,7 @@
                 name="name"
                 placeholder="Введите ваше имя*">
             </li>
-            <li class="field">
+            <li class="field field--row">
               <label class="field__label">Отчество:</label>
               <input
                 class="field__input"
@@ -94,9 +96,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet form__fielsdet--background-color">
-          <legend class="form__fielsdet-legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="fielsdet-list fielsdet-list--choice fielsdet-list--grid">
+        <fieldset class="form__fieldset form__fieldset--progress form__fieldset--background-color">
+          <legend class="form__fieldset-legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="fieldset-list fieldset-list--choice fieldset-list--grid">
               <li>
                 <label class="inline-field">
                   <input
@@ -151,21 +153,21 @@
             </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet form__fielsdet--contacts">
-          <legend class="form__fielsdet-legend form__fielsdet-legend--content form__fielsdet-legend--contacts-hidden">Контактная информация</legend>
-          <ul class="fielsdet-list fielsdet-list--general fielsdet-list--row">
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__fieldset-legend form__fieldset-legend--content form__fieldset-legend--contacts-hidden">Контактная информация</legend>
+          <ul class="fieldset-list fieldset-list--general fieldset-list--row">
             <li class="field">
-              <label class="field__label">Номер телефона</label>
+              <label class="field__label field__label--contacts">Номер телефона</label>
               <input
-                class="field__input"
+                class="field__input field__input--contacts"
                 type="tel"
                 name="phone"
                 placeholder="Номер, пожалуйста">
             </li>
             <li class="field">
-              <label class="field__label">Адрес почты</label>
+              <label class="field__label field__label--contacts">Адрес почты</label>
               <input
-                class="field__input"
+                class="field__input field__input--contacts"
                 type="email"
                 name="email"
                 placeholder="Введите почту*">
@@ -173,9 +175,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet form__fielsdet--background-color  context-class__fielsdet context-class__fielsdet--app">
-          <legend class="form__fielsdet-legend form__fielsdet-legend--aplication-hidden">С каким приложением путешествовали?</legend>
-            <ul class="fielsdet-list fielsdet-list--choice">
+        <fieldset class="form__fieldset form__fieldset--app form__fieldset--background-color  context-class__fieldset context-class__fieldset--app">
+          <legend class="form__fieldset-legend form__fieldset-legend--aplication-hidden">С каким приложением путешествовали?</legend>
+            <ul class="fieldset-list fieldset-list--choice">
               <li>
                 <label class="inline-field">
                   <input
@@ -207,9 +209,9 @@
             </ul>
         </fieldset>
 
-        <fieldset class="form__fielsdet form__fielsdet--emotions">
-          <legend class="form__fielsdet-legend form__fielsdet-legend--one-row">Опишите свои эмоции</legend>
-            <textarea class="form__fielsdet-textarea" name="comment" rows="5" wrap="soft" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <fieldset class="form__fieldset form__fieldset--emotions">
+          <legend class="form__fieldset-legend form__fieldset-legend--one-row">Опишите свои эмоции</legend>
+            <textarea class="form__fieldset-textarea" name="comment" rows="5" wrap="soft" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="feedback">
