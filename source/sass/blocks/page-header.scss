@@ -24,23 +24,32 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 66px 397px auto;
-  background: url("../img/phone_back_no.png"),
-    url("../img/screen.png"),
+  background: url("../img/phone_header_mob.png"),
     url("../img/back-mobile.jpg");
-  background-size: auto, auto, cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 40% 40%, 50% 39.5%, 50% 20%;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 40% 40%, 50% 20%;
 
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 110px 309px 309px;
+    background: url("../img/phone_header_tablet.png"),
+    url("../img/back-tablet.jpg");
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 40% 100%, 50% 20%;
   }
 
   @media screen and (min-width: $media-desktop) {
     display: grid;
+    min-height: 860px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 110px auto;
-    /*padding: 0 210px;*/
+    background: url("../img/phone_header_desk.png"),
+    url("../img/back-desktop.jpg");
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 100%, 50% 20%;
   }
 }
 

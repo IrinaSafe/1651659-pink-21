@@ -16,6 +16,10 @@
   margin: 0 auto;
   padding: 40px 20px 0;
   height: 100%;
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 20px 130px 60px;
+  }
 }
 
 .effect__image {
@@ -24,18 +28,26 @@
   align-items: center;
   width: 50%;
   min-height: 330px;
-  background-image: url("../img/diagram-fill.svg"), url("../img/timer.svg");
+  background-image: url("../img/time_tablet.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 202px 202px, 238px 276px;
-  background-position: 50% 64%, 50% 50%;
+  background-size: auto;
+  background-position: 50% 50%;
+
+  @media screen and (min-width: $media-desktop) {
+    background-image: url("../img/time_desk.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+    min-height: 345px;
+  }
 }
 
-.effect__image-text {
+/*.effect__image-text {
   font-size: 96px;
   font-weight: 700;
   line-height: 1;
   color: $color-pink;
-}
+}*/
 
 .effect__description {
   display: flex;
@@ -51,6 +63,10 @@
   margin: 0;
   width: 60%;
   line-height: 36px;
+
+  @media screen and (min-width: $media-desktop) {
+    width: 100%;
+  }
 }
 
 .effect__text {
