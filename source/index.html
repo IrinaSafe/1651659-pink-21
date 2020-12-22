@@ -99,10 +99,10 @@
         </div>
         <div class="advantages-wrapper">
           <ul class="advantages__list-image">
-            <li class="advantages__item-image advantages__item-image--hidden">
+            <li class="advantages__item-image">
               <img class="advantages-image" src="img/phone1_desk.png" alt="">
             </li>
-            <li class="advantages__item-image advantages__item-image--hidden">
+            <li class="advantages__item-image">
               <img class="advantages-image" src="img/phone2_desk.png" alt="">
             </li>
             <li class="advantages__item-image">
@@ -178,6 +178,14 @@
       <section class="price">
         <h2 class="visually-hidden">Прайс</h2>
         <div class="price__wrapper">
+          <div class="slider__toggles">
+            <input class="slider__input" type="radio" name="price" id="slide1">
+            <input class="slider__input" type="radio" checked name="price" id="slide2">
+            <input class="slider__input" type="radio" name="price" id="slide3">
+            <label class="slider__toggle" for="slide1"></label>
+            <label class="slider__toggle" for="slide2"></label>
+            <label class="slider__toggle" for="slide3"></label>
+          </div>
           <table class="table">
             <tr class="table__tr">
               <th class="table__th--border-hidden table--hidden"></th>
@@ -297,14 +305,6 @@
               </td>
             </tr>
           </table>
-          <div class="slider__toggles">
-            <input class="slider__input" type="radio" name="price" id="slide1">
-            <input class="slider__input" type="radio" checked name="price" id="slide2">
-            <input class="slider__input" type="radio" name="price" id="slide3">
-            <label class="slider__toggle" for="slide1"></label>
-            <label class="slider__toggle" for="slide2"></label>
-            <label class="slider__toggle" for="slide3"></label>
-          </div>
         </div>
       </section>
       <section class="contacts">
@@ -333,7 +333,10 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <img class="map__image" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Карта">
+        <!--<img class="map__image" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Карта">-->
+        <div id="yandexmap">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae6975fb90c1302fa6aa0e79378eb7c2d9e53cc93cff2fa7608a35e38fa15c1b6&amp;source=constructor" width="100%" frameborder="0"></iframe>
+        </div>
       </section>
     </main>
     <footer class="footer">

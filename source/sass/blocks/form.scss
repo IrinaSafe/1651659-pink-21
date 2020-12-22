@@ -23,22 +23,14 @@
   margin: 0;
   border: 0;
 
-  &:nth-child(2) {
-    background-color: $color-lightgrey;
-  }
-
-  &:nth-child(4) {
+  &:nth-of-type(even) {
     background-color: $color-lightgrey;
   }
 
   @media screen and (min-width: $media-tablet) {
     border: 2px solid $color-grey;
 
-    &:nth-child(2) {
-      background-color: $color-white;
-    }
-
-    &:nth-child(4) {
+    &:nth-of-type(even) {
       background-color: $color-white;
     }
 

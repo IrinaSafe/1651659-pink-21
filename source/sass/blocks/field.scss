@@ -46,7 +46,25 @@
     width: 100%;
   }
 
-  &--contacts {
+  /*&--contacts
     width: auto;
+  }*/
+
+  &--phone-image {
+    @media screen and (min-width: $media-tablet) {
+      width: auto;
+      background: url("../img/phone_icone.svg");
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
+  }
+
+  &--mail-image {
+    @media screen and (min-width: $media-tablet) {
+      width: auto;
+      background: url("../img/mail_icone.svg");
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
   }
 }

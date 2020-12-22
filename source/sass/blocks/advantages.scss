@@ -60,6 +60,9 @@
   grid-row: 2 / 3;
   /*background-color: $color-lightgrey;*/
 
+  li:not(:last-child) {
+    display: none;
+  }
 
   @media screen and (min-width: $media-tablet) {
     grid-column: 1 / 2;
@@ -72,6 +75,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column: 1 / 4;
     grid-row: 1 / 2;
+
+    li:not(:last-child) {
+      display: grid;
+    }
   }
 }
 
@@ -84,14 +91,6 @@
   background-repeat: no-repeat;
   background-position: center 50px;*/
   /*height: 320px;*/
-
-  &--hidden {
-    display: none;
-
-    @media screen and (min-width: $media-desktop) {
-      display: inline;
-    }
-  }
 }
 
 .advantages-image {
