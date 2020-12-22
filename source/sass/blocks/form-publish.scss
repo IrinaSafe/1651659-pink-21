@@ -82,4 +82,8 @@
     padding-top: 0;
     border-top: none;
   }
+
+  @media screen and (min-width: $media-desktop) {
+    flex-direction: row;
+  }
 }
