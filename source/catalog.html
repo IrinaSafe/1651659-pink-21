@@ -242,44 +242,49 @@
 
             <fieldset class="form-publish__fieldset-filters">
               <div class="form-publish__container">
-                <div class="form-publish__icon">
-                  <label class="filter-label">
-                    <input
-                      class="filter-label__input-radio-crop"
-                      type="radio"
-                      name="browser"
-                      checked="checked">
-                  </label>
-                  <label class="filter-label">
-                    <input
-                      class="filter-label__input-radio-fill"
-                      type="radio"
-                      name="browser">
-                  </label>
-                  <label class="filter-label">
-                    <input
-                      class="filter-label__input-radio-contrast"
-                      type="radio"
-                      name="browser">
-                  </label>
-                </div>
-                <div class="form-publish__range">
-                  <div class="form-publish__range-row">
-                    <div class="range-line">
-                      <span class="range-circle"></span>
-                    </div>
-                  </div>
-                  <div class="form-publish__range-row">
-                    <div class="range-line range-line--hidden">
-                      <span class="range-circle"></span>
-                    </div>
-                  </div>
-                  <div class="form-publish__range-row">
-                    <div class="range-line range-line--hidden">
-                      <span class="range-circle"></span>
-                    </div>
-                  </div>
-                </div>
+                <ul class="form-publish__list" role="tablist">
+                  <li class="filter" role="presentation">
+                    <label class="filter__label" role="tab" aria-selected="true" data-toggle="pill">
+                      <input
+                        class="filter__input filter__input--crop"
+                        type="radio"
+                        name="browser"
+                        checked="checked">
+                        <div class="filter__range">
+                          <div class="filter__line">
+                            <span class="filter__circle"></span>
+                          </div>
+                        </div>
+                    </label>
+                  </li>
+                  <li class="filter" role="presentation">
+                    <label class="filter__label" role="tab" aria-selected="false">
+                      <input
+                        class="filter__input filter__input--fill"
+                        type="radio"
+                        name="browser">
+                        <div class="filter__range">
+                          <div class="filter__line">
+                            <span class="filter__circle"></span>
+                          </div>
+                        </div>
+                    </label>
+                  </li>
+                  <li class="filter" role="presentation">
+                    <label class="filter__label" role="tab" aria-selected="false">
+                      <input
+                        class="filter__input filter__input--contrast"
+                        type="radio"
+                        name="browser">
+                        <div class="filter__range">
+                          <div class="filter__line">
+                            <span class="filter__circle"></span>
+                          </div>
+                        </div>
+                    </label>
+                  </li>
+                </ul>
+                <div class="form-publish__range"></div>
               </div>
               <div class="form-publish__button">
                 <input class="button button--submit" type="submit" value="Запостить">
