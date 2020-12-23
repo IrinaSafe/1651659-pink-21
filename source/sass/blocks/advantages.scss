@@ -1,19 +1,5 @@
 .advantages {
-  /*background-color: $color-lightgrey;*/
-  /*display: grid;
-  grid-template-areas: "title" "image" "text";
-  grid-template-columns: 1fr;
-  /*background-image: url("../img/grey_background.svg");
-  background-repeat: no-repeat;
-  /*background-position: center -40px;
-  background-size: cover;
-  background-size: 101% auto;
-  background-position: 50% 0;*/
-/*
-  @media screen and (min-width: $media-tablet) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }*/
+  //Nothing
 }
 
 .advantages-wrapper {
@@ -22,18 +8,22 @@
   background-size: cover;
   background-position: 50% 0;
   display: grid;
-  grid-template-areas:"image" "text";
+  grid-template-areas:
+  "image"
+  "text";
   grid-template-columns: 1fr;
 
   @media screen and (min-width: $media-tablet) {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    grid-template-areas: "image text";
   }
 
   @media screen and (min-width: $media-desktop) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 0 210px;
+    grid-template-areas:
+    "image"
+    " text";
+    gap: 40px;
+    padding: 0 130px;
   }
 
 }
@@ -52,77 +42,61 @@
 
 .advantages__list-image {
   @extend %ul-general-style;
-  display: grid;
   padding: 0 20px;
   text-align: center;
   grid-area: image;
-  /*grid-row: 3 / 4;*/
-  grid-row: 2 / 3;
-  /*background-color: $color-lightgrey;*/
 
   li:not(:last-child) {
     display: none;
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
   }
 
   @media screen and (min-width: $media-tablet) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 5;
-    /*justify-content: center;
-    align-items: center;*/
+
   }
 
   @media screen and (min-width: $media-desktop) {
+    padding: 0;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-
-    li:not(:last-child) {
-      display: grid;
-    }
+    justify-content: center;
   }
 }
 
 .advantages__item-image {
-  display: grid;
-  justify-content: center;
   overflow: hidden;
-  /*margin-bottom: 60px;*/
-  /*background-image: url("../img/iphone_3.png");
-  background-repeat: no-repeat;
-  background-position: center 50px;*/
-  /*height: 320px;*/
 }
 
 .advantages-image {
-  transform:translateY(80px); /*75*/
+  transform:translateY(80px);
 }
 
 .advantages__list {
-  /*background: linear-gradient(-5deg,#f2f2f2 31%,#fff 31%,#fff 31%);*/
   @extend %ul-general-style;
-  display: grid;
   text-align: center;
   padding: 0 20px;
   grid-area: text;
-  /*grid-row: 2 / 3;*/
-  grid-row: 1 / 2;
-  /*background-color: $color-lightgrey;*/
-  /*background-image: url("../img/grey_background.svg");
-  background-repeat: no-repeat;
-  background-size: 101% auto;
-  background-position: 50% 0;*/
 
   @media screen and (min-width: $media-tablet) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 5;
     text-align: start;
+    padding: 80px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 
   @media screen and (min-width: $media-desktop) {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -130,7 +104,8 @@
   //Nothing
 }
 
-.advantages__item-title {
+.advantages__title {
+  margin: 0;
   font-size: $advantages__item-title-font-size;
   font-weight: $advantages__item-title-font-weight;
   color: $advantages__item-title-color;
@@ -138,17 +113,7 @@
 
 .advantages__description {
   @extend %p-general-style;
-}
-
-.advantages__item-description {
   font-size: $advantages__item-description-font-size;
   font-weight: $advantages__item-description-font-weight;
   color: $advantages__item-description-color;
 }
-
-/*.advantages__list::after {
-  content: '';
-  display: block;
-  height: 330px;
-  background: url(../img/iphone_3.png) no-repeat center 50px;
-}*/
