@@ -8,15 +8,15 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
+
         <div class="page-header__logo">
           <a class="page-header__link">
               <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
           </a>
+          <button class="main-nav__toggle" type="button"></button>
         </div>
 
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"></button>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__list--active">
               <a>
@@ -42,7 +42,9 @@
         </nav>
 
         <p class="heading presentation__heading">Взгляните на жизнь иначе!</p>
-
+        <div class="page-header__image">
+          <img src="./img/phone_header_mob.png") alt="">
+        </div>
         <div class="presentation__wrapper">
           <button class="button button--download" type="button">Скачать приложение</button>
           <ul class="presentation__list">
@@ -66,10 +68,22 @@
             Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8
           </p>
         </div>
-      </div>
+
 
     </header>
+
     <script>
+      let button = document.querySelector('.main-nav__toggle');
+      let nav = document.querySelector('.main-nav');
+      let color = document.querySelector('.page-header__logo');
+
+      button.addEventListener('click', () => {
+        button.classList.toggle('main-nav__toggle--opened');
+        nav.classList.toggle('main-nav--opened');
+        color.classList.toggle('page-header__logo--opened');
+      })
+    </script>
+    <!--<script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -84,7 +98,7 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
-    </script>
+    </script>-->
     <main>
       <h1 class="visually-hidden">Приложение «Pink»</h1>
       <!--<section class="presentation">

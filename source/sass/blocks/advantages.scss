@@ -9,8 +9,8 @@
   background-position: 50% 0;
   display: grid;
   grid-template-areas:
-  "image"
-  "text";
+  "text"
+  "image";
   grid-template-columns: 1fr;
 
   @media screen and (min-width: $media-tablet) {
