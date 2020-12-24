@@ -12,7 +12,7 @@
         <a class="page-header__link">
             <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
         </a>
-        <button class="main-nav__toggle" type="button"></button>
+        <button class="page-header__toggle" type="button"></button>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
@@ -41,12 +41,12 @@
       <p class="heading page-header__title">Фотографии<br> пользователей</p>
     </header>
     <script>
-      let button = document.querySelector('.main-nav__toggle');
+      let button = document.querySelector('.page-header__toggle');
       let nav = document.querySelector('.main-nav');
       let color = document.querySelector('.page-header__head-line');
 
       button.addEventListener('click', () => {
-        button.classList.toggle('main-nav__toggle--opened');
+        button.classList.toggle('page-header__toggle--opened');
         nav.classList.toggle('main-nav--opened');
         color.classList.toggle('page-header__head-line--opened');
       })
