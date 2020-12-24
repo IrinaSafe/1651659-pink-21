@@ -39,28 +39,11 @@
   }
 }
 
-.page-header__wrapper--form {
-  background: url("../img/back-mobile.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 10%;
-  display: grid;
-  grid-template-rows: 66px 173px;
-
-  @media screen and (min-width: $media-tablet) {
-    grid-template-rows: 110px 330px;
-  }
-
-  @media screen and (min-width: $media-desktop) {
-    grid-template-rows: 110px 284px;
-  }
-}
-
 .page-header__link {
   @extend %a-general-style;
 }
 
-.page-header__logo {
+.page-header__head-line {
   grid-area: top;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;

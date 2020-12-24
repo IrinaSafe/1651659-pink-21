@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo">
+      <div class="page-header__head-line">
         <a class="page-header__link">
             <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
         </a>
@@ -41,20 +41,15 @@
       <p class="heading page-header__title">Фотографии<br> пользователей</p>
     </header>
     <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      let button = document.querySelector('.main-nav__toggle');
+      let nav = document.querySelector('.main-nav');
+      let color = document.querySelector('.page-header__head-line');
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
+      button.addEventListener('click', () => {
+        button.classList.toggle('main-nav__toggle--opened');
+        nav.classList.toggle('main-nav--opened');
+        color.classList.toggle('page-header__head-line--opened');
+      })
     </script>
     <main class="page-main">
       <div class="page-main__title-wrapper">
