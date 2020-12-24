@@ -9,8 +9,8 @@
   background-position: 50% 0;
   display: grid;
   grid-template-areas:
-  "text"
-  "image";
+    "text"
+    "image";
   grid-template-columns: 1fr;
 
   @media screen and (min-width: $media-tablet) {
@@ -20,12 +20,11 @@
 
   @media screen and (min-width: $media-desktop) {
     grid-template-areas:
-    "image"
-    " text";
+      "image"
+      " text";
     gap: 40px;
     padding: 0 130px;
   }
-
 }
 
 .advantages__title-wrapper {
@@ -54,10 +53,6 @@
     }
   }
 
-  @media screen and (min-width: $media-tablet) {
-
-  }
-
   @media screen and (min-width: $media-desktop) {
     padding: 0;
     display: grid;
@@ -71,7 +66,7 @@
 }
 
 .advantages-image {
-  transform:translateY(80px);
+  transform: translateY(80px);
 }
 
 .advantages__list {

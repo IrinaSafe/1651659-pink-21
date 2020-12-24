@@ -13,11 +13,11 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 110px auto;
     grid-template-areas:
-    "top top"
-    "nav nav"
-    "heading ."
-    "download ."
-    "image image";
+      "top top"
+      "nav nav"
+      "heading ."
+      "download ."
+      "image image";
     background: url("../img/back-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,10 +28,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 110px auto;
     grid-template-areas:
-    "top nav nav"
-    "heading . ."
-    "download . ."
-    "image image image";
+      "top nav nav"
+      "heading . ."
+      "download . ."
+      "image image image";
     background: url("../img/back-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,13 +62,13 @@
 
 .page-header__logo {
   grid-area: top;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   display: flex;
   justify-content: space-between;
 
   @media screen and (min-width: $media-tablet) {
-    padding: 0px 20px 0;
+    padding: 0 20px 0;
     align-items: center;
   }
 
@@ -89,14 +89,6 @@
 .page-header__title-wrapper {
   text-align: center;
   padding: 40px 20px;
-
-  @media screen and (min-width: $media-tablet) {
-
-  }
-
-  @media screen and (min-width: $media-desktop) {
-
-  }
 }
 
 .page-header__title {

@@ -14,10 +14,6 @@
   padding: 40px 20px 0;
   border: none;
   text-align: center;
-
-  @media screen and (min-width: $media-tablet) {
-
-  }
 }
 
 .form-publish__input-hidden {
@@ -48,25 +44,9 @@
 }
 
 .form-publish__list {
-  grid-area: icons;
   @extend %ul-general-style;
-
-  @media screen and (min-width: $media-tablet) {
-    /*display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    /*grid-column: 1 /2;*/
-  }
+  grid-area: icons;
 }
-
-/*.form-publish__range
-  grid-area: ranges;
-
-  @media screen and (min-width: $media-tablet) {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column: 2 /3;
-  }
-}*/
 
 .form-publish__range-row {
   //Nothing

@@ -65,26 +65,14 @@
 
   &--contacts {
     grid-area: contacts;
-
-    @media screen and (min-width: $media-desktop) {
-
-    }
   }
 
   &--app {
     grid-area: app;
-
-    @media screen and (min-width: $media-desktop) {
-
-    }
   }
 
   &--emotions {
     grid-area: emotions;
-
-    @media screen and (min-width: $media-desktop) {
-
-    }
   }
 }
 

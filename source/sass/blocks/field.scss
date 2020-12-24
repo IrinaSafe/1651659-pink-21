@@ -26,7 +26,7 @@
   @media screen and (min-width: $media-tablet) {
     padding-left: 0;
     padding-right: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   &--contacts {
@@ -42,13 +42,9 @@
   padding: 17px 0 17px 15px;
   border-radius: 1px;
 
-  @media screen and (min-width: $media-tablet)  {
+  @media screen and (min-width: $media-tablet) {
     width: 100%;
   }
-
-  /*&--contacts
-    width: auto;
-  }*/
 
   &--phone-image {
     @media screen and (min-width: $media-tablet) {

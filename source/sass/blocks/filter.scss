@@ -11,21 +11,21 @@
   appearance: none;
 
   &--crop {
-    background-image: url(../img/crop.svg);
+    background-image: url("../img/crop.svg");
     background-repeat: no-repeat;
     width: 44px;
     height: 44px;
   }
 
   &--fill {
-    background-image: url(../img/fill.svg);
+    background-image: url("../img/fill.svg");
     background-repeat: no-repeat;
     width: 48px;
     height: 43px;
   }
 
   &--contrast {
-    background-image: url(../img/contrast.svg);
+    background-image: url("../img/contrast.svg");
     background-repeat: no-repeat;
     width: 32px;
     height: 32px;
@@ -41,11 +41,11 @@
   bottom: -27px;
   width: 240px;
   height: 2px;
-  background: #283645;
+  background-color: #283645;
 }
 
 .filter__circle {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border: 2px solid #d22856;
   border-radius: 100%;
   display: block;
