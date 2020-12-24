@@ -83,7 +83,7 @@
 }
 
 .page-header__logo-image {
-
+  //Nothing
 }
 
 .page-header__title-wrapper {
@@ -110,6 +110,7 @@
   color: $page-header__title-color;
   margin: 0;
   grid-area: heading;
+  padding: 0 20px;
 
   @media screen and (min-width: $media-tablet) {
     grid-column: 1/3;
