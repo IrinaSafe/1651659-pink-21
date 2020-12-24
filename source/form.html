@@ -8,57 +8,48 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper--form">
-        <div class="page-header__logo">
-          <a class="page-header__link">
+      <div class="page-header__logo">
+        <a class="page-header__link">
             <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
-          </a>
-        </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a>
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__title-wrapper">
-          <h1 class="page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</h1>
-        </div>
+        </a>
+        <button class="main-nav__toggle" type="button"></button>
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a>
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="heading page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</p>
     </header>
     <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      let button = document.querySelector('.main-nav__toggle');
+      let nav = document.querySelector('.main-nav');
+      let color = document.querySelector('.page-header__logo');
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
+      button.addEventListener('click', () => {
+        button.classList.toggle('main-nav__toggle--opened');
+        nav.classList.toggle('main-nav--opened');
+        color.classList.toggle('page-header__logo--opened');
+      })
     </script>
     <main class="page-main">
       <div class="page-main__title-wrapper">
