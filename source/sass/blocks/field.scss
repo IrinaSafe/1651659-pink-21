@@ -36,11 +36,21 @@
 
 .field__input {
   border: 2px solid $color-grey;
+  border-radius: 1px;
   font-size: $field__input-font-size;
   font-weight: $field__input-font-weight;
   color: $field__input-color;
   padding: 17px 0 17px 15px;
-  border-radius: 1px;
+
+  &:hover {
+    border: 2px solid $color-blue;
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid $color-pink;
+    outline: none;
+  }
 
   @media screen and (min-width: $media-tablet) {
     width: 100%;
