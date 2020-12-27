@@ -18,17 +18,29 @@
 
 .reviews__author-name {
   @extend %p-general-style;
-  font-size: $reviews__author-name-font-size;
-  font-weight: $reviews__author-name-font-weight;
-  color: $reviews__author-name-color;
+  font-size: $author-name-font-size;
+  font-weight: $author-name-font-weight;
+  color: $author-name-color;
   margin-bottom: 10px;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $author-name-font-size--tablet;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $author-name-font-size--desktop;
+  }
 }
 
 .reviews__author-age-profession {
   @extend %p-general-style;
-  font-size: $reviews__author-age-profession-font-size;
-  font-weight: $reviews__author-age-profession-font-weight;
-  color: $reviews__author-age-profession-color;
+  font-size: $author-age-profession-font-size;
+  font-weight: $author-age-profession-font-weight;
+  color: $author-age-profession-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $author-age-profession-font-size--desktop;
+  }
 
   &--hidden {
     display: none;
@@ -45,11 +57,15 @@
 
 .reviews__author-text {
   @extend %p-general-style;
-  font-size: $reviews__author-text-font-size;
-  font-weight: $reviews__author-text-font-weight;
-  color: $reviews__author-text-color;
+  font-size: $author-text-font-size;
+  font-weight: $author-text-font-weight;
+  color: $author-text-color;
   line-height: 30px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $author-text-font-size--tablet;
+  }
 }
 
 .reviews__toggles {

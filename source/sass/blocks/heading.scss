@@ -4,13 +4,16 @@
   font-weight: $heading-font-weight;
 
   @media screen and (min-width: $media-tablet) {
-    font-size: 40px;
+    font-size: $heading-font-size--tablet;
     line-height: 120%;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $heading-font-size--desktop;
   }
 
   &--blue {
     @extend %p-general-style;
     color: $color-blue;
-    /*margin-bottom: 30px;*/
   }
 }

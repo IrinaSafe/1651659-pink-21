@@ -101,14 +101,22 @@
 
 .advantages__title {
   margin: 0;
-  font-size: $advantages__item-title-font-size;
-  font-weight: $advantages__item-title-font-weight;
-  color: $advantages__item-title-color;
+  font-size: $advantages-title-font-size;
+  font-weight: $advantages-title-font-weight;
+  color: $advantages-title-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $advantages-title-font-size--desktop;
+  }
 }
 
 .advantages__description {
   @extend %p-general-style;
-  font-size: $advantages__item-description-font-size;
-  font-weight: $advantages__item-description-font-weight;
-  color: $advantages__item-description-color;
+  font-size: $advantages-description-font-size;
+  font-weight: $advantages-description-font-weight;
+  color: $advantages-description-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $advantages-description-font-size--desktop;
+  }
 }

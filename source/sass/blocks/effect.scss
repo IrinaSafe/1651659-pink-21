@@ -75,6 +75,10 @@
   font-weight: $effect-text-font-weight;
   color: $effect-text-color;
   margin: 20px 0;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $effect-text-font-size--desktop;
+  }
 }
 
 .effect__link {
@@ -83,4 +87,8 @@
   font-weight: $effect-link-font-weight;
   color: $effect-link-color;
   text-decoration: underline;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $effect-link-font-size--desktop;
+  }
 }

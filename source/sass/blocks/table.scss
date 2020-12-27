@@ -47,16 +47,24 @@
 }
 
 .table__th-text {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: $th-text-font-size;
+  font-weight: $th-text-font-weight;
   text-transform: uppercase;
-  color: $color-white;
+  color: $th-text-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $th-text-font-size--desktop;
+  }
 }
 
 .table__th-price {
-  font-size: 18px;
-  font-weight: 300;
-  color: $color-white;
+  font-size: $th-price-font-size;
+  font-weight: $th-price-font-weight;
+  color: $th-price-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $th-price-font-size--desktop;
+  }
 }
 
 .table__td {
@@ -76,9 +84,13 @@
 }
 
 .table__td-text {
-  font-size: 14px;
-  font-weight: 400;
-  color: $color-blue;
+  font-size: $td-text-font-size;
+  font-weight: $td-text-font-weight;
+  color: $td-text-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $td-text-font-size--desktop;
+  }
 }
 
 .table__td-wrapper {

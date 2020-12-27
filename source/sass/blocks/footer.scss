@@ -44,10 +44,14 @@
 }
 
 .footer__developer-text {
-  font-size: $footer__developer-text-font-size;
-  font-weight: $footer__developer-text-font-weight;
-  color: $footer__developer-text-color;
+  font-size: $developer-text-font-size;
+  font-weight: $developer-text-font-weight;
+  color: $developer-text-color;
   text-decoration: none;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $developer-text-font-size--desktop;
+  }
 }
 
 .footer__developer-image {
