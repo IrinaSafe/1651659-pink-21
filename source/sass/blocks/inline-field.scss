@@ -1,10 +1,13 @@
 .inline-field {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.inline-field__input-checkbox {
+.inline-field__input-checkbox, .inline-field__input-radio {
   appearance: none;
+  position: absolute;
+  top: 1px;
 }
 
 .inline-field__input-radio {
@@ -18,35 +21,65 @@
   font-weight: $inline-field__label-font-weight;
   color: $inline-field__label-color;
   line-height: 30px;
+}
 
-  &:hover::before {
+.inline-field__label--checkbox {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $color-grey;
+  margin-right: 15px;
+  background-color: $color-white;
+  border-radius: 1px;
+
+  &:hover {
     border: 2px solid $color-blue;
-  }
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    border: 2px solid $color-grey;
-    margin-right: 15px;
-    background-color: $color-white;
-    border-radius: 1px;
   }
 }
 
-.inline-field .inline-field__input-checkbox:checked + .inline-field__label::before {
-  background-image: url(../img/tick.svg);
+.inline-field__label--radio {
+  display: flex;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $color-grey;
+  margin-right: 15px;
+  background-color: $color-white;
+  border-radius: 50%;
+
+  &:hover {
+    border: 2px solid $color-blue;
+  }
+}
+
+.inline-field .inline-field__input-checkbox:checked + .inline-field__label .inline-field__label--checkbox {
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.inline-field .inline-field__input-checkbox:focus + .inline-field__label::before {
-  content: "";
+.inline-field .inline-field__input-checkbox:focus + .inline-field__label .inline-field__label--checkbox {
   border: 2px solid $color-blue;
 }
 
-.inline-field .inline-field__input-checkbox:checked:focus + .inline-field__label::before {
-  content: "";
+.inline-field .inline-field__input-checkbox:checked:focus + .inline-field__label .inline-field__label--checkbox {
+  border: 2px solid $color-pink;
+}
+
+.inline-field .inline-field__input-radio:checked + .inline-field__label .inline-field__label--radio::before {
+    content: "";
+    display: inline-block;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    background-color: $color-pink;
+    border-radius: 50%;
+}
+
+.inline-field .inline-field__input-radio:focus + .inline-field__label .inline-field__label--radio {
+  border: 2px solid $color-blue;
+}
+
+.inline-field .inline-field__input-radio:checked:focus + .inline-field__label .inline-field__label--radio {
   border: 2px solid $color-pink;
 }

@@ -10,7 +10,11 @@
 
 .page-main__title {
   @extend %p-general-style;
-  font-size: $page-main__title-font-size;
-  font-weight: $page-main__title-font-weight;
-  color: $page-main__title-color;
+  font-size: $main-title-font-size;
+  font-weight: $main-title-font-weight;
+  color: $main-title-color;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $main-title-font-size--tablet;
+  }
 }

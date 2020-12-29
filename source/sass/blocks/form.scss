@@ -121,7 +121,7 @@
   appearance: none;
   margin-top: 60px;
   outline: none;
-  padding: 0;
+  padding: 20px;
 
   @media screen and (min-width: $media-tablet) {
     margin-top: 0;
@@ -130,5 +130,6 @@
 
   @media screen and (min-width: $media-desktop) {
     min-height: 124px;
+    width: -webkit-fill-available;
   }
 }

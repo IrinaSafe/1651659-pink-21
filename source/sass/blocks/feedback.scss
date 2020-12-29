@@ -22,11 +22,18 @@
 
 .feedback-text {
   text-transform: uppercase;
-  /*color: $color-white;*/
   color: $color-blue;
 
   @media screen and (min-width: $media-tablet) {
     text-align: right;
+  }
+
+  &--desk-only {
+    display: none;
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
   }
 }
 
