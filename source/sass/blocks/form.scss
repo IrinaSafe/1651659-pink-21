@@ -110,7 +110,7 @@
 }
 
 .form__fieldset-textarea {
-  width: 100%;
+  width: -webkit-fill-available;
   min-height: 197px;
   font-weight: 400;
   font-size: 18px;
@@ -130,6 +130,5 @@
 
   @media screen and (min-width: $media-desktop) {
     min-height: 124px;
-    width: -webkit-fill-available;
   }
 }
