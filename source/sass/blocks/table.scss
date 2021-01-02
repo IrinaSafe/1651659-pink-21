@@ -6,13 +6,13 @@
   word-break: break-all;
   margin: 0 auto;
   text-align: center;
-  width: 300%;
+  width: 100%;
   /*transform: translate(-31%);*/
-  /*table-layout: fixed;*/
+  table-layout: fixed;
   transition: transform 0.5s ease;
   /*position: relative;
   left: 50%;*/
-  /*transform: translateX(-50%);*/
+  transform: translateX(-33%);
 
   @media screen and (min-width: $media-tablet) {
     width: 100%;

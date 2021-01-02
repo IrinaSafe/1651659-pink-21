@@ -6,7 +6,7 @@
   background-image: url("../img/grey_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 100% 0;
   display: grid;
   grid-template-areas:
     "text"
@@ -63,10 +63,18 @@
 
 .advantages__item-image {
   overflow: hidden;
+
+  @media screen and (min-width: $media-tablet) {
+    margin-top: -75px;
+  }
 }
 
 .advantages-image {
-  transform: translateY(50px);
+  transform: translateY(41px);
+
+  @media screen and (min-width: $media-tablet) {
+    transform: translateY(75px);
+  }
 }
 
 .advantages__list {
@@ -74,13 +82,20 @@
   text-align: center;
   padding: 0 20px;
   grid-area: text;
+  line-height: 1.4;
+  margin-top: 85px;
+
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
 
   @media screen and (min-width: $media-tablet) {
     text-align: start;
-    padding: 80px 20px 0;
+    padding: 40px 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 0;
 
     li:not(:last-child) {
       margin-bottom: 40px;
@@ -104,6 +119,7 @@
   font-size: $advantages-title-font-size;
   font-weight: $advantages-title-font-weight;
   color: $advantages-title-color;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $media-desktop) {
     font-size: $advantages-title-font-size--desktop;
