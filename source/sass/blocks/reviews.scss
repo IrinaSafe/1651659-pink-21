@@ -1,10 +1,29 @@
 .reviews {
-  //Nothing
+  padding: 40px 20px 60px;
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 40px 130px;
+  }
 }
 
 .reviews__wrapper {
   text-align: center;
-  padding: 40px 20px 60px;
+
+
+  @media screen and (min-width: $media-desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      width: 79px;
+      height: 63px;
+      background-image: url(../img/quotes.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 .reviews__list {
@@ -68,6 +87,29 @@
   }
 }
 
-.reviews__toggles {
-  @extend %p-general-style;
+.reviews__button {
+  display: none;
+
+  @media screen and (min-width: $media-desktop) {
+    display: inline-block;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  &--left {
+    background-image: url(../img/left_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--right {
+    background-image: url(../img/right_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

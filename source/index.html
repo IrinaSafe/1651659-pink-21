@@ -131,11 +131,7 @@
 
       <section class="effect">
         <div class="effect__wrapper">
-          <div class="effect__image">
-            <!--<span class="effect__image-text">
-              24
-            </span>-->
-          </div>
+          <div class="effect__image"></div>
           <div class="effect__description">
             <h2 class="effect__heading">Эффект на&nbsp;24 часа!</h2>
 
@@ -149,6 +145,7 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
+          <button class="reviews__button reviews__button--left"></button>
           <div class="reviews__list slider__list">
             <span class="reviews__author-name">Николай Петров<br>
               <span class="reviews__author-age-profession reviews__author-age-profession--hidden">25 лет, водитель трамвая</span>
@@ -161,24 +158,17 @@
               </p>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
+          <div class="slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button"></button>
             <button class="slider__toggle" type="button"></button>
-          </p>
+            <button class="slider__toggle" type="button"></button>
+          </div>
+          <button class="reviews__button reviews__button--right"></button>
         </div>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Прайс</h2>
         <div class="price__wrapper">
-          <div class="slider__toggles">
-            <input class="slider__input" type="radio" name="price" id="slide1">
-            <input class="slider__input" type="radio" checked name="price" id="slide2">
-            <input class="slider__input" type="radio" name="price" id="slide3">
-            <label class="slider__toggle" for="slide1"></label>
-            <label class="slider__toggle" for="slide2"></label>
-            <label class="slider__toggle" for="slide3"></label>
-          </div>
           <table class="table">
             <tr class="table__tr">
               <th class="table__th--border-hidden table--hidden"></th>
@@ -298,6 +288,11 @@
               </td>
             </tr>
           </table>
+          <div class="slider__toggles price-toggles">
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle slider__toggle--active"></button>
+            <button class="slider__toggle"></button>
+          </div>
         </div>
       </section>
       <section class="contacts">
