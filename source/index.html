@@ -10,9 +10,18 @@
     <header class="page-header">
       <div class="page-header__head-line">
         <a class="page-header__link">
-          <img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
+          <!--<img class="page-header__logo-image" src="./img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">-->
+          <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
+            <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
+            <use xlink:href="img/header-logo-tablet.svg#headerLogoTablet"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
+            <use xlink:href="img/header-logo-desktop.svg#headerLogoDesktop"></use>
+          </svg>
         </a>
-        <button class="page-header__toggle" type="button"></button>
+        <button class="page-header__toggle logo" type="button"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -321,16 +330,20 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <!--<img class="map__image" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Карта">-->
-        <div id="yandexmap">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae6975fb90c1302fa6aa0e79378eb7c2d9e53cc93cff2fa7608a35e38fa15c1b6&amp;source=constructor" width="100%" frameborder="0"></iframe>
+        <div class="map__wrapper">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3d0a4a2aecfb0830db62f78e2dad5cb10fafa62c326aabbc062091b202293c1&amp;source=constructor" width="100%" height="inherit" frameborder="0"></iframe>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="logo footer__logo">
-          <img class="footer__logo-image" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип «Pink»">
+        <a class="footer__link">
+          <svg class="footer__logo logo footer__logo--mobile" width="145" height="40">
+            <use xlink:href="img/footer-logo.svg#footerLogo"></use>
+          </svg>
+          <svg class="footer__logo logo footer__logo--desktop" width="147" height="40">
+            <use xlink:href="img/footer-logo-desktop.svg#footerLogoDesktop"></use>
+          </svg>
         </a>
         <div class="footer-social">
           <ul class="socials-list">
@@ -348,7 +361,9 @@
         <div class="footer__developer">
           <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__developer-text">Разработано</span>
-            <img class="footer__developer-image" src="img/html-academy-logo.svg" width="27" height="34" alt="htmlacademy logo">
+            <svg width="27" height="34">
+              <use xlink:href="img/html-academy-logo.svg#footerlogo"></use>
+            </svg>
           </a>
         </div>
       </div>

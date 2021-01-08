@@ -45,6 +45,7 @@
     font-weight: $main-nav-font-weight--desktop;
   }
 
+
   &:hover {
     color: $color-pink;
   }
@@ -52,6 +53,21 @@
   &:active {
     color: $color-pink;
     opacity: 0.3;
+  }
+
+  &--active {
+    @media screen and (min-width: $media-desktop) {
+      border-bottom: 2px solid $color-white;
+
+      &:hover {
+        border-bottom: 2px solid $color-pink;
+      }
+
+      &:active {
+        border-bottom: 2px solid $color-pink;
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -68,6 +84,6 @@
 
 .main-nav__item--active a{
   @media screen and (min-width: $media-desktop) {
-    border-bottom: 2px solid $color-white;
+    /*border-bottom: 2px solid $color-white;*/
   }
 }
