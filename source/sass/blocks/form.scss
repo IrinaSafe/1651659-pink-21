@@ -57,10 +57,6 @@
 
   &--progress {
     grid-area: progress;
-
-    @media screen and (min-width: $media-desktop) {
-      grid-auto-flow: dense;
-    }
   }
 
   &--contacts {
@@ -111,7 +107,7 @@
 
 .form__fieldset-textarea {
   width: -webkit-fill-available;
-  min-height: 197px;
+  height: 197px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -125,10 +121,18 @@
 
   @media screen and (min-width: $media-tablet) {
     margin-top: 0;
-    min-height: 189px;
+    height: 189px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    min-height: 124px;
+    height: 124px;
+  }
+
+  &:hover {
+    border-color: $color-blue;
+  }
+
+  &:focus {
+    border-color: $color-pink;
   }
 }

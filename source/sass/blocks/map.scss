@@ -1,12 +1,78 @@
 .map {
-  height: 200px;
   background-color: $map-background-color;
+
 }
 
 .map__wrapper {
-  height: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/triangle-map.png");
+    background-repeat: no-repeat;
+    background-position: center -89px;
+    background-size: cover;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: -50px;
+
+    @media screen and (min-width: $media-tablet) {
+      top: -200px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      top: -300px;
+      background-image: url("../img/triangle-map-desktop.png");
+      background-repeat: no-repeat;
+      background-position: center -89px;
+      background-size: cover;
+    }
+  }
+
+  &:after {
+    content: "";
+    background-image: url("../img/map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 36px;
+    height: 36px;
+  }
 }
 
+.map__content {
+  min-height: 200px;
+  z-index: 1;
+
+  @media screen and (min-width: $media-tablet) {
+    min-height: 374px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    min-height: 502px;
+  }
+}
+
+
+
 .map__image {
-  //Nothing
+  position: absolute;
+  top: -49px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: $media-tablet) {
+
+  }
 }

@@ -58,6 +58,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    gap: 100px;
   }
 }
 
@@ -105,6 +106,7 @@
   @media screen and (min-width: $media-desktop) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
     text-align: center;
     padding: 0;
   }

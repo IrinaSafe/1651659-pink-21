@@ -6,6 +6,14 @@
 .page-main__title-wrapper {
   text-align: center;
   padding: 39px 20px 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    padding: 39px 60px 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 39px 200px 20px;
+  }
 }
 
 .page-main__title {
@@ -16,5 +24,13 @@
 
   @media screen and (min-width: $media-tablet) {
     font-size: $main-title-font-size--tablet;
+  }
+
+  &--mobile-hidden {
+    display: none;
+
+    @media screen and (min-width: $media-tablet) {
+      display: inline;
+    }
   }
 }

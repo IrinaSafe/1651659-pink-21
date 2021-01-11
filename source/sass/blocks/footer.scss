@@ -39,6 +39,11 @@
 
 .footer__link {
   @extend %a-general-style;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $media-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-social {
@@ -46,7 +51,9 @@
 }
 
 .footer__developer {
-  //Nothing
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__developer-link {

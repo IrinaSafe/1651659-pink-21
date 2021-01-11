@@ -21,9 +21,18 @@
   cursor: pointer;
   border-radius: 50%;
   border: none;
-  background-color: lighten($color: $color-dark-blue, $amount: 70%);
+  background-color: rgba($color-blue, 0.3);
   text-decoration: none;
   padding: 0;
+  outline: none;
+
+  &:hover {
+    background-color: rgba($color-blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-blue, 0.1);
+  }
 
   @media screen and (min-width: $media-desktop) {
     display: none;

@@ -241,48 +241,119 @@
 
             <fieldset class="form-publish__fieldset-filters">
               <div class="form-publish__container">
-                <ul class="form-publish__list" role="tablist">
-                  <li class="filter" role="presentation">
-                    <label class="filter__label" role="tab" aria-selected="true" data-toggle="pill">
+
+                <div class="filter-icon">
+                  <button class="filter-button" type="button" aria-label="Обрезка">
+                    <svg class="" width="44" height="44">
+                      <use xlink:href="../img/filters.svg#crop"></use>
+                    </svg>
+                  </button>
+                  <button class="filter-button" type="button" aria-label="Заливка">
+                    <svg class="" width="48" height="43">
+                      <use xlink:href="../img/filters.svg#fill"></use>
+                    </svg>
+                  </button>
+                  <button class="filter-button" type="button" aria-label="Контраст">
+                    <svg class="" width="32" height="32">
+                      <use xlink:href="../img/filters.svg#contrast"></use>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="filter-range">
+                  <div class="filter__range">
+                    <div class="filter__line">
+                      <span class="filter__circle"></span>
+                    </div>
+                  </div>
+                  <div class="filter__range">
+                    <div class="filter__line">
+                      <span class="filter__circle"></span>
+                    </div>
+                  </div>
+                  <div class="filter__range">
+                    <div class="filter__line">
+                      <span class="filter__circle"></span>
+                    </div>
+                  </div>
+                </div>
+
+                  <!--<ul class="form-publish__list">
+                  <li class="filter" role="tab">
+                    <div class="filter__label">
+                      <img src="../img/crop.svg" alt="">
+                      <div class="filter__range">
+                        <div class="filter__line">
+                          <span class="filter__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filter" role="tab">
+                    <div class="filter__label">
+                      <img src="../img/fill.svg" alt="">
+                      <div class="filter__range">
+                        <div class="filter__line">
+                          <span class="filter__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filter" role="tab">
+                    <div class="filter__label">
+                      <img src="../img/contrast.svg" alt="">
+                      <div class="filter__range">
+                        <div class="filter__line">
+                          <span class="filter__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>-->
+                <!--<ul class="form-publish__list">
+                  <li class="filter">
+                    <label class="filter__label">
                       <input
                         class="filter__input filter__input--crop"
                         type="radio"
                         name="browser"
                         checked="checked">
-                        <div class="filter__range">
-                          <div class="filter__line">
-                            <span class="filter__circle"></span>
-                          </div>
-                        </div>
                     </label>
+                    <div class="filter__range filter__range--crop">
+                      <div class="filter__line">
+                        <span class="filter__circle"></span>
+                      </div>
+                    </div>
                   </li>
-                  <li class="filter" role="presentation">
-                    <label class="filter__label" role="tab" aria-selected="false">
+                  <input class="test" type="range">
+                  <li class="filter">
+                    <label class="filter__label">
                       <input
                         class="filter__input filter__input--fill"
                         type="radio"
                         name="browser">
-                        <div class="filter__range">
-                          <div class="filter__line">
-                            <span class="filter__circle"></span>
-                          </div>
-                        </div>
                     </label>
+                    <div class="filter__range filter__range--fill">
+                      <div class="filter__line">
+                        <span class="filter__circle"></span>
+                      </div>
+                    </div>
                   </li>
-                  <li class="filter" role="presentation">
-                    <label class="filter__label" role="tab" aria-selected="false">
+                  <li class="filter">
+                    <label class="filter__label">
                       <input
                         class="filter__input filter__input--contrast"
                         type="radio"
                         name="browser">
-                        <div class="filter__range">
-                          <div class="filter__line">
-                            <span class="filter__circle"></span>
-                          </div>
-                        </div>
                     </label>
+                    <div class="filter__range filter__range--contrast">
+                      <div class="filter__line">
+                        <span class="filter__circle"></span>
+                      </div>
+                    </div>
                   </li>
-                </ul>
+                </ul>-->
                 <div class="form-publish__range"></div>
               </div>
               <div class="form-publish__button">

@@ -109,12 +109,23 @@
     border: none;
     box-sizing: border-box;
     margin-top: 40px;
+    outline: none;
+    cursor: pointer;
+    color: rgba($color-blue, 0.3);
+
+    &:hover {
+      color: rgba($color-blue, 0.6);
+    }
+
+    &:active {
+      color: rgba($color-blue, 0.1);
+    }
   }
 
   &--left {
-    background-image: url(../img/left_arrow.svg);
+    /*background-image: url(../img/left_arrow.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
   }
 
   &--right {

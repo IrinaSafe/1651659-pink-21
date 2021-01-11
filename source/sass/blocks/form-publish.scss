@@ -5,6 +5,8 @@
 
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image filters";
+    gap: 60px;
   }
 }
 
@@ -28,14 +30,12 @@
   text-align: center;
 
   @media screen and (min-width: $media-tablet) {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    padding: 0 20px 0 0;
   }
 }
 
 
 .form-publish__container {
-  display: grid;
   grid-template-areas: "icons";
 
   @media screen and (min-width: $media-tablet) {
