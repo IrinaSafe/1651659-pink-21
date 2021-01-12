@@ -1,7 +1,7 @@
 .button {
   display: block;
   /*height: 55px;*/
-  max-width: 280px;
+  min-width: 280px;
   box-sizing: border-box;
   text-decoration: none;
   border: $button-border;
@@ -79,11 +79,14 @@
     }
 
     @media screen and (min-width: $media-tablet) {
+      min-width: 260px;
       max-width: 260px;
     }
 
     @media screen and (min-width: $media-desktop) {
+      min-width: 183px;
       max-width: 183px;
+      padding: 12px 20px;
     }
   }
 
@@ -104,11 +107,14 @@
     }
 
     @media screen and (min-width: $media-tablet) {
+      min-width: 260px;
       max-width: 260px;
     }
 
     @media screen and (min-width: $media-desktop) {
+      min-width: 183px;
       max-width: 183px;
+      padding: 12px 20px;
     }
   }
 }
