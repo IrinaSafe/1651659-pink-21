@@ -22,6 +22,11 @@
   display: flex;
   flex-direction: column;
   background-color: $color-lightgrey;
+  width: calc(100vw - 40px);
+
+  @media screen and (min-width: $media-tablet) {
+    width: 100%;
+  }
 
   &--panorama {
     align-items: center;

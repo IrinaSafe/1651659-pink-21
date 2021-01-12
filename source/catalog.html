@@ -233,28 +233,27 @@
         <div class="publish__form-wrapper">
           <form class="form-publish" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
             <fieldset class="form-publish__fieldset-image">
-              <label for="your-photo">
-                <img src="img/photo-7-tablet.jpg" id="your-photo" alt="Ваше фото">
+              <label>
+                <input class="form-publish__input-hidden" type="file">
+                <img src="img/photo-7-tablet.jpg" width="280px" height="374px" alt="Ваше фото">
               </label>
-              <input class="form-publish__input-hidden" type="file">
             </fieldset>
 
             <fieldset class="form-publish__fieldset-filters">
               <div class="form-publish__container">
-
                 <div class="filter-icon">
                   <button class="filter-button" type="button" aria-label="Обрезка">
-                    <svg class="" width="44" height="44">
+                    <svg class="filter-button__image filter-button__image--crop" width="44" height="44">
                       <use xlink:href="../img/filters.svg#crop"></use>
                     </svg>
                   </button>
                   <button class="filter-button" type="button" aria-label="Заливка">
-                    <svg class="" width="48" height="43">
+                    <svg class="filter-button__image filter-button__image--fill" width="48" height="43">
                       <use xlink:href="../img/filters.svg#fill"></use>
                     </svg>
                   </button>
                   <button class="filter-button" type="button" aria-label="Контраст">
-                    <svg class="" width="32" height="32">
+                    <svg class="filter-button__image filter-button__image--contrast" width="32" height="32">
                       <use xlink:href="../img/filters.svg#contrast"></use>
                     </svg>
                   </button>
@@ -277,84 +276,6 @@
                     </div>
                   </div>
                 </div>
-
-                  <!--<ul class="form-publish__list">
-                  <li class="filter" role="tab">
-                    <div class="filter__label">
-                      <img src="../img/crop.svg" alt="">
-                      <div class="filter__range">
-                        <div class="filter__line">
-                          <span class="filter__circle"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="filter" role="tab">
-                    <div class="filter__label">
-                      <img src="../img/fill.svg" alt="">
-                      <div class="filter__range">
-                        <div class="filter__line">
-                          <span class="filter__circle"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="filter" role="tab">
-                    <div class="filter__label">
-                      <img src="../img/contrast.svg" alt="">
-                      <div class="filter__range">
-                        <div class="filter__line">
-                          <span class="filter__circle"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>-->
-                <!--<ul class="form-publish__list">
-                  <li class="filter">
-                    <label class="filter__label">
-                      <input
-                        class="filter__input filter__input--crop"
-                        type="radio"
-                        name="browser"
-                        checked="checked">
-                    </label>
-                    <div class="filter__range filter__range--crop">
-                      <div class="filter__line">
-                        <span class="filter__circle"></span>
-                      </div>
-                    </div>
-                  </li>
-                  <input class="test" type="range">
-                  <li class="filter">
-                    <label class="filter__label">
-                      <input
-                        class="filter__input filter__input--fill"
-                        type="radio"
-                        name="browser">
-                    </label>
-                    <div class="filter__range filter__range--fill">
-                      <div class="filter__line">
-                        <span class="filter__circle"></span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="filter">
-                    <label class="filter__label">
-                      <input
-                        class="filter__input filter__input--contrast"
-                        type="radio"
-                        name="browser">
-                    </label>
-                    <div class="filter__range filter__range--contrast">
-                      <div class="filter__line">
-                        <span class="filter__circle"></span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>-->
-                <div class="form-publish__range"></div>
               </div>
               <div class="form-publish__button">
                 <input class="button button--submit" type="submit" value="Запостить">

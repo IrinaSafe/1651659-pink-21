@@ -43,6 +43,12 @@
   &:not(:first-child) {
     display: none;
   }
+
+  @media screen and (min-width: $media-tablet) {
+    &:not(:first-child) {
+      display: block;
+    }
+  }
 }
 
 .filter__line {
@@ -72,6 +78,20 @@
   padding: 0;
   margin: 0;
   border: none;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.filter-button__image {
   color: rgba($color-blue, 0.3);
 
   &:hover {
@@ -81,17 +101,71 @@
   &:active {
     color: $color-pink;
   }
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+
+    @media screen and (min-width: $media-tablet) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+
+      @media screen and (min-width: $media-tablet) {
+        width: 24px;
+        height: 22px;
+      }
+
+      @media screen and (min-width: $media-desktop) {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+
+      @media screen and (min-width: $media-tablet) {
+        width: 16px;
+        height: 16px;
+      }
+
+      @media screen and (min-width: $media-desktop) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
 }
 
 .filter-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $media-tablet) {
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
 }
 
 .filter-range {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
