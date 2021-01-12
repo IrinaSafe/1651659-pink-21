@@ -1,16 +1,37 @@
 .cards-list {
   @extend %ul-general-style;
   padding: 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px 130px;
+  }
 }
 
 .cards-list__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
   background-color: $color-lightgrey;
 
   &--panorama {
     align-items: center;
+
+    @media screen and (min-width: $media-tablet) {
+      grid-column: 1/3;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      grid-column: 1/4;
+    }
   }
 }

@@ -1,0 +1,94 @@
+.effect {
+  display: none;
+
+  @media screen and (min-width: $media-tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    background-color: $color-lightgrey;
+  }
+}
+
+.effect__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  height: 100%;
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 20px 130px 60px;
+  }
+}
+
+.effect__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 330px;
+  background-image: url("../img/time_tablet.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+
+  @media screen and (min-width: $media-desktop) {
+    background-image: url("../img/time_desk.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+    min-height: 345px;
+  }
+}
+
+/*.effect__image-text {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+  color: $color-pink;
+}*/
+
+.effect__description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.effect__heading {
+  font-size: $effect-heading-font-size;
+  font-weight: $effect-heading-font-weight;
+  color: $effect-heading-color;
+  margin: 0;
+  width: 60%;
+  line-height: 36px;
+
+  @media screen and (min-width: $media-desktop) {
+    width: 100%;
+  }
+}
+
+.effect__text {
+  @extend %p-general-style;
+  font-size: $effect-text-font-size;
+  font-weight: $effect-text-font-weight;
+  color: $effect-text-color;
+  margin: 20px 0;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $effect-text-font-size--desktop;
+  }
+}
+
+.effect__link {
+  @extend %a-general-style;
+  font-size: $effect-link-font-size;
+  font-weight: $effect-link-font-weight;
+  color: $effect-link-color;
+  text-decoration: underline;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $effect-link-font-size--desktop;
+  }
+}

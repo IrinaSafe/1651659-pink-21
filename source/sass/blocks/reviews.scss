@@ -1,29 +1,74 @@
 .reviews {
-  //Nothing
+  padding: 40px 20px 60px;
+  position: relative;
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 40px 130px;
+    &::before {
+      content: "";
+      width: 79px;
+      height: 63px;
+      background-image: url(../img/quotes.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
 }
 
 .reviews__wrapper {
   text-align: center;
-  padding: 40px 20px 60px;
+
+  @media screen and (min-width: $media-desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+  }
 }
 
 .reviews__list {
-  //Nothing
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $media-tablet) {
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    margin: 0 85px;
+  }
 }
 
 .reviews__author-name {
   @extend %p-general-style;
-  font-size: $reviews__author-name-font-size;
-  font-weight: $reviews__author-name-font-weight;
-  color: $reviews__author-name-color;
+  font-size: $author-name-font-size;
+  font-weight: $author-name-font-weight;
+  color: $author-name-color;
   margin-bottom: 10px;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $author-name-font-size--tablet;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $author-name-font-size--desktop;
+  }
 }
 
 .reviews__author-age-profession {
   @extend %p-general-style;
-  font-size: $reviews__author-age-profession-font-size;
-  font-weight: $reviews__author-age-profession-font-weight;
-  color: $reviews__author-age-profession-color;
+  font-size: $author-age-profession-font-size;
+  font-weight: $author-age-profession-font-weight;
+  color: $author-age-profession-color;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $author-age-profession-font-size--desktop;
+  }
 
   &--hidden {
     display: none;
@@ -40,13 +85,52 @@
 
 .reviews__author-text {
   @extend %p-general-style;
-  font-size: $reviews__author-text-font-size;
-  font-weight: $reviews__author-text-font-weight;
-  color: $reviews__author-text-color;
+  font-size: $author-text-font-size;
+  font-weight: $author-text-font-weight;
+  color: $author-text-color;
   line-height: 30px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $author-text-font-size--tablet;
+  }
 }
 
-.reviews__toggles {
-  @extend %p-general-style;
+.reviews__button {
+  display: none;
+
+  @media screen and (min-width: $media-desktop) {
+    display: inline-block;
+    width: 10%;
+    height: 41px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 40px;
+    outline: none;
+    cursor: pointer;
+    color: rgba($color-blue, 0.3);
+
+    &:hover {
+      color: rgba($color-blue, 0.6);
+    }
+
+    &:active {
+      color: rgba($color-blue, 0.1);
+    }
+  }
+
+  &--left {
+    /*background-image: url(../img/left_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;*/
+  }
+
+  &--right {
+    background-image: url(../img/right_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

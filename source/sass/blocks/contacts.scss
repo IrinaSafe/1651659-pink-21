@@ -1,5 +1,54 @@
 .contacts {
   text-align: center;
+
+  @media screen and (min-width: $media-tablet) {
+    gap: 20px;
+  }
+}
+
+.contacts__list {
+  @extend %ul-general-style;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "title" "phone" "email" "adress";
+  gap: 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "phone email"
+      "adress adress";
+      padding: 20px 20px 0 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title"
+      "phone adress email";
+      padding: 0 130px;
+  }
+}
+
+.contacts__item {
+  display: block;
+
+  &--title {
+    grid-area: title;
+  }
+
+  &--phone {
+    grid-area: phone;
+  }
+
+  &--email {
+    grid-area: email;
+  }
+
+  &--adress {
+    grid-area: adress;
+  }
 }
 
 .contacts__wrapper {
@@ -18,7 +67,11 @@
   font-size: $contacts__info-title-font-size;
   font-weight: $contacts__info-title-font-weight;
   color: $contacts__info-title-color;
-  margin: 30px 0 0;
+  margin: 0;
+
+  @media screen and (min-width: $media-desktop) {
+    height: 50px;
+  }
 }
 
 .contacts__link {
@@ -26,4 +79,15 @@
   font-size: $contacts__link-font-size;
   font-weight: $contacts__link-font-weight;
   color: $contacts__link-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-blue;
+    border-bottom: 1px solid $color-blue;
+  }
+
+  &:active {
+    color: rgba($color-blue, 0.3);
+    border-bottom: none;
+  }
 }

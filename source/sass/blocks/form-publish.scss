@@ -1,8 +1,17 @@
 .form-publish {
-  //Nothing
+  display: grid;
+  grid-template-areas: "image" "filters";
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: $media-tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image filters";
+    gap: 60px;
+  }
 }
 
 .form-publish__fieldset-image {
+  grid-area: image;
   margin: 0;
   padding: 40px 20px 0;
   border: none;
@@ -14,23 +23,29 @@
 }
 
 .form-publish__fieldset-filters {
+  grid-area: filters;
   margin: 0;
   padding: 20px;
   border: none;
   text-align: center;
+
+  @media screen and (min-width: $media-tablet) {
+    padding: 0 20px 0 0;
+  }
 }
 
 
 .form-publish__container {
-  //Nothing
+  grid-template-areas: "icons";
+
+  @media screen and (min-width: $media-tablet) {
+    /*grid-template-columns: 1fr 2fr;*/
+  }
 }
 
-.form-publish__icon {
-  //Nothing
-}
-
-.form-publish__range {
-  //Nothing
+.form-publish__list {
+  @extend %ul-general-style;
+  grid-area: icons;
 }
 
 .form-publish__range-row {
@@ -42,4 +57,13 @@
   flex-direction: column;
   padding-top: 40px;
   border-top: 1px solid $color-blue;
+
+  @media screen and (min-width: $media-tablet) {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    flex-direction: row;
+  }
 }

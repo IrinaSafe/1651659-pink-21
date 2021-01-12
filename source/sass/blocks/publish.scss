@@ -1,5 +1,7 @@
 .publish {
-  //Nothing
+  @media screen and (min-width: $media-desktop) {
+    padding: 0 130px;
+  }
 }
 
 .publish__title {

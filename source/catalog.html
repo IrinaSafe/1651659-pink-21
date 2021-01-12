@@ -8,20 +8,28 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a>
-          <img class="page-header__logo-image" src="../img/pink.svg" width="74" height="23" aria-label="Приложение «Pink»">
+      <div class="page-header__head-line">
+        <a class="page-header__link">
+          <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
+            <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
+            <use xlink:href="img/header-logo-tablet.svg#headerLogoTablet"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
+            <use xlink:href="img/header-logo-desktop.svg#headerLogoDesktop"></use>
+          </svg>
         </a>
+        <button class="page-header__toggle logo" type="button"></button>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a>
               Фотографии
             </a>
@@ -38,25 +46,18 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__title-wrapper">
-        <h1 class="page-header__title">Фотографии пользователей</h1>
-      </div>
+      <p class="heading page-header__title">Фотографии<br> пользователей</p>
     </header>
     <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      let button = document.querySelector('.page-header__toggle');
+      let nav = document.querySelector('.main-nav');
+      let color = document.querySelector('.page-header__head-line');
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
+      button.addEventListener('click', () => {
+        button.classList.toggle('page-header__toggle--opened');
+        nav.classList.toggle('main-nav--opened');
+        color.classList.toggle('page-header__head-line--opened');
+      })
     </script>
     <main class="page-main">
       <div class="page-main__title-wrapper">
@@ -71,16 +72,16 @@
               <img class="card__image card__image--panorama" src="img/panorama-tablet.jpg" alt="Панорама">
             </a>
             <div class="card__description card__description--panorama">
-              <span class="card__name">
+              <span class="card__name card__name--panorama">
                 Анна
                 <time class="card__time" datetime="2020-12-02T12:00">(5 минут назад)</time>
               </span>
               <p class="card__comment">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <div class="card__like">
+              <div class="card__like card__like--panorama">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 215
@@ -95,14 +96,14 @@
             <div class="card__description">
               <span class="card__name">
                 Левон
-                <time class="card__time" datetime="2020-12-02T12:00">5 часов назад</time>
+                <time class="card__time" datetime="2020-12-02T12:00">(5 часов назад)</time>
               </span>
               <p class="card__comment">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <div class="card__like">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 356
@@ -118,14 +119,14 @@
             <div class="card__description">
               <span class="card__name">
                 Антон
-                <time class="card__time" datetime="2020-12-02T12:00">12 часов назад</time>
+                <time class="card__time" datetime="2020-12-02T12:00">(12 часов назад)</time>
               </span>
               <p class="card__comment">
                 Соседи будут рады!
               </p>
               <div class="card__like">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 666
@@ -141,14 +142,14 @@
             <div class="card__description">
               <span class="card__name">
                 Борис
-                <time class="card__time" datetime="2020-12-02T12:00">20 часов назад</time>
+                <time class="card__time" datetime="2020-12-02T12:00">(20 часов назад)</time>
               </span>
               <p class="card__comment">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <div class="card__like">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 215
@@ -164,14 +165,14 @@
             <div class="card__description">
               <span class="card__name">
                 Сергей
-                <time class="card__time" datetime="2020-12-02T12:00">25 часов назад</time>
+                <time class="card__time" datetime="2020-12-02T12:00">(25 часов назад)</time>
               </span>
               <p class="card__comment">
                 Самая кубанская в мире!
               </p>
               <div class="card__like">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 4
@@ -187,14 +188,14 @@
             <div class="card__description">
               <span class="card__name">
                 Максим
-                <time class="card__time" datetime="2020-12-02T12:00">40 часов назад</time>
+                <time class="card__time" datetime="2020-12-02T12:00">(40 часов назад)</time>
               </span>
               <p class="card__comment">
                 Где снег-то?
               </p>
               <div class="card__like">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like»">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like»">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 150
@@ -210,14 +211,14 @@
             <div class="card__description">
               <span class="card__name">
                 Надежда
-                <time class="card__time" datetime="2020-12-02T12:00">45 часов назад</time>
+                <time class="card__time" datetime="2020-12-02T12:00">(45 часов назад)</time>
               </span>
               <p class="card__comment">
                 Всем GM и взаимные лайки!
               </p>
               <div class="card__like">
                 <button class="card__like-button" type="button" aria-label="Like">
-                  <img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">
+                  <!--<img class="card__like-icon" src="img/heart.svg" width="13" height="12" alt="Like">-->
                 </button>
                 <span class="card__like-text">
                   Нравится: 2560
@@ -240,44 +241,120 @@
 
             <fieldset class="form-publish__fieldset-filters">
               <div class="form-publish__container">
-                <div class="form-publish__icon">
-                  <label class="filter-label">
-                    <input
-                      class="filter-label__input-radio-crop"
-                      type="radio"
-                      name="browser"
-                      checked="checked">
-                  </label>
-                  <label class="filter-label">
-                    <input
-                      class="filter-label__input-radio-fill"
-                      type="radio"
-                      name="browser">
-                  </label>
-                  <label class="filter-label">
-                    <input
-                      class="filter-label__input-radio-contrast"
-                      type="radio"
-                      name="browser">
-                  </label>
+
+                <div class="filter-icon">
+                  <button class="filter-button" type="button" aria-label="Обрезка">
+                    <svg class="" width="44" height="44">
+                      <use xlink:href="../img/filters.svg#crop"></use>
+                    </svg>
+                  </button>
+                  <button class="filter-button" type="button" aria-label="Заливка">
+                    <svg class="" width="48" height="43">
+                      <use xlink:href="../img/filters.svg#fill"></use>
+                    </svg>
+                  </button>
+                  <button class="filter-button" type="button" aria-label="Контраст">
+                    <svg class="" width="32" height="32">
+                      <use xlink:href="../img/filters.svg#contrast"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="form-publish__range">
-                  <div class="form-publish__range-row">
-                    <div class="range-line">
-                      <span class="range-circle"></span>
+
+                <div class="filter-range">
+                  <div class="filter__range">
+                    <div class="filter__line">
+                      <span class="filter__circle"></span>
                     </div>
                   </div>
-                  <div class="form-publish__range-row">
-                    <div class="range-line range-line--hidden">
-                      <span class="range-circle"></span>
+                  <div class="filter__range">
+                    <div class="filter__line">
+                      <span class="filter__circle"></span>
                     </div>
                   </div>
-                  <div class="form-publish__range-row">
-                    <div class="range-line range-line--hidden">
-                      <span class="range-circle"></span>
+                  <div class="filter__range">
+                    <div class="filter__line">
+                      <span class="filter__circle"></span>
                     </div>
                   </div>
                 </div>
+
+                  <!--<ul class="form-publish__list">
+                  <li class="filter" role="tab">
+                    <div class="filter__label">
+                      <img src="../img/crop.svg" alt="">
+                      <div class="filter__range">
+                        <div class="filter__line">
+                          <span class="filter__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filter" role="tab">
+                    <div class="filter__label">
+                      <img src="../img/fill.svg" alt="">
+                      <div class="filter__range">
+                        <div class="filter__line">
+                          <span class="filter__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filter" role="tab">
+                    <div class="filter__label">
+                      <img src="../img/contrast.svg" alt="">
+                      <div class="filter__range">
+                        <div class="filter__line">
+                          <span class="filter__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>-->
+                <!--<ul class="form-publish__list">
+                  <li class="filter">
+                    <label class="filter__label">
+                      <input
+                        class="filter__input filter__input--crop"
+                        type="radio"
+                        name="browser"
+                        checked="checked">
+                    </label>
+                    <div class="filter__range filter__range--crop">
+                      <div class="filter__line">
+                        <span class="filter__circle"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <input class="test" type="range">
+                  <li class="filter">
+                    <label class="filter__label">
+                      <input
+                        class="filter__input filter__input--fill"
+                        type="radio"
+                        name="browser">
+                    </label>
+                    <div class="filter__range filter__range--fill">
+                      <div class="filter__line">
+                        <span class="filter__circle"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filter">
+                    <label class="filter__label">
+                      <input
+                        class="filter__input filter__input--contrast"
+                        type="radio"
+                        name="browser">
+                    </label>
+                    <div class="filter__range filter__range--contrast">
+                      <div class="filter__line">
+                        <span class="filter__circle"></span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>-->
+                <div class="form-publish__range"></div>
               </div>
               <div class="form-publish__button">
                 <input class="button button--submit" type="submit" value="Запостить">
@@ -290,8 +367,13 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="logo footer__logo">
-          <img class="footer__logo-image" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип «Pink»">
+        <a class="footer__link">
+          <svg class="footer__logo logo footer__logo--mobile" width="145" height="40">
+            <use xlink:href="img/footer-logo.svg#footerLogo"></use>
+          </svg>
+          <svg class="footer__logo logo footer__logo--desktop" width="147" height="40">
+            <use xlink:href="img/footer-logo-desktop.svg#footerLogoDesktop"></use>
+          </svg>
         </a>
         <div class="footer-social">
           <ul class="socials-list">
@@ -309,7 +391,9 @@
         <div class="footer__developer">
           <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__developer-text">Разработано</span>
-            <img class="footer__developer-image" src="img/html-academy-logo.svg" width="27" height="34" alt="htmlacademy logo">
+            <svg width="27" height="34">
+              <use xlink:href="img/html-academy-logo.svg#footerlogo"></use>
+            </svg>
           </a>
         </div>
       </div>

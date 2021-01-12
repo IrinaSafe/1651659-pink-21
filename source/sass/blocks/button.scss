@@ -1,7 +1,7 @@
 .button {
   display: block;
   /*height: 55px;*/
-  min-width: 280px;
+  max-width: 280px;
   box-sizing: border-box;
   text-decoration: none;
   border: $button-border;
@@ -9,42 +9,106 @@
   font-size: $button-font-size;
   font-weight: $button-font-weight;
   color: $button-color;
-  background-color: $button-background-color;
+  background-color: transparent;
   font-family: $main-font-family;
   text-align: center;
   padding: 12px 30px 13px;
+  outline: none;
+  cursor: pointer;
 
   &--download {
     margin: 0 0 20px;
+
+    &:hover {
+      color: $color-pink;
+      background-color: $color-white;
+    }
+
+    &:active {
+      background-color: $color-white;
+      color: rgba($color-pink, 0.3);
+    }
+
+    @media screen and (min-width: $media-tablet) {
+      background: 0;
+    }
   }
 
   &--square {
-    background: $color-darkgreen;
-    border: 2px solid $color-darkgreen;
+    background-color: $color-light-green;
+    border: 2px solid $color-light-green;
     border-radius: 1px;
     color: $color-white;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     padding: 15px 30px 16px;
+    max-width: 300px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: $color-dark-green;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
+
+    &:disabled {
+      background-color: $color-grey;
+    }
   }
 
   &--submit {
     border: 3px solid $color-pink;
     color: $color-pink;
     background-color: $color-lightgrey;
-    /*height: 0;*/
     margin-bottom: 10px;
     padding: 12px 50px 13px;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-pink;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
+
+    @media screen and (min-width: $media-tablet) {
+      max-width: 260px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      max-width: 183px;
+    }
   }
 
   &--reset {
-    /*border: 3px solid desaturate($color: $color-blue, $amount: 90%);*/
     border: 3px solid $color-blue;
     color: $color-blue;
     opacity: 0.1;
     background-color: $color-lightgrey;
-    /*color: desaturate($color: $color-blue, $amount: 90%);*/
     margin-bottom: 10px;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+      background-color: $color-blue;
+    }
+
+    @media screen and (min-width: $media-tablet) {
+      max-width: 260px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      max-width: 183px;
+    }
   }
 }

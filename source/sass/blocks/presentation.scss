@@ -5,31 +5,49 @@
   background-color: $color-lightgrey;
 }
 
-.presentation::before {
-  content: "";
-  display: block;
-  height: 463px;
-  background: url("../img/phone.jpg") no-repeat 40% bottom,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat center;
-  background-size: auto, cover;
-}
-
 .presentation__wrapper {
+  grid-area: download;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   text-align: center;
   background-color: $color-dark-blue;
-  /*height: 271px;*/
   padding: 23px 20px 25px;
+
+  @media screen and (min-width: $media-tablet) {
+    background-color: transparent;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    z-index: 2;
+    padding: 0 0 0 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 0 0 0 130px;
+  }
 }
 
 .presentation__heading {
+  @extend %p-general-style;
+  grid-area: heading;
   text-align: center;
-  margin: 0;
-  padding: 20px 20px;
-  background-color: $color-lightgrey;
+  padding: 25px 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 50px;
+    /*padding: 80px 50px 0;*/
+    grid-row: 3/4;
+    grid-column: 1/2;
+    z-index: 2;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 0 0 0 130px;
+  }
 }
 
 .presentation__list {
@@ -49,9 +67,13 @@
 }
 
 .presentation__text {
-  color: $presentation__text-color;
-  font-size: $presentation__text-font-size;
-  font-weight: $presentation__text-font-weight;
+  color: $presentation-text-color;
+  font-size: $presentation-text-font-size;
+  font-weight: $presentation-text-font-weight;
   padding: 0;
   margin: 0;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $presentation-text-font-size--tablet;
+  }
 }

@@ -1,22 +1,78 @@
 .form {
-  //Nothing
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "name" "progress" "contacts" "app" "emotions" "feedback";
+  gap: 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    padding: 0 20px;
+    grid-template-areas: "name" "app" "contacts" "progress" "emotions" "feedback";
+    gap: 40px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name app"
+      "contacts contacts"
+      "progress progress"
+      "emotions emotions"
+      "feedback feedback";
+    padding: 40px 130px;
+  }
 }
 
-.form__fielsdet {
+.form__fieldset {
   padding: 20px;
   margin: 0;
   border: 0;
 
-  &--background-color {
+  &:nth-of-type(even) {
     background-color: $color-lightgrey;
   }
 
-  &--border-hidden {
-    //Nothing
+  @media screen and (min-width: $media-tablet) {
+    border: 2px solid $color-grey;
+    padding: 20px 60px;
+
+    &:nth-of-type(even) {
+      background-color: $color-white;
+    }
+  }
+
+  &--name {
+    display: grid;
+    grid-area: name;
+
+    @media screen and (min-width: $media-tablet) {
+      border: none;
+      padding: 20px 0;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      padding: 0;
+      align-items: end;
+    }
+  }
+
+  &--progress {
+    grid-area: progress;
+  }
+
+  &--contacts {
+    grid-area: contacts;
+  }
+
+  &--app {
+    grid-area: app;
+  }
+
+  &--emotions {
+    grid-area: emotions;
   }
 }
 
-.form__fielsdet-legend {
+.form__fieldset-legend {
   font-size: $form__fielsdet-legend-font-size;
   font-weight: $form__fielsdet-legend-font-weight;
   color: $form__fielsdet-legend-color;
@@ -26,18 +82,32 @@
   padding: 20px 40px 0 20px;
   text-align: center;
 
+  @media screen and (min-width: $media-tablet) {
+    position: inherit;
+    padding: 0 10px;
+    width: max-content;
+  }
+
   &--one-row {
     padding: 20px 40px 0 50px;
+
+    @media screen and (min-width: $media-tablet) {
+      padding: 0 10px;
+    }
   }
 
   &--contacts-hidden {
     display: none;
+
+    @media screen and (min-width: $media-tablet) {
+      display: block;
+    }
   }
 }
 
-.form__fielsdet-textarea {
-  width: 100%;
-  height: 191px;
+.form__fieldset-textarea {
+  width: -webkit-fill-available;
+  height: 197px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -45,9 +115,24 @@
   border-color: $color-lightgrey;
   font-family: $main-font-family;
   appearance: none;
-  /*-moz-appearance: none;
-  -webkit-appearance: none;*/
   margin-top: 60px;
   outline: none;
-  padding: 0;
+  padding: 20px;
+
+  @media screen and (min-width: $media-tablet) {
+    margin-top: 0;
+    height: 189px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    height: 124px;
+  }
+
+  &:hover {
+    border-color: $color-blue;
+  }
+
+  &:focus {
+    border-color: $color-pink;
+  }
 }

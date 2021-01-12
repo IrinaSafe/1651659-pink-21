@@ -1,6 +1,6 @@
 // Queries system
 $media-mobile: 320px;
-$media-tablet: 768px;
+$media-tablet: 660px;
 $media-desktop: 1200px;
 
 
@@ -11,10 +11,11 @@ $color-blue: #283645;
 $color-black: #000000;
 $color-green: #3dc644;
 $color-orange: #f25b26;
-$color-lightgrey: #f2f2ff;
+$color-lightgrey: #f2f2f2;
 $color-dark-blue: #1d2631;
 $color-grey: #e5e5e5;
-$color-darkgreen: #2aab6d;
+$color-light-green: #2aab6d;
+$color-dark-green: #1c9b5e;
 
 // Fonts sytem
 $main-font-family: "Open Sans", "Arial", sans-serif;
@@ -31,77 +32,102 @@ $page-header__title-color: $color-white;
 // Main nav
 $main-nav-background-color: $color-blue;
 $main-nav-color: $color-white;
+$main-nav-font-size: 18px;
+$main-nav-font-weight: bold;
+$main-nav-font-weight--desktop: 400;
 
-// Site list
-$site-list-font-size: 18px;
-$site-list-font-weight: bold;
-
-//  Heading
+// Heading
 $heading-color: $color-white;
 $heading-font-size: 24px;
 $heading-font-weight: 300;
+$heading-font-size--tablet: 40px;
+$heading-font-size--desktop: 50px;
+
 
 // Presentation
-$presentation__text-color: $color-white;
-$presentation__text-font-size: 14px;
-$presentation__text-font-weight: 300;
+$presentation-text-color: $color-white;
+$presentation-text-font-size: 14px;
+$presentation-text-font-weight: 300;
+$presentation-text-font-size--tablet: 18px;
 
-//Button
+// Button
 $button-font-size: 18px;
 $button-font-weight: bold;
 $button-border: 3px solid $color-white;
 $button-color: $color-white;
-$button-background-color: $color-dark-blue;
 
-//Advantages
+// Advantages
+$advantages-title-font-size: 18px;
+$advantages-title-font-weight: bold;
+$advantages-title-color: $color-black;
+$advantages-title-font-size--desktop: 30px;
 
-$advantages__item-title-font-size: 18px;
-$advantages__item-title-font-weight: bold;
-$advantages__item-title-color: $color-black;
-$advantages__item-description-font-size: 14px;
-$advantages__item-description-font-weight: 400;
-$advantages__item-description-color: $color-dark-blue;
+$advantages-description-font-size: 14px;
+$advantages-description-font-weight: 400;
+$advantages-description-color: $color-blue;
+$advantages-description-font-size--desktop: 18px;
 
-//Reviews
-$reviews__author-name-font-size: 18px;
-$reviews__author-name-font-weight: bold;
-$reviews__author-name-color: $color-black;
+// Reviews
+$author-name-font-size: 18px;
+$author-name-font-weight: bold;
+$author-name-color: $color-black;
+$author-name-font-size--tablet: 20px;
+$author-name-font-size--desktop: 24px;
 
-$reviews__author-age-profession-font-size: 14px;
-$reviews__author-age-profession-font-weight: 400;
-$reviews__author-age-profession-color: $color-dark-blue;
+$author-age-profession-font-size: 14px;
+$author-age-profession-font-weight: 400;
+$author-age-profession-color: $color-blue;
+$author-age-profession-font-size--desktop: 18px;
 
-$reviews__author-text-font-size: 14px;
-$reviews__author-text-font-weight: 400;
-$reviews__author-text-color: $color-dark-blue;
+$author-text-font-size: 14px;
+$author-text-font-weight: 400;
+$author-text-color: $color-blue;
+$author-text-font-size--tablet: 18px;
 
-//Price
+// Price
 $price__wrapper-background-color: $color-lightgrey;
+$th-text-color: $color-white;
+$th-text-font-size: 16px;
+$th-text-font-weight: bold;
+$th-text-font-size--desktop: 18px;
 
-//Contacts
+$th-price-color: $color-white;
+$th-price-font-size: 18px;
+$th-price-font-weight: 300;
+$th-price-font-size--desktop: 24px;
+
+$td-text-color: $color-blue;
+$td-text-font-size: 14px;
+$td-text-font-weight: 400;
+$td-text-font-size--desktop: 18px;
+
+// Contacts
 $contacts__info-title-font-size: 18px;
 $contacts__info-title-font-weight: bold;
-$contacts__info-title-color: $color-dark-blue;
+$contacts__info-title-color: $color-blue;
 
 $contacts__link-font-size: 24px;
 $contacts__link-font-weight: 300;
 $contacts__link-color: $color-pink;
 
-//Map
+// Map
 $map-background-color: $color-white;
 
-//Footer
+// Footer
 $footer-background-color:  $color-white;
-$footer__developer-text-font-size: 14px;
-$footer__developer-text-font-weight: 400;
-$footer__developer-text-color: $color-blue;
 
-//Main
-$page-main__title-font-size: 14px;
-$page-main__title-font-weight: 400;
-$page-main__title-color: $color-blue;
+$developer-text-font-size: 14px;
+$developer-text-font-weight: 400;
+$developer-text-color: $color-blue;
+$developer-text-font-size--desktop: 18px;
 
-//Field
+// Main
+$main-title-font-size: 14px;
+$main-title-font-weight: 400;
+$main-title-color: $color-blue;
+$main-title-font-size--tablet: 18px;
+
+// Field
 $field__label-font-size: 14px;
 $field__label-font-weight: 400;
 $field__label-color: $color-pink;
@@ -114,11 +140,11 @@ $form__fielsdet-legend-font-size: 14px;
 $form__fielsdet-legend-font-weight: 400;
 $form__fielsdet-legend-color: $color-pink;
 
-$inline-field__label-font-size: 14px;
+$inline-field__label-font-size: 18px;
 $inline-field__label-font-weight: 400;
 $inline-field__label-color: $color-blue;
 
-//Card
+// Card
 $name-font-size: 14px;
 $name-font-weight: bold;
 $name-color: $color-blue;
@@ -134,3 +160,18 @@ $comment-color: $color-blue;
 $like-text-font-size: 12px;
 $like-text-font-weight: 400;
 $like-text-color: $color-pink;
+
+// Effect
+$effect-heading-color: $color-black;
+$effect-heading-font-size: 30px;
+$effect-heading-font-weight: bold;
+
+$effect-text-color: $color-blue;
+$effect-text-font-size: 14px;
+$effect-text-font-weight: 400;
+$effect-text-font-size--desktop: 18px;
+
+$effect-link-color: $color-pink;
+$effect-link-font-size: 14px;
+$effect-link-font-weight: 400;
+$effect-link-font-size--desktop: 18px;

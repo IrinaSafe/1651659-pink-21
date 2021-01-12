@@ -7,7 +7,11 @@
 }
 
 .slider__toggles {
+  @extend %ul-general-style;
   text-align: center;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .slider__toggle {
@@ -17,9 +21,22 @@
   cursor: pointer;
   border-radius: 50%;
   border: none;
-  background-color: $color-dark-blue;
+  background-color: rgba($color-blue, 0.3);
   text-decoration: none;
   padding: 0;
+  outline: none;
+
+  &:hover {
+    background-color: rgba($color-blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-blue, 0.1);
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    display: none;
+  }
 
   &--active {
     box-shadow: 0 0 0 3px $color-dark-blue;

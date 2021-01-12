@@ -5,14 +5,45 @@
 .footer__wrapper {
   text-align: center;
   padding: 37px 20px 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $media-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 40px 130px;
+  }
 }
 
 .footer__logo {
-  //Nothing
+  color: $color-blue;
+
+  &--mobile {
+    @media screen and (min-width: $media-desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
+  }
 }
 
-.footer__logo-image {
+.footer__link {
+  @extend %a-general-style;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $media-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-social {
@@ -20,20 +51,35 @@
 }
 
 .footer__developer {
-  //Nothing
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__developer-link {
   @extend %a-general-style;
+  display: flex;
+  align-items: center;
+  color: $color-pink;
+
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    color: lighten($color: $color-blue, $amount: 70%)
+  }
 }
 
 .footer__developer-text {
-  font-size: $footer__developer-text-font-size;
-  font-weight: $footer__developer-text-font-weight;
-  color: $footer__developer-text-color;
+  font-size: $developer-text-font-size;
+  font-weight: $developer-text-font-weight;
+  color: $developer-text-color;
   text-decoration: none;
+  margin-right: 10px;
+
+  @media screen and (min-width: $media-desktop) {
+    font-size: $developer-text-font-size--desktop;
+  }
 }
 
-.footer__developer-image {
-  //Nothing
-}
