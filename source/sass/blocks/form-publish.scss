@@ -6,8 +6,13 @@
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "image filters";
-    gap: 60px;
+    gap: 65px;
     padding: 40px 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    gap: 0;
+    padding: 60px;
   }
 }
 
@@ -20,6 +25,10 @@
 
   @media screen and (min-width: $media-tablet) {
     padding: 0;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    text-align: left;
   }
 }
 
@@ -70,5 +79,6 @@
 
   @media screen and (min-width: $media-desktop) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
