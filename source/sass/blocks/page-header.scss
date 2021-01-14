@@ -5,9 +5,13 @@
   grid-template-areas: "top" "nav" "heading" "image" "download";
   grid-template-rows: 66px auto;
   background: url("../img/back-mobile.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 50% 0%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
@@ -22,6 +26,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media screen and (min-width: $media-desktop) {
@@ -36,6 +44,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 

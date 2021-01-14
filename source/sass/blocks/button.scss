@@ -1,7 +1,7 @@
 .button {
   display: block;
   /*height: 55px;*/
-  max-width: 280px;
+  min-width: 280px;
   box-sizing: border-box;
   text-decoration: none;
   border: $button-border;
@@ -79,11 +79,13 @@
     }
 
     @media screen and (min-width: $media-tablet) {
-      max-width: 260px;
+      min-width: 183px;
+      width: 260px;
     }
 
     @media screen and (min-width: $media-desktop) {
-      max-width: 183px;
+      width: 183px;
+      padding: 12px 30px 13px;
     }
   }
 
@@ -93,6 +95,7 @@
     opacity: 0.1;
     background-color: $color-lightgrey;
     margin-bottom: 10px;
+    padding: 12px 50px 13px;
 
     &:hover {
       opacity: 0.3;
@@ -104,11 +107,12 @@
     }
 
     @media screen and (min-width: $media-tablet) {
-      max-width: 260px;
+      width: 260px;
+      min-width: 183px;
     }
 
     @media screen and (min-width: $media-desktop) {
-      max-width: 183px;
+      width: 183px;
     }
   }
 }

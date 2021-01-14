@@ -6,16 +6,30 @@
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "image filters";
-    gap: 60px;
+    gap: 65px;
+    padding: 40px 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    gap: 0;
+    padding: 60px;
   }
 }
 
 .form-publish__fieldset-image {
   grid-area: image;
   margin: 0;
-  padding: 40px 20px 0;
+  padding: 20px 20px 0;
   border: none;
   text-align: center;
+
+  @media screen and (min-width: $media-tablet) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    text-align: left;
+  }
 }
 
 .form-publish__input-hidden {
@@ -30,16 +44,21 @@
   text-align: center;
 
   @media screen and (min-width: $media-tablet) {
-    padding: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
   }
 }
 
 
 .form-publish__container {
   grid-template-areas: "icons";
+  border-bottom: 1px solid rgba($color-blue, 0.1);
 
   @media screen and (min-width: $media-tablet) {
-    /*grid-template-columns: 1fr 2fr;*/
+    display: flex;
+    border-bottom: none;
   }
 }
 
@@ -48,22 +67,18 @@
   grid-area: icons;
 }
 
-.form-publish__range-row {
-  //Nothing
-}
-
 .form-publish__button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-top: 40px;
-  border-top: 1px solid $color-blue;
 
   @media screen and (min-width: $media-tablet) {
-    padding-top: 0;
     border-top: none;
   }
 
   @media screen and (min-width: $media-desktop) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
