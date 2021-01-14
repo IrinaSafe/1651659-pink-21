@@ -8,8 +8,7 @@
 }
 
 .card__image {
-  display: inherit;
-  width: 100%;
+  display: block;
 
   &--panorama {
     width: 100vw;

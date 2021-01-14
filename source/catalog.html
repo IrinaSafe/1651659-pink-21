@@ -69,8 +69,8 @@
           <li class="cards-list__item cards-list__item--panorama card">
             <a class="card__link-image-area">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x"/>
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x"/>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" width="300px" height="400px"/>
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" width="300px" height="400px"/>
                 <img class="card__image card__image--panorama" src="img/panorama-mob@1x.jpg 1x" srcset="img/panorama-mob@2x.jpg 2x" alt="Панорама">
               </picture>
             </a>
@@ -92,7 +92,11 @@
           </li>
           <li class="cards-list__item card">
             <a class="card__link-image-area">
-              <img class="card__image" src="img/photo-1-mobile.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-1-mobile@1x.jpg 1x" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -113,7 +117,11 @@
 
           <li class="cards-list__item card">
             <a class="card__link-image-area">
-              <img class="card__image" src="img/photo-2-mobile.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-2-mobile@1x.jpg 1x" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -134,7 +142,11 @@
 
           <li class="cards-list__item card">
             <a class="card__link-image-area">
-              <img class="card__image" src="img/photo-3-tablet.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-3-mobile@1x.jpg 1x" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -155,7 +167,11 @@
 
           <li class="cards-list__item card">
             <a class="card__link-image-area">
-              <img class="card__image" src="img/photo-4-tablet.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-4-mobile@1x.jpg 1x" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -177,7 +193,11 @@
 
           <li class="cards-list__item card">
             <a class="card__link-image-area">
-              <img class="card__image" src="img/photo-5-tablet.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-5-mobile@1x.jpg 1x" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -198,7 +218,11 @@
 
           <li class="cards-list__item card">
             <a class="card__link-image-area">
-              <img class="card__image" src="img/photo-6-tablet.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-6-mobile@1x.jpg 1x" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -225,8 +249,12 @@
             <fieldset class="form-publish__fieldset-image">
               <label>
                 <input class="form-publish__input-hidden" type="file">
-                <img src="img/photo-7-tablet.jpg" width="280px" height="374px" alt="Ваше фото">
               </label>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x"/>
+                <img class="card__image" src="img/photo-7-mobile@1x.jpg 1x" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </fieldset>
 
             <fieldset class="form-publish__fieldset-filters">
