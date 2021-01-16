@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../img/320.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/Tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../img/Desktop.png" );
+        }
+      }
+    </style>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -98,7 +120,7 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__title-wrapper">
           <p class="heading heading--blue">Устали от серости мегаполиса?</p><br>
-          <p class="heading heading--blue">Нам есть что вам<br>предложить!</p>
+          <p class="heading heading--blue">Нам есть что вам<br>&nbsp;предложить!</p>
         </div>
         <div class="advantages-wrapper">
           <ul class="advantages__list-image">

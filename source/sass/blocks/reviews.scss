@@ -1,5 +1,5 @@
 .reviews {
-  padding: 40px 20px 60px;
+  padding: 43px 20px 35px;
   position: relative;
 
   @media screen and (min-width: $media-desktop) {
@@ -49,7 +49,7 @@
   font-size: $author-name-font-size;
   font-weight: $author-name-font-weight;
   color: $author-name-color;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $author-name-font-size--tablet;
@@ -89,7 +89,7 @@
   font-weight: $author-text-font-weight;
   color: $author-text-color;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $author-text-font-size--tablet;

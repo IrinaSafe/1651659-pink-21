@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @media screen and (min-width: $media-tablet) {
     margin-bottom: 0;
@@ -11,7 +11,11 @@
 }
 
 .socials-list__item {
-  margin: 0 5px;
+  /*margin: 0 5px;*/
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
 }
 
 .socials-list__link {

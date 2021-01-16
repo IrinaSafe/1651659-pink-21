@@ -9,11 +9,16 @@
 
 .card__image {
   display: block;
+  width: 100%;
 
   &--panorama {
     width: 100vw;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  &--post {
+    width: auto;
   }
 }
 
