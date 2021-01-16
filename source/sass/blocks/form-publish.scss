@@ -18,7 +18,7 @@
 
 .form-publish__fieldset-image {
   grid-area: image;
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 20px 0;
   border: none;
   text-align: center;
@@ -72,6 +72,7 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 40px;
+  margin: 0 auto;
 
   @media screen and (min-width: $media-tablet) {
     border-top: none;

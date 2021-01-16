@@ -8,7 +8,7 @@
 
 .contacts__list {
   @extend %ul-general-style;
-  padding: 20px;
+  padding: 44px 20px 35px;
   display: grid;
   grid-template-areas: "title" "phone" "email" "adress";
   gap: 20px;
@@ -36,6 +36,7 @@
 
   &--title {
     grid-area: title;
+    margin-bottom: 15px;
   }
 
   &--phone {

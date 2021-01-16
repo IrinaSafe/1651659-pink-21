@@ -7,6 +7,7 @@
   table-layout: fixed;
   transition: transform 0.5s ease;
   transform: translateX(-33%);
+  margin-bottom: 27px;
 
   @media screen and (min-width: $media-tablet) {
     transform: none;
