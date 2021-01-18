@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "top" "nav" "heading" "image" "download";
-  grid-template-rows: 66px auto;
+  grid-template-rows: 69px auto;
   background-image: url("../img/back-mobile.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -209,15 +209,16 @@
 .page-header__title {
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   text-align: center;
-  min-height: 173px;
+  // min-height: 173px;
   font-size: $page-header__title-font-size;
   font-weight: $page-header__title-font-weight;
   color: $page-header__title-color;
   margin: 0;
   grid-area: heading;
-  padding: 0 20px;
+  padding: 25px 20px 44px;
+  line-height: 33px;
 
   @media screen and (min-width: $media-tablet) {
     grid-column: 1/3;

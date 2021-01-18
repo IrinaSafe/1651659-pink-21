@@ -79,7 +79,7 @@
   text-transform: uppercase;
   line-height: 18px;
   position: absolute;
-  padding: 20px 40px 0 20px;
+  padding: 22px 40px 0 20px;
   text-align: center;
 
   @media screen and (min-width: $media-tablet) {
@@ -89,7 +89,7 @@
   }
 
   &--one-row {
-    padding: 20px 40px 0 50px;
+    padding: 20px 40px 0 48px;
 
     @media screen and (min-width: $media-tablet) {
       padding: 0 10px;
@@ -107,17 +107,18 @@
 
 .form__fieldset-textarea {
   // width: -webkit-fill-available;
-  height: 197px;
+  height: 157px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: $color-blue;
-  border-color: $color-lightgrey;
+  border: 2px solid $color-lightgrey;
   font-family: $main-font-family;
   appearance: none;
-  margin-top: 60px;
+  margin-top: 54px;
   outline: none;
   padding: 20px;
+  width: calc(100% - 44px);
 
   @media screen and (min-width: $media-tablet) {
     margin-top: 0;

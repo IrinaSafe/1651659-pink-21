@@ -20,8 +20,8 @@
   font-weight: $field__label-font-weight;
   color: $field__label-color;
   text-transform: uppercase;
-  padding-left: 15px;
-  margin-bottom: 10px;
+  padding-left: 23px;
+  margin-bottom: 7px;
 
   @media screen and (min-width: $media-tablet) {
     padding-left: 0;
@@ -30,7 +30,7 @@
   }
 
   &--contacts {
-    padding: 10px 0 0 15px;
+    padding: 15px 0 0 25px;
   }
 }
 
@@ -40,7 +40,7 @@
   font-size: $field__input-font-size;
   font-weight: $field__input-font-weight;
   color: $field__input-color;
-  padding: 17px 0 17px 15px;
+  padding: 19px 0 18px 20px;
 
   &:hover {
     border: 2px solid $color-blue;

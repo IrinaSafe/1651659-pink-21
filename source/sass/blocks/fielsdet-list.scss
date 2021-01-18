@@ -3,15 +3,15 @@
   @include list-style;
   @include zero-margins;
   display: grid;
-  gap: 20px;
+  gap: 19px;
 
   @media screen and (min-width: $media-tablet) {
     gap: 35px;
   }
 
   &--choice {
-    margin-top: 80px;
-    gap: 40px;
+    margin-top: 92px;
+    gap: 43px;
 
     @media screen and (min-width: $media-tablet) {
       margin-top: 0;
@@ -19,7 +19,8 @@
   }
 
   &--general {
-    margin-top: 20px;
+    // margin-top: 20px;
+    gap: 5px;
 
     @media screen and (min-width: $media-tablet) {
       margin-top: 0;
@@ -27,10 +28,16 @@
   }
 
   &--grid {
+    margin-top: 95px;
     @media screen and (min-width: $media-desktop) {
       grid-template-columns: 1.1fr 1fr 1fr;
       grid-template-rows: repeat(2, 1fr);
       grid-auto-flow: column;
     }
+  }
+
+  &--radio {
+    margin-top: 92px;
+    gap: 33px;
   }
 }

@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../img/Mobile-form.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/Tablet-form.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../img/Desktop-form.png" );
+        }
+      }
+    </style>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -63,7 +85,7 @@
       <div class="page-main__title-wrapper">
         <span class="page-main__title">
           Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="page-main__title--mobile-hidden">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        </span>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--name        context-class__fieldset form__fieldset--border-hidden">
@@ -176,7 +198,7 @@
 
         <fieldset class="form__fieldset form__fieldset--app form__fieldset--background-color  context-class__fieldset context-class__fieldset--app">
           <legend class="form__fieldset-legend form__fieldset-legend--aplication-hidden">С каким приложением путешествовали?</legend>
-            <ul class="fieldset-list fieldset-list--choice">
+            <ul class="fieldset-list fieldset-list--radio">
               <li>
                 <label class="inline-field">
                   <input

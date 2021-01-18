@@ -5,7 +5,7 @@
 
 .page-main__title-wrapper {
   text-align: center;
-  padding: 39px 20px 20px;
+  padding: 43px 20px 16px;
 
   @media screen and (min-width: $media-tablet) {
     padding: 39px 60px 20px;
@@ -22,6 +22,7 @@
   font-size: $main-title-font-size;
   font-weight: $main-title-font-weight;
   color: $main-title-color;
+  line-height: 30px;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $main-title-font-size--tablet;
