@@ -33,7 +33,7 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-template-columns: 450px 1fr 1fr;
     grid-template-rows: 110px auto;
     grid-template-areas:
       "top nav nav"
@@ -230,8 +230,8 @@
 
   @media screen and (min-width: $media-desktop) {
     grid-column: 1/5;
-    min-height: 288px;
-    padding: 0 130px;
+    // min-height: 288px;
+    padding: 61px 130px 87px 130px;
   }
 }
 

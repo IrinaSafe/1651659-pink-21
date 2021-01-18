@@ -18,7 +18,7 @@
       "progress progress"
       "emotions emotions"
       "feedback feedback";
-    padding: 40px 130px;
+    padding: 40px 130px 0;
   }
 }
 
@@ -63,6 +63,10 @@
       margin-top: 18px;
       padding-bottom: 50px;
     }
+
+    @media screen and (min-width: $media-desktop) {
+      padding-bottom: 57px;
+    }
   }
 
   &--contacts {
@@ -72,6 +76,10 @@
       margin-top: 19px;
       padding-top: 35px;
       padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      padding-bottom: 14px;
     }
   }
 
@@ -83,8 +91,15 @@
     grid-area: emotions;
 
     @media screen and (min-width: $media-tablet) {
-      margin-top: 16px;
-      padding-bottom: 45px;
+      margin-top: 20px;
+      padding-bottom: 46px;
+      padding-top: 40px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      margin-top: 17px;
+      padding-bottom: 40px;
+      padding-top: 35px;
     }
   }
 }
@@ -124,7 +139,8 @@
 
 .form__fieldset-textarea {
   // width: -webkit-fill-available;
-  height: 157px;
+  box-sizing: border-box;
+  height: 197px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -132,14 +148,14 @@
   border: 2px solid $color-lightgrey;
   font-family: $main-font-family;
   appearance: none;
-  margin-top: 54px;
+  margin-top: 58px;
   outline: none;
   padding: 20px;
-  width: calc(100% - 44px);
+  width: 100%;
 
   @media screen and (min-width: $media-tablet) {
     margin-top: 0;
-    height: 141px;
+    height: 189px;
   }
 
   @media screen and (min-width: $media-desktop) {

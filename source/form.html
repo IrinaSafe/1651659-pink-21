@@ -32,15 +32,17 @@
     <header class="page-header">
       <div class="page-header__head-line">
         <a class="page-header__link">
-          <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
-            <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
-          </svg>
-          <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
-            <use xlink:href="img/header-logo-tablet.svg#headerLogoTablet"></use>
-          </svg>
-          <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
-            <use xlink:href="img/header-logo-desktop.svg#headerLogoDesktop"></use>
-          </svg>
+          <picture>
+            <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
+              <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
+            </svg>
+            <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
+              <use xlink:href="img/header-logo-tablet.svg#headerLogoTablet"></use>
+            </svg>
+            <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
+              <use xlink:href="img/header-logo-desktop.svg#headerLogoDesktop"></use>
+            </svg>
+        </picture>
         </a>
         <button class="page-header__toggle logo" type="button"></button>
       </div>
@@ -68,7 +70,7 @@
           </li>
         </ul>
       </nav>
-      <p class="heading page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</p>
+      <p class="heading page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
     <script>
       let button = document.querySelector('.page-header__toggle');
@@ -177,7 +179,7 @@
         <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__fieldset-legend form__fieldset-legend--content form__fieldset-legend--contacts-hidden">Контактная информация</legend>
           <ul class="fieldset-list fieldset-list--general fieldset-list--contacts-image">
-            <li class="field field--contacts-image">
+            <li class="field field--number">
               <label class="field__label field__label--contacts">Номер телефона</label>
               <input
                 class="field__input field__input--contacts  field__input--phone-image"
@@ -185,7 +187,7 @@
                 name="phone"
                 placeholder="Номер, пожалуйста">
             </li>
-            <li class="field">
+            <li class="field field--adress">
               <label class="field__label field__label--contacts">Адрес почты</label>
               <input
                 class="field__input field__input--contacts field__input--mail-image"

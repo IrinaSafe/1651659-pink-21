@@ -26,6 +26,11 @@
       margin-top: 0;
       gap: 31px;
     }
+
+    @media screen and (min-width: $media-desktop) {
+      grid-template-columns: 1fr 1fr;
+      gap: 74px;
+    }
   }
 
   &--grid {
