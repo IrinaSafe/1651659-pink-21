@@ -3,6 +3,11 @@
 @import "fonts";
 @import "system/visually-hidden";
 
+//Mixins
+@import "mixins/decoration";
+@import "mixins/list-style";
+@import "mixins/zero-margins";
+
 //Templates
 @import "silent_classes/ul";
 @import "silent_classes/a";
@@ -12,7 +17,6 @@
 @import "blocks/page";
 @import "blocks/page-header";
 @import "blocks/main-nav";
-@import "blocks/site-list";
 @import "blocks/presentation";
 @import "blocks/button";
 @import "blocks/heading";

@@ -1,5 +1,7 @@
 .fieldset-list {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
   display: grid;
   gap: 20px;
 

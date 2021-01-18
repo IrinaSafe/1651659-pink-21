@@ -5,8 +5,6 @@
 .filter__label {
   display: flex;
   align-items: center;
-
-  /**/
   flex-direction: row;
 }
 
@@ -60,7 +58,7 @@
     &:nth-of-type(1)::before {
       content: "";
       position: absolute;
-      background-image: url(../img/crop.svg);
+      background-image: url("../img/crop.svg");
       background-repeat: no-repeat;
       background-size: contain;
       left: 0;
@@ -71,7 +69,7 @@
     &:nth-of-type(2)::before {
       content: "";
       position: absolute;
-      background-image: url(../img/fill.svg);
+      background-image: url("../img/fill.svg");
       background-repeat: no-repeat;
       background-size: contain;
       left: 0;
@@ -82,7 +80,7 @@
     &:nth-of-type(3)::before {
       content: "";
       position: absolute;
-      background-image: url(../img/contrast.svg);
+      background-image: url("../img/contrast.svg");
       background-repeat: no-repeat;
       background-size: contain;
       left: 0;
@@ -185,36 +183,35 @@
     }
   }
 
-    &--fill {
+  &--fill {
+    width: 48px;
+    height: 43px;
+
+    @media screen and (min-width: $media-tablet) {
+      width: 24px;
+      height: 22px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
       width: 48px;
       height: 43px;
+    }
+  }
 
-      @media screen and (min-width: $media-tablet) {
-        width: 24px;
-        height: 22px;
-      }
+  &--contrast {
+    width: 32px;
+    height: 32px;
 
-      @media screen and (min-width: $media-desktop) {
-        width: 48px;
-        height: 43px;
-      }
+    @media screen and (min-width: $media-tablet) {
+      width: 16px;
+      height: 16px;
     }
 
-    &--contrast {
+    @media screen and (min-width: $media-desktop) {
       width: 32px;
       height: 32px;
-
-      @media screen and (min-width: $media-tablet) {
-        width: 16px;
-        height: 16px;
-      }
-
-      @media screen and (min-width: $media-desktop) {
-        width: 32px;
-        height: 32px;
-      }
     }
-
+  }
 }
 
 .filter-icon {
@@ -225,7 +222,6 @@
   @media screen and (min-width: $media-tablet) {
     display: none;
   }
-
 }
 
 .filter-range {
@@ -234,4 +230,3 @@
   justify-content: center;
   width: 100%;
 }
-

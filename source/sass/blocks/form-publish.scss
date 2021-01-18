@@ -63,7 +63,9 @@
 }
 
 .form-publish__list {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
   grid-area: icons;
 }
 

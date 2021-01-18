@@ -1,5 +1,7 @@
 .socials-list {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,25 +9,43 @@
 
   @media screen and (min-width: $media-tablet) {
     margin-bottom: 0;
+    margin-left: -14px;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    margin-left: 14px;
   }
 }
 
 .socials-list__item {
-  /*margin: 0 5px;*/
-
   &:not(:last-child) {
     margin-right: 6px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-right: 9px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      margin-right: 5px;
+    }
   }
 }
 
 .socials-list__link {
-  @extend %a-general-style;
+  // @extend %a-general-style;
+  @include decoration;
   display: block;
   width: 51px;
   height: 51px;
   border: 3px solid rgba($color-blue, 0.1);
   border-radius: 50%;
   text-align: center;
+
+  @media screen and (min-width: $media-tablet) {
+    width: 48px;
+    height: 48px;
+  }
 
   &:hover {
     border-color: $color-blue;

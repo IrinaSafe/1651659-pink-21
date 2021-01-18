@@ -17,7 +17,8 @@
 }
 
 .page-main__title {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   font-size: $main-title-font-size;
   font-weight: $main-title-font-weight;
   color: $main-title-color;

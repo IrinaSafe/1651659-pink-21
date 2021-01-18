@@ -1,18 +1,23 @@
 .reviews {
-  padding: 43px 20px 35px;
+  padding: 24px 20px 35px;
   position: relative;
 
+  @media screen and (min-width: $media-tablet) {
+    padding: 75px 20px 35px;
+  }
+
   @media screen and (min-width: $media-desktop) {
-    padding: 40px 130px;
+    padding: 35px 130px;
+
     &::before {
       content: "";
       width: 79px;
       height: 63px;
-      background-image: url(../img/quotes.svg);
+      background-image: url("../img/quotes.svg");
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
-      top: 55px;
+      top: 75px;
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -45,11 +50,13 @@
 }
 
 .reviews__author-name {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   font-size: $author-name-font-size;
   font-weight: $author-name-font-weight;
   color: $author-name-color;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  padding-top: 20px;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $author-name-font-size--tablet;
@@ -57,11 +64,13 @@
 
   @media screen and (min-width: $media-desktop) {
     font-size: $author-name-font-size--desktop;
+    padding-top: 24px;
   }
 }
 
 .reviews__author-age-profession {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   font-size: $author-age-profession-font-size;
   font-weight: $author-age-profession-font-weight;
   color: $author-age-profession-color;
@@ -84,7 +93,8 @@
 }
 
 .reviews__author-text {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   font-size: $author-text-font-size;
   font-weight: $author-text-font-weight;
   color: $author-text-color;
@@ -101,14 +111,14 @@
 
   @media screen and (min-width: $media-desktop) {
     display: inline-block;
-    width: 10%;
+    width: 5%;
     height: 41px;
     padding: 0;
     margin: 0;
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    margin-top: 40px;
+    margin-top: 30px;
     outline: none;
     cursor: pointer;
     color: rgba($color-blue, 0.3);
@@ -120,17 +130,5 @@
     &:active {
       color: rgba($color-blue, 0.1);
     }
-  }
-
-  &--left {
-    /*background-image: url(../img/left_arrow.svg);
-    background-repeat: no-repeat;
-    background-size: contain;*/
-  }
-
-  &--right {
-    background-image: url(../img/right_arrow.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }

@@ -7,10 +7,12 @@
   table-layout: fixed;
   transition: transform 0.5s ease;
   transform: translateX(-33%);
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $media-tablet) {
     transform: none;
+    width: auto;
+    margin-bottom: 0;
   }
 
   &--hidden {
@@ -18,19 +20,8 @@
 
     @media screen and (min-width: $media-tablet) {
       display: table-cell;
-      /*padding: 18px 24px 17px 15px;*/
-    }
-
-    @media screen and (min-width: $media-desktop) {
-      /*width: 234px;
-      height: 59px;
-      padding: 23px 65px 23px 22px;*/
     }
   }
-}
-
-.table__tr {
-  //Nothing
 }
 
 .table__th {
@@ -39,21 +30,21 @@
   height: 94px;
   background-color: $color-blue;
   text-align: center;
-  border: 2px solid $color-grey;
 
   @media screen and (min-width: $media-tablet) {
-    width: 152px;
-    height: 75px;
+    width: 157px;
+    height: 79px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    width: 233px;
-    height: 94px;
+    width: 235px;
+    height: 98px;
   }
-}
 
-.table__th--border-hidden {
-  //Nothing
+  &--hit {
+    border-right: 2px solid $color-grey;
+    border-left: 2px solid $color-grey;
+  }
 }
 
 .table__th-text {
@@ -81,10 +72,19 @@
   box-sizing: border-box;
   background-color: $color-white;
   border: 2px solid $color-grey;
-  padding: 14px 20px;
+  padding: 0 20px;
+  width: 280px;
+  height: 63px;
+
+  @media screen and (min-width: $media-tablet) {
+    width: 157px;
+    height: 49px;
+  }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 19px 102px 19px 101px;
+    padding: 0 0;
+    width: 235px;
+    height: 63px;
   }
 
   &--hidden {
@@ -111,13 +111,11 @@
     @media screen and (min-width: $media-tablet) {
       display: table-cell;
       text-align: left;
-      padding: 18px 24px 17px 15px;
     }
 
     @media screen and (min-width: $media-desktop) {
       width: 234px;
       height: 59px;
-      padding: 23px 65px 23px 22px;
     }
   }
 }
@@ -126,10 +124,11 @@
   font-size: $td-text-font-size;
   font-weight: $td-text-font-weight;
   color: $td-text-color;
+  padding-right: 0;
 
   @media screen and (min-width: $media-desktop) {
     font-size: $td-text-font-size--desktop;
-    width: 114px;
+    padding-left: 20px;
   }
 }
 
@@ -141,8 +140,4 @@
   @media screen and (min-width: $media-tablet) {
     justify-content: center;
   }
-}
-
-.table__td-icon {
-  //Nothing
 }

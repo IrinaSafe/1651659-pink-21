@@ -12,10 +12,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 31px 20px 40px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 40px 130px;
+    padding: 65px 130px;
   }
 }
 
@@ -38,7 +39,8 @@
 }
 
 .footer__link {
-  @extend %a-general-style;
+  // @extend %a-general-style;
+  @include decoration;
   margin-bottom: 29px;
 
   @media screen and (min-width: $media-tablet) {
@@ -57,7 +59,8 @@
 }
 
 .footer__developer-link {
-  @extend %a-general-style;
+  // @extend %a-general-style;
+  @include decoration;
   display: flex;
   align-items: center;
   color: $color-pink;
@@ -67,7 +70,7 @@
   }
 
   &:active {
-    color: lighten($color: $color-blue, $amount: 70%)
+    color: lighten($color: $color-blue, $amount: 70%);
   }
 }
 
@@ -82,4 +85,3 @@
     font-size: $developer-text-font-size--desktop;
   }
 }
-

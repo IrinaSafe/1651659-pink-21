@@ -7,10 +7,12 @@
 }
 
 .slider__toggles {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
   text-align: center;
   display: flex;
-  margin-top: 20px;
+  // margin-top: 20px;
   justify-content: center;
 }
 
@@ -25,6 +27,8 @@
   text-decoration: none;
   padding: 0;
   outline: none;
+  // margin-top: 30px;
+  margin-top: 20px;
 
   &:hover {
     background-color: rgba($color-blue, 0.6);
@@ -32,6 +36,10 @@
 
   &:active {
     background-color: rgba($color-blue, 0.1);
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    margin-top: 25px;
   }
 
   @media screen and (min-width: $media-desktop) {

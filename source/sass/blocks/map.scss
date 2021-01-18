@@ -1,6 +1,5 @@
 .map {
   background-color: $map-background-color;
-
 }
 
 .map__wrapper {
@@ -9,7 +8,7 @@
   position: relative;
   overflow: hidden;
 
-  &:before {
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -35,7 +34,7 @@
     }
   }
 
-  &:after {
+  &::after {
     content: "";
     background-image: url("../img/map-marker.svg");
     background-repeat: no-repeat;
@@ -62,8 +61,6 @@
   }
 }
 
-
-
 .map__image {
   position: absolute;
   top: -49px;
@@ -71,8 +68,4 @@
   left: 0;
   margin: 0 auto;
   width: 100%;
-
-  @media screen and (min-width: $media-tablet) {
-
-  }
 }

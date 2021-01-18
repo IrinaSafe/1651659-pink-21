@@ -3,7 +3,8 @@
 }
 
 .card__link-image-area {
-  @extend %a-general-style;
+  // @extend %a-general-style;
+  @include decoration;
   padding: 0;
 }
 
@@ -72,7 +73,8 @@
 }
 
 .card__comment {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   grid-area: comment;
   font-size: $comment-font-size;
   font-weight: $comment-font-weight;
@@ -84,9 +86,9 @@
   @media screen and (min-width: $media-tablet) {
     grid-column: 1/3;
     margin-bottom: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 2;
+    // -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
   }

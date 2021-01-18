@@ -4,7 +4,8 @@
   position: relative;
 }
 
-.inline-field__input-checkbox, .inline-field__input-radio {
+.inline-field__input-checkbox,
+.inline-field__input-radio {
   appearance: none;
   position: absolute;
   top: 1px;
@@ -67,13 +68,13 @@
 }
 
 .inline-field .inline-field__input-radio:checked + .inline-field__label .inline-field__label--radio::before {
-    content: "";
-    display: inline-block;
-    margin: auto;
-    width: 15px;
-    height: 15px;
-    background-color: $color-pink;
-    border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background-color: $color-pink;
+  border-radius: 50%;
 }
 
 .inline-field .inline-field__input-radio:focus + .inline-field__label .inline-field__label--radio {
