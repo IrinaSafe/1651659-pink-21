@@ -48,6 +48,10 @@
   background-color: $color-white;
   border-radius: 50%;
 
+  @media screen and (min-width: $media-tablet) {
+    margin-right: 19px;
+  }
+
   &:hover {
     border: 2px solid $color-blue;
   }

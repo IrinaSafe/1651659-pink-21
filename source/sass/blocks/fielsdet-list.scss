@@ -6,7 +6,7 @@
   gap: 19px;
 
   @media screen and (min-width: $media-tablet) {
-    gap: 35px;
+    gap: 53px;
   }
 
   &--choice {
@@ -39,5 +39,9 @@
   &--radio {
     margin-top: 92px;
     gap: 33px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-top: 0;
+    }
   }
 }
