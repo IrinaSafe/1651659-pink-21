@@ -58,6 +58,11 @@
 
   &--progress {
     grid-area: progress;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-top: 18px;
+      padding-bottom: 50px;
+    }
   }
 
   &--contacts {
@@ -66,6 +71,7 @@
     @media screen and (min-width: $media-tablet) {
       margin-top: 19px;
       padding-top: 35px;
+      padding-bottom: 30px;
     }
   }
 
@@ -75,6 +81,11 @@
 
   &--emotions {
     grid-area: emotions;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-top: 16px;
+      padding-bottom: 45px;
+    }
   }
 }
 
@@ -128,7 +139,7 @@
 
   @media screen and (min-width: $media-tablet) {
     margin-top: 0;
-    height: 189px;
+    height: 141px;
   }
 
   @media screen and (min-width: $media-desktop) {

@@ -24,11 +24,16 @@
 
     @media screen and (min-width: $media-tablet) {
       margin-top: 0;
+      gap: 31px;
     }
   }
 
   &--grid {
     margin-top: 95px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-top: 0;
+    }
     @media screen and (min-width: $media-desktop) {
       grid-template-columns: 1.1fr 1fr 1fr;
       grid-template-rows: repeat(2, 1fr);
