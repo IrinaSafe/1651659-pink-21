@@ -12,7 +12,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url("../img/triangle-map.png");
+    background-image: url("../img/triangle-map.svg");
     background-repeat: no-repeat;
     background-position: center -89px;
     background-size: cover;
@@ -27,10 +27,6 @@
 
     @media screen and (min-width: $media-desktop) {
       top: -300px;
-      background-image: url("../img/triangle-map-desktop.png");
-      background-repeat: no-repeat;
-      background-position: center -89px;
-      background-size: cover;
     }
   }
 
