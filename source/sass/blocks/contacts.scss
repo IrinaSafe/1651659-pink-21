@@ -1,17 +1,15 @@
 .contacts {
   text-align: center;
-
-  @media screen and (min-width: $media-tablet) {
-    gap: 20px;
-  }
 }
 
 .contacts__list {
-  @extend %ul-general-style;
-  padding: 20px;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
+  padding: 45px 20px 35px;
   display: grid;
   grid-template-areas: "title" "phone" "email" "adress";
-  gap: 20px;
+  gap: 17px;
 
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
@@ -19,7 +17,8 @@
       "title title"
       "phone email"
       "adress adress";
-      padding: 20px 20px 0 20px;
+    padding: 44px 20px 22px 20px;
+    gap: 32px;
   }
 
   @media screen and (min-width: $media-desktop) {
@@ -27,7 +26,9 @@
     grid-template-areas:
       "title title title"
       "phone adress email";
-      padding: 0 130px;
+    padding: 60px 130px 20px;
+    row-gap: 38px;
+    column-gap: 23px;
   }
 }
 
@@ -36,6 +37,11 @@
 
   &--title {
     grid-area: title;
+    margin-bottom: 19px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin: 0;
+    }
   }
 
   &--phone {
@@ -48,19 +54,20 @@
 
   &--adress {
     grid-area: adress;
+    margin-top: 5px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-top: 10px;
+
+      @media screen and (min-width: $media-desktop) {
+        margin-top: 0;
+      }
+    }
   }
 }
 
 .contacts__wrapper {
   padding: 36px 20px 10px;
-}
-
-.contacts__container {
-  //Nothing
-}
-
-.contacts__info {
-  //Nothing
 }
 
 .contacts__info-title {
@@ -69,13 +76,18 @@
   color: $contacts__info-title-color;
   margin: 0;
 
+  @media screen and (min-width: $media-tablet) {
+    margin-bottom: 5px;
+  }
+
   @media screen and (min-width: $media-desktop) {
-    height: 50px;
+    margin-bottom: 24px;
   }
 }
 
 .contacts__link {
-  @extend %a-general-style;
+  // @extend %a-general-style;
+  @include decoration;
   font-size: $contacts__link-font-size;
   font-weight: $contacts__link-font-weight;
   color: $contacts__link-color;

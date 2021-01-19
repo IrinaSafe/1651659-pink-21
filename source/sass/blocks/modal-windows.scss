@@ -1,0 +1,138 @@
+.modal-windows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1425px;
+  z-index: 1000;
+  width: 100%;
+
+  @media screen and (min-width: $media-tablet) {
+    top: 1164px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    top: 817px;
+  }
+}
+
+.modal-windows__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+  background-color: $modal-bg-color;
+  width: 320px;
+
+  @media screen and (min-width: $media-tablet) {
+    width: 460px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    width: 780px;
+  }
+
+  &--error {
+    height: 289px;
+    padding-top: 44px;
+
+    @media screen and (min-width: $media-tablet) {
+      height: 363px;
+      padding-top: 49px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      height: 377px;
+    }
+  }
+
+  &--send {
+    height: 380px;
+    padding-top: 44px;
+    margin-top: 185px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-top: 111px;
+      height: 432px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      margin-top: 81px;
+      padding-top: 33px;
+      height: 377px;
+    }
+  }
+}
+
+.modal-windows__title {
+  @include zero-margins;
+  color: $modal-title-color;
+  font-size: $modal-title-font-size;
+  font-weight: $modal-title-font-weight;
+  line-height: 1;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $modal-title-font-size--tablet;
+    padding: 0 100px;
+    line-height: 40px;
+  }
+}
+
+.modal-windows__description {
+  @include zero-margins;
+  color: $modal-description-color;
+  font-size: $modal-description-font-size;
+  font-weight: $modal-description-font-weight;
+  padding: 27px 20px 0;
+  line-height: 24px;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: $modal-description-font-size--tablet;
+    padding: 10px 70px 0;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 27px 214px 59px 215px;
+  }
+
+  &--send {
+    padding: 27px 20px 40px;
+
+    @media screen and (min-width: $media-tablet) {
+      padding: 27px 70px 40px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      padding: 27px 190px 41px;
+    }
+  }
+
+  &--br {
+    display: inline;
+
+    @media screen and (min-width: $media-tablet) {
+      display: none;
+    }
+  }
+}
+
+.modal-windows__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 153px;
+
+  @media screen and (min-width: $media-desktop) {
+    background-color: $color-lightgrey;
+  }
+
+  &--send {
+    min-height: 163px;
+    background-color: $color-lightgrey;
+  }
+}

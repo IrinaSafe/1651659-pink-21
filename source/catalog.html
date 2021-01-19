@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../img/Mobile-catalog.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/Tablet-catalog.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../img/Desktop-catalog.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -46,7 +71,7 @@
           </li>
         </ul>
       </nav>
-      <p class="heading page-header__title">Фотографии<br> пользователей</p>
+      <p class="heading page-header__title page-header__title--catalog">Фотографии<br> пользователей</p>
     </header>
     <script>
       let button = document.querySelector('.page-header__toggle');
@@ -60,8 +85,8 @@
       })
     </script>
     <main class="page-main">
-      <div class="page-main__title-wrapper">
-        <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="page-main__title-wrapper page-main__title-wrapper--catalog ">
+        <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи!&nbsp;<br>Видите, как не хватает ваших?</p>
       </div>
       <section class="gallery-section">
         <h2 class="visually-hidden">Карточки с фотографиями пользователей</h2>
@@ -77,13 +102,13 @@
             <div class="card__description card__description--panorama">
               <span class="card__name card__name--panorama">
                 Анна
-                <time class="card__time" datetime="2020-12-02T12:00">(5 минут назад)</time>
+                <time class="card__time" datetime="2020-12-02T12:00">&nbsp;(5 минут назад)</time>
               </span>
               <p class="card__comment">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                Прыгать или нет? Напишите в комментарии свой совет и&nbsp;<br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
               <div class="card__like card__like--panorama">
-                <button class="card__like-button" type="button" aria-label="Like"></button>
+                <button class="card__like-button card__like-button--panorama" type="button" aria-label="Like"></button>
                 <span class="card__like-text">
                   Нравится: 215
                 </span>
@@ -103,7 +128,7 @@
                 Левон
                 <time class="card__time" datetime="2020-12-02T12:00">(5 часов назад)</time>
               </span>
-              <p class="card__comment">
+              <p class="card__comment card__comment--cards">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <div class="card__like">
@@ -128,7 +153,7 @@
                 Антон
                 <time class="card__time" datetime="2020-12-02T12:00">(12 часов назад)</time>
               </span>
-              <p class="card__comment">
+              <p class="card__comment card__comment--cards">
                 Соседи будут рады!
               </p>
               <div class="card__like">
@@ -153,7 +178,7 @@
                 Борис
                 <time class="card__time" datetime="2020-12-02T12:00">(20 часов назад)</time>
               </span>
-              <p class="card__comment">
+              <p class="card__comment card__comment--cards">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <div class="card__like">
@@ -178,7 +203,7 @@
                 Сергей
                 <time class="card__time" datetime="2020-12-02T12:00">(25 часов назад)</time>
               </span>
-              <p class="card__comment">
+              <p class="card__comment card__comment--cards">
                 Самая кубанская в мире!
               </p>
               <div class="card__like">
@@ -204,7 +229,7 @@
                 Максим
                 <time class="card__time" datetime="2020-12-02T12:00">(40 часов назад)</time>
               </span>
-              <p class="card__comment">
+              <p class="card__comment card__comment--cards">
                 Где снег-то?
               </p>
               <div class="card__like">
@@ -229,7 +254,7 @@
                 Надежда
                 <time class="card__time" datetime="2020-12-02T12:00">(45 часов назад)</time>
               </span>
-              <p class="card__comment">
+              <p class="card__comment card__comment--cards">
                 Всем GM и взаимные лайки!
               </p>
               <div class="card__like">
@@ -243,7 +268,7 @@
         </ul>
       </section>
       <section class="publish">
-        <p class="publish__title">Затми их всех!<br>Выкладывай все что накопиллось в телефоне!</p>
+        <p class="publish__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         <div class="publish__form-wrapper">
           <form class="form-publish" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
             <fieldset class="form-publish__fieldset-image">
@@ -253,12 +278,12 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-7-mobile@1x.jpg 1x" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото">
+                <img class="card__image card__image--post" src="img/photo-7-mobile@1x.jpg 1x" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото">
               </picture>
             </fieldset>
 
             <fieldset class="form-publish__fieldset-filters">
-              <div class="form-publish__container">
+              <div class="form-publish__container filter">
                 <div class="filter-icon">
                   <button class="filter-button" type="button" aria-label="Обрезка">
                     <svg class="filter-button__image filter-button__image--crop" width="44" height="44">
@@ -276,20 +301,20 @@
                     </svg>
                   </button>
                 </div>
-                <div class="filter-range">
+                <div class="filter-ranges">
                   <div class="filter__range">
                     <div class="filter__line">
-                      <span class="filter__circle"></span>
+                      <span class="filter__circle filter__circle--crop"></span>
                     </div>
                   </div>
                   <div class="filter__range">
                     <div class="filter__line">
-                      <span class="filter__circle"></span>
+                      <span class="filter__circle filter__circle--fill"></span>
                     </div>
                   </div>
                   <div class="filter__range">
                     <div class="filter__line">
-                      <span class="filter__circle"></span>
+                      <span class="filter__circle filter__circle--contrast"></span>
                     </div>
                   </div>
                 </div>

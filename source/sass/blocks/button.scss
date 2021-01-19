@@ -31,6 +31,15 @@
 
     @media screen and (min-width: $media-tablet) {
       background: 0;
+      // margin: 28px 0 20px;
+      width: 300px;
+      margin: 28px 0 37px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      font-size: 21px;
+      padding: 12px 20px 13px;
+      margin: 26px 0 31px;
     }
   }
 
@@ -42,11 +51,11 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-    padding: 15px 30px 16px;
+    padding: 15px 30px 20px;
     max-width: 300px;
 
     @media screen and (min-width: $media-tablet) {
-      margin-right: 10px;
+      margin-top: 15px;
     }
 
     &:hover {
@@ -85,7 +94,8 @@
 
     @media screen and (min-width: $media-desktop) {
       width: 183px;
-      padding: 12px 30px 13px;
+      height: 55px;
+      margin: 0;
     }
   }
 
@@ -109,10 +119,27 @@
     @media screen and (min-width: $media-tablet) {
       width: 260px;
       min-width: 183px;
+      margin-top: 15px;
     }
 
     @media screen and (min-width: $media-desktop) {
       width: 183px;
+      margin: 0;
+    }
+  }
+
+  &--modal-windows {
+    width: 280px;
+    height: 63px;
+    border: 2px solid $color-light-green;
+    border-radius: 1px;
+    background-color: $color-light-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+
+    @media screen and (min-width: $media-tablet) {
+      width: 300px;
     }
   }
 }

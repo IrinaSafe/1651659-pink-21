@@ -1,24 +1,35 @@
 .price {
   overflow-x: hidden;
-  background-image: url(../img/table-background.svg);
+  background-image: url("../img/table-background.svg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 95% 0;
   background-size: cover;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: $media-tablet) {
+    padding-top: 38px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding-top: 0;
+    background-position: 95% 20px;
+    padding-bottom: 40px;
+  }
 }
 
 .price__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 66px 20px 0;
 
   @media screen and (min-width: $media-tablet) {
     padding: 40px 20px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 40px 130px;
+    padding: 144px 130px 50px;
     width: auto;
   }
 }

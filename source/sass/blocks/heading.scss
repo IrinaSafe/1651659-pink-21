@@ -1,4 +1,5 @@
 .heading {
+  // @include zero-margins;
   color: $heading-color;
   font-size: $heading-font-size;
   font-weight: $heading-font-weight;
@@ -10,10 +11,28 @@
 
   @media screen and (min-width: $media-desktop) {
     font-size: $heading-font-size--desktop;
+    line-height: 68px;
   }
 
   &--blue {
-    @extend %p-general-style;
+    // @extend %p-general-style;
+    @include zero-margins;
     color: $color-blue;
+
+    @media screen and (min-width: $media-tablet) {
+      line-height: 54px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      line-height: 68px;
+    }
+  }
+
+  &--contacts {
+    margin-bottom: 29px;
+
+    @media screen and (min-width: $media-tablet) {
+      margin-bottom: 0;
+    }
   }
 }

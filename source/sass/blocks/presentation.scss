@@ -9,69 +9,84 @@
   grid-area: download;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   align-items: center;
   text-align: center;
   background-color: $color-dark-blue;
-  padding: 23px 20px 25px;
+  padding: 25px 20px 26px;
 
   @media screen and (min-width: $media-tablet) {
     background-color: transparent;
     grid-row: 4/5;
     grid-column: 1/2;
     z-index: 2;
-    padding: 0 0 0 20px;
+    padding: 0 10px 110px 20px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 0 0 0 130px;
+    padding: 0 10px 110px 120px;
   }
 }
 
 .presentation__heading {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   grid-area: heading;
   text-align: center;
-  padding: 25px 20px;
+  padding: 22px 20px 30px;
+  line-height: 29px;
 
   @media screen and (min-width: $media-tablet) {
     display: flex;
-    align-items: flex-end;
-    padding: 0 50px;
-    /*padding: 80px 50px 0;*/
+    padding: 0 50px 0 60px;
     grid-row: 3/4;
     grid-column: 1/2;
     z-index: 2;
-    margin-bottom: 40px;
+    padding-top: 90px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 0 0 0 130px;
+    padding: 100px 50px 0 160px;
+    line-height: 68px;
   }
 }
 
 .presentation__list {
-  @extend %ul-general-style;
-  margin: 10px 0 20px;
+  // @extend %ul-general-style;
+  @include list-style;
+  margin: 10px 0 12px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $media-tablet) {
+    margin: 10px 0 22px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    margin: 35px 0 39px;
+  }
 }
 
 .presentation__item {
   display: inline-block;
   vertical-align: bottom;
-  margin: 0 15px;
+
+  &:nth-of-type(2) {
+    margin: 0 35px;
+  }
 }
 
 .presentation__logo {
+  @include decoration;
   display: block;
-  text-decoration: none;
 }
 
 .presentation__text {
+  @include zero-margins;
   color: $presentation-text-color;
   font-size: $presentation-text-font-size;
   font-weight: $presentation-text-font-weight;
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $presentation-text-font-size--tablet;

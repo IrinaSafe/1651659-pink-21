@@ -1,12 +1,12 @@
 .advantages {
-  //Nothing
+  background-color: $color-white;
 }
 
 .advantages-wrapper {
   background-image: url("../img/grey_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 0;
+  background-position: 95% 0;
   display: grid;
   grid-template-areas:
     "text"
@@ -14,7 +14,6 @@
   grid-template-columns: 1fr;
 
   @media screen and (min-width: $media-tablet) {
-    gap: 20px;
     grid-template-areas: "image text";
   }
 
@@ -22,17 +21,26 @@
     grid-template-areas:
       "image"
       " text";
-    gap: 40px;
-    padding: 0 130px;
+    gap: 55px;
+    padding: 15px 155px;
+    background-position: 95% 20px;
   }
 }
 
 .advantages__title-wrapper {
   text-align: center;
-  background-color: $color-white;
-  padding: 42px 20px 40px 20px;
+  padding: 41px 21px 32px 21px;
   grid-area: title;
   grid-column: 1 / 3;
+  line-height: 29px;
+
+  @media screen and (min-width: $media-tablet) {
+    padding: 45px 20px 32px 20px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 65px 24px 32px 24px;
+  }
 }
 
 .advantages__heading {
@@ -40,7 +48,9 @@
 }
 
 .advantages__list-image {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
   padding: 0 20px;
   text-align: center;
   grid-area: image;
@@ -58,62 +68,73 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
   }
 }
 
 .advantages__item-image {
   overflow: hidden;
+  margin-top: -10px;
 
   @media screen and (min-width: $media-tablet) {
-    margin-top: -75px;
+    margin-top: -70px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    margin-top: -77px;
   }
 }
 
 .advantages-image {
-  transform: translateY(41px);
+  transform: translateY(47px);
 
   @media screen and (min-width: $media-tablet) {
     transform: translateY(75px);
   }
+
+  @media screen and (min-width: $media-desktop) {
+    transform: translateY(85px);
+  }
 }
 
 .advantages__list {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include list-style;
+  @include zero-margins;
   text-align: center;
   padding: 0 20px;
   grid-area: text;
-  line-height: 1.4;
-  margin-top: 85px;
+  line-height: 1.7;
+  margin-top: 77px;
 
   li:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
   }
 
   @media screen and (min-width: $media-tablet) {
     text-align: start;
-    padding: 40px 20px 0;
+    padding: 30px 22px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 0;
 
     li:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: $media-desktop) {
+        margin-bottom: 0;
+      }
     }
   }
 
   @media screen and (min-width: $media-desktop) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 75px;
     text-align: center;
     padding: 0;
   }
-}
-
-.advantages__item {
-  //Nothing
 }
 
 .advantages__title {
@@ -121,20 +142,37 @@
   font-size: $advantages-title-font-size;
   font-weight: $advantages-title-font-weight;
   color: $advantages-title-color;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 
   @media screen and (min-width: $media-desktop) {
     font-size: $advantages-title-font-size--desktop;
+    line-height: 30px;
+    margin-bottom: 23px;
   }
 }
 
 .advantages__description {
-  @extend %p-general-style;
+  // @extend %p-general-style;
+  @include zero-margins;
   font-size: $advantages-description-font-size;
   font-weight: $advantages-description-font-weight;
   color: $advantages-description-color;
+  line-height: 24px;
 
   @media screen and (min-width: $media-desktop) {
     font-size: $advantages-description-font-size--desktop;
+    line-height: 30px;
+  }
+
+  &--br {
+    display: none;
+
+    @media screen and (min-width: $media-tablet) {
+      display: inline;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      display: none;
+    }
   }
 }

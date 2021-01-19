@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../img/Mobile-form.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/Tablet-form.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../img/Desktop-form.png" );
+        }
+      }
+    </style>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__head-line">
         <a class="page-header__link">
-          <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
-            <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
-          </svg>
-          <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
-            <use xlink:href="img/header-logo-tablet.svg#headerLogoTablet"></use>
-          </svg>
-          <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
-            <use xlink:href="img/header-logo-desktop.svg#headerLogoDesktop"></use>
-          </svg>
+          <picture>
+            <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
+              <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
+            </svg>
+            <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
+              <use xlink:href="img/header-logo-tablet.svg#headerLogoTablet"></use>
+            </svg>
+            <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
+              <use xlink:href="img/header-logo-desktop.svg#headerLogoDesktop"></use>
+            </svg>
+        </picture>
         </a>
         <button class="page-header__toggle logo" type="button"></button>
       </div>
@@ -46,7 +70,7 @@
           </li>
         </ul>
       </nav>
-      <p class="heading page-header__title">Конкурс на самое безбашеннное путешествие с Пинк</p>
+      <p class="heading page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
     <script>
       let button = document.querySelector('.page-header__toggle');
@@ -63,7 +87,7 @@
       <div class="page-main__title-wrapper">
         <span class="page-main__title">
           Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="page-main__title--mobile-hidden">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        </span>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--name        context-class__fieldset form__fieldset--border-hidden">
@@ -155,7 +179,7 @@
         <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__fieldset-legend form__fieldset-legend--content form__fieldset-legend--contacts-hidden">Контактная информация</legend>
           <ul class="fieldset-list fieldset-list--general fieldset-list--contacts-image">
-            <li class="field field--contacts-image">
+            <li class="field field--number">
               <label class="field__label field__label--contacts">Номер телефона</label>
               <input
                 class="field__input field__input--contacts  field__input--phone-image"
@@ -163,7 +187,7 @@
                 name="phone"
                 placeholder="Номер, пожалуйста">
             </li>
-            <li class="field">
+            <li class="field field--adress">
               <label class="field__label field__label--contacts">Адрес почты</label>
               <input
                 class="field__input field__input--contacts field__input--mail-image"
@@ -176,7 +200,7 @@
 
         <fieldset class="form__fieldset form__fieldset--app form__fieldset--background-color  context-class__fieldset context-class__fieldset--app">
           <legend class="form__fieldset-legend form__fieldset-legend--aplication-hidden">С каким приложением путешествовали?</legend>
-            <ul class="fieldset-list fieldset-list--choice">
+            <ul class="fieldset-list fieldset-list--radio">
               <li>
                 <label class="inline-field">
                   <input
@@ -218,6 +242,26 @@
           <span class="feedback-text"><span class="feedback-text__icon">*</span>&nbsp;&mdash;&nbsp;Обязательные<span class="feedback-text--desk-only">&nbsp;для заполнения</span>&nbsp;поля</span>
         </div>
       </form>
+      <section class="modal-windows">
+        <div class="modal-windows__container modal-windows__container--error">
+          <h3 class="modal-windows__title">Что-то пошло не так!</h3>
+          <p class="modal-windows__description">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+          <div class="modal-windows__footer">
+            <button class="button button--modal-windows">Ок</button>
+          </div>
+        </div>
+        <div class="modal-windows__container modal-windows__container--send">
+          <h3 class="modal-windows__title">Ваша заявка отправлена</h3>
+          <p class="modal-windows__description modal-windows__description--send">
+            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <span class="modal-windows__description--br"><br></span>оповестим вас.
+          </p>
+          <div class="modal-windows__footer modal-windows__footer--send">
+            <button class="button button--modal-windows">Закрыть окно</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">

@@ -5,11 +5,25 @@
 }
 
 .publish__title {
-  @extend %p-general-style;
+  @include zero-margins;
   text-align: center;
-  padding: 0 20px 40px;
+  padding: 25px 32px 40px 30px;
+  line-height: 30px;
+  font-size: 14px;
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 20px 32px 66px 30px;
+  }
 }
 
 .publish__form-wrapper {
   background-color: $color-lightgrey;
+
+  @media screen and (min-width: $media-desktop) {
+    margin-bottom: 25px;
+  }
 }

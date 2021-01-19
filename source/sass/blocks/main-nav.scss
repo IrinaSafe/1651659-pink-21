@@ -4,6 +4,7 @@
   color: $main-nav-color;
   height: max-content;
   background-color: $color-blue;
+  line-height: 29px;
 
   &--opened {
     display: block;
@@ -13,13 +14,15 @@
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 0 130px 0 0;
     height: 100%;
+    padding: 0 130px 0 0;
   }
 }
 
 .main-nav__list {
-  @extend %ul-general-style;
+  // @extend %ul-general-style;
+  @include zero-margins;
+  @include list-style;
 
   @media screen and (min-width: $media-desktop) {
     display: flex;
@@ -33,7 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   text-transform: uppercase;
   font-size: $main-nav-font-size;
   font-weight: $main-nav-font-weight;
@@ -44,7 +47,6 @@
     text-transform: none;
     font-weight: $main-nav-font-weight--desktop;
   }
-
 
   &:hover {
     color: $color-pink;
@@ -72,18 +74,13 @@
 }
 
 .main-nav__item a {
-  @extend %a-general-style;
+  // @extend %a-general-style;
+  @include decoration;
   color: inherit;
   cursor: pointer;
   padding: 18px 20px;
 
   @media screen and (min-width: $media-desktop) {
     padding: 0;
-  }
-}
-
-.main-nav__item--active a{
-  @media screen and (min-width: $media-desktop) {
-    /*border-bottom: 2px solid $color-white;*/
   }
 }

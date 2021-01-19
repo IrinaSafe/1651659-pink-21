@@ -1,28 +1,30 @@
 .feedback {
-  /*display: flex;*/
   display: grid;
   grid-area: feedback;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   text-align: center;
-  row-gap: 40px;
+  // row-gap: 40px;
 
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0 45px;
   }
 
   @media screen and (min-width: $media-desktop) {
     grid-column: 1 / 3;
+    padding: 5px 0 0;
   }
 }
 
 .feedback-text {
   text-transform: uppercase;
   color: $color-blue;
+  margin-top: 35px;
+  margin-bottom: 19px;
 
   @media screen and (min-width: $media-tablet) {
     text-align: right;
