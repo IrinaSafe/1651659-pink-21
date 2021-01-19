@@ -44,6 +44,41 @@
   &--hit {
     border-right: 2px solid $color-grey;
     border-left: 2px solid $color-grey;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "Хит";
+      position: absolute;
+      margin: auto;
+      top: -5px;
+      left: -38px;
+      bottom: auto;
+      right: auto;
+      width: 74px;
+      height: 21px;
+      font-size: 14px;
+      line-height: 67px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      border-bottom: 27px solid $color-pink;
+      border-left: 19px solid transparent;
+      border-right: 19px solid transparent;
+      transform: rotate(-45deg);
+      z-index: 10;
+
+      @media screen and (min-width: $media-tablet) {
+        top: -13px;
+        left: -47px;
+      }
+
+      @media screen and (min-width: $media-desktop) {
+        top: -1px;
+        left: -35px;
+      }
+    }
   }
 }
 
