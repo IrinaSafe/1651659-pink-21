@@ -94,7 +94,8 @@
 
     @media screen and (min-width: $media-desktop) {
       width: 183px;
-      padding: 12px 30px 13px;
+      height: 55px;
+      margin: 0;
     }
   }
 
@@ -118,10 +119,12 @@
     @media screen and (min-width: $media-tablet) {
       width: 260px;
       min-width: 183px;
+      margin-top: 15px;
     }
 
     @media screen and (min-width: $media-desktop) {
       width: 183px;
+      margin: 0;
     }
   }
 

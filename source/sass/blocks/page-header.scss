@@ -211,7 +211,6 @@
   justify-content: center;
   // align-items: center;
   text-align: center;
-  // min-height: 173px;
   font-size: $page-header__title-font-size;
   font-weight: $page-header__title-font-weight;
   color: $page-header__title-color;
@@ -222,7 +221,6 @@
 
   @media screen and (min-width: $media-tablet) {
     grid-column: 1/3;
-    // min-height: 330px;
     padding: 61px 80px;
     font-size: 50px;
     line-height: 68px;
@@ -230,8 +228,23 @@
 
   @media screen and (min-width: $media-desktop) {
     grid-column: 1/5;
-    // min-height: 288px;
     padding: 61px 130px 87px 130px;
+  }
+
+  &--form {
+    padding: 25px 20px 77px;
+
+    @media screen and (min-width: $media-tablet) {
+      padding: 61px 80px 128px;
+    }
+  }
+
+  &--catalog {
+    padding: 25px 20px 77px;
+
+    @media screen and (min-width: $media-tablet) {
+      padding: 61px 80px 88px;
+    }
   }
 }
 

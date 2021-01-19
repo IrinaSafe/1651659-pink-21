@@ -14,10 +14,15 @@
   @media screen and (min-width: $media-desktop) {
     padding: 90px 200px 33px;
   }
+
+  &--catalog {
+    @media screen and (min-width: $media-desktop) {
+      padding: 90px 200px;
+    }
+  }
 }
 
 .page-main__title {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $main-title-font-size;
   font-weight: $main-title-font-weight;
@@ -34,5 +39,9 @@
     @media screen and (min-width: $media-tablet) {
       display: inline;
     }
+  }
+
+  & br {
+    display: inline;
   }
 }

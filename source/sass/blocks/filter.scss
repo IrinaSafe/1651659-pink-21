@@ -1,46 +1,50 @@
 .filter {
-  height: 60px;
-}
+  border-bottom: 1px solid rgba($color-blue, 0.1);
 
-.filter__label {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.filter__input {
-  appearance: none;
-  background-color: red;
-
-  &--crop {
-    mask-image: url("../img/crop.svg");
-    background-repeat: no-repeat;
-    width: 44px;
-    height: 44px;
-    color: red;
-  }
-
-  &--fill {
-    background-image: url("../img/fill.svg");
-    background-repeat: no-repeat;
-    width: 48px;
-    height: 43px;
-  }
-
-  &--contrast {
-    background-image: url("../img/contrast.svg");
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
+  @media screen and (min-width: $media-tablet) {
+    display: flex;
+    border-bottom: none;
   }
 }
+
+// .filter__label {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: row;
+// }
+
+// .filter__input {
+//   appearance: none;
+//   background-color: red;
+
+//   &--crop {
+//     mask-image: url("../img/crop.svg");
+//     background-repeat: no-repeat;
+//     width: 44px;
+//     height: 44px;
+//     color: red;
+//   }
+
+//   &--fill {
+//     background-image: url("../img/fill.svg");
+//     background-repeat: no-repeat;
+//     width: 48px;
+//     height: 43px;
+//   }
+
+//   &--contrast {
+//     background-image: url("../img/contrast.svg");
+//     background-repeat: no-repeat;
+//     width: 32px;
+//     height: 32px;
+//   }
+// }
 
 .filter__range {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*height: 50px;*/
-  padding: 40px 0;
+  padding: 37px 0 32px;
 
   &:not(:first-child) {
     display: none;
@@ -48,7 +52,8 @@
 
   @media screen and (min-width: $media-tablet) {
     position: relative;
-    padding-left: 40px;
+    // padding-left: 49px;
+    padding: 37px 0 35px 49px;
     border-bottom: 1px solid rgba($color-blue, 0.3);
 
     &:not(:first-child) {
@@ -61,7 +66,7 @@
       background-image: url("../img/crop.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 0;
+      left: 3px;
       width: 22px;
       height: 22px;
     }
@@ -72,7 +77,7 @@
       background-image: url("../img/fill.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 0;
+      left: 3px;
       width: 24px;
       height: 22px;
     }
@@ -83,14 +88,22 @@
       background-image: url("../img/contrast.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 0;
+      left: 6px;
       width: 16px;
       height: 16px;
+    }
+
+    &:last-child {
+      padding: 31px 0 36px 49px;
     }
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 40px 0 40px 80px;
+    padding: 26px 0 35px 80px;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
 
     &:nth-of-type(1)::before {
       width: 44px;
@@ -118,6 +131,7 @@
 
   @media screen and (min-width: $media-tablet) {
     width: 202px;
+    margin-right: 14px;
   }
 
   @media screen and (min-width: $media-desktop) {
@@ -136,6 +150,34 @@
   height: 10px;
   width: 10px;
   cursor: pointer;
+
+  @media screen and (min-width: $media-tablet) {
+    &--crop {
+      left: 73%;
+    }
+
+    &--fill {
+      left: 13%;
+    }
+
+    &--contrast {
+      left: 48%;
+    }
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    &--crop {
+      left: 24%;
+    }
+
+    &--fill {
+      left: 86%;
+    }
+
+    &--contrast {
+      left: 61%;
+    }
+  }
 }
 
 .filter-button {
@@ -146,7 +188,7 @@
   border: none;
 
   &:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 35px;
   }
 
   @media screen and (min-width: $media-tablet) {
@@ -218,15 +260,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 24px;
+  padding-left: 12px;
 
   @media screen and (min-width: $media-tablet) {
     display: none;
   }
 }
 
-.filter-range {
+.filter-ranges {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+
+  @media screen and (min-width: $media-tablet) {
+    padding-top: 26px;
+    // padding-right: 18px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding-top: 0;
+  }
 }
