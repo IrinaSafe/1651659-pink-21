@@ -59,23 +59,6 @@
   }
 }
 
-
-// .form-publish__container {
-//   // grid-template-areas: "icons";
-//   border-bottom: 1px solid rgba($color-blue, 0.1);
-
-//   @media screen and (min-width: $media-tablet) {
-//     display: flex;
-//     border-bottom: none;
-//   }
-// }
-
-// .form-publish__list {
-//   @include list-style;
-//   @include zero-margins;
-//   grid-area: icons;
-// }
-
 .form-publish__button {
   display: flex;
   flex-direction: column;

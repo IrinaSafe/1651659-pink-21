@@ -52,13 +52,12 @@
 }
 
 .page-header__link {
-  // @extend %a-general-style;
   @include decoration;
 }
 
 .page-header__head-line {
   grid-area: top;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-blue;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -71,10 +70,11 @@
   @media screen and (min-width: $media-desktop) {
     padding: 0 0 0 130px;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   &--opened {
-    background-color: $color-blue;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -82,88 +82,91 @@
   border: none;
   cursor: pointer;
   outline: none;
-  width: 50px;
   height: 24px;
   background-color: transparent;
   color: #ffffff;
+  width: 30px;
+
+  @media screen and (min-width: $media-desktop) {
+    display: none;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    top: 22px;
-    right: 20px;
-    width: 50px;
+    top: 31px;
+    right: 18px;
+    width: 30px;
     height: 4px;
-    background-color: $color-white;
-    box-shadow: 0 8px 0 0 $color-white, 0 16px 0 0 $color-white;
+    background-color: #ffffff;
+    box-shadow: none;
+    transform: rotate(45deg);
 
     @media screen and (min-width: $media-tablet) {
-      top: 45px;
+      top: 52px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 18px;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: none;
+    transform: rotate(-45deg);
+
+    @media screen and (min-width: $media-tablet) {
+      top: 52px;
     }
   }
 
   &:hover::before {
     background-color: $color-pink;
-    box-shadow: 0 8px 0 0 $color-pink, 0 16px 0 0 $color-pink;
+    box-shadow: none;
+  }
+
+  &:hover::after {
+    background-color: $color-pink;
   }
 
   &:active::before {
     opacity: 0.3;
   }
 
-  @media screen and (min-width: $media-desktop) {
-    display: none;
+  &:active::after {
+    opacity: 0.3;
   }
 
   &--opened {
-    width: 30px;
+    &::after {
+      display: none;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      top: 31px;
-      right: 18px;
-      width: 30px;
+      width: 50px;
+      top: 22px;
+      right: 20px;
       height: 4px;
-      background-color: #ffffff;
-      box-shadow: none;
-      transform: rotate(45deg);
+      background-color: $color-white;
+      box-shadow: 0 8px 0 0 $color-white, 0 16px 0 0 $color-white;
+      transform: none;
 
       @media screen and (min-width: $media-tablet) {
-        top: 52px;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 31px;
-      right: 18px;
-      width: 30px;
-      height: 4px;
-      background-color: #ffffff;
-      box-shadow: none;
-      transform: rotate(-45deg);
-
-      @media screen and (min-width: $media-tablet) {
-        top: 52px;
+        top: 45px;
       }
     }
 
     &:hover::before {
       background-color: $color-pink;
-      box-shadow: none;
-    }
-
-    &:hover::after {
-      background-color: $color-pink;
+      box-shadow: 0 8px 0 0 $color-pink, 0 16px 0 0 $color-pink;
     }
 
     &:active::before {
-      opacity: 0.3;
-    }
-
-    &:active::after {
       opacity: 0.3;
     }
   }
@@ -209,7 +212,6 @@
 .page-header__title {
   display: flex;
   justify-content: center;
-  // align-items: center;
   text-align: center;
   font-size: $page-header__title-font-size;
   font-weight: $page-header__title-font-weight;
