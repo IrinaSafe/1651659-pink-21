@@ -245,6 +245,11 @@
     padding: 25px 20px 77px;
 
     @media screen and (min-width: $media-tablet) {
+      // padding: 61px 80px 88px;
+      padding: 61px 80px 128px;
+    }
+
+    @media screen and (min-width: $media-desktop) {
       padding: 61px 80px 88px;
     }
   }

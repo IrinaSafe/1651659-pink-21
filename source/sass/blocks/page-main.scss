@@ -16,6 +16,10 @@
   }
 
   &--catalog {
+    @media screen and (min-width: $media-tablet) {
+      padding: 90px 60px 78px;
+    }
+
     @media screen and (min-width: $media-desktop) {
       padding: 90px 200px;
     }
@@ -43,5 +47,13 @@
 
   & br {
     display: inline;
+
+    @media screen and (min-width: $media-tablet) {
+      display: none;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
   }
 }
