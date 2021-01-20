@@ -1,13 +1,13 @@
 .main-nav {
   grid-area: nav;
-  display: none;
+  display: block;
   color: $main-nav-color;
   height: max-content;
   background-color: $color-blue;
   line-height: 29px;
 
   &--opened {
-    display: block;
+    display: none;
   }
 
   @media screen and (min-width: $media-desktop) {
@@ -20,7 +20,6 @@
 }
 
 .main-nav__list {
-  // @extend %ul-general-style;
   @include zero-margins;
   @include list-style;
 
@@ -74,7 +73,6 @@
 }
 
 .main-nav__item a {
-  // @extend %a-general-style;
   @include decoration;
   color: inherit;
   cursor: pointer;

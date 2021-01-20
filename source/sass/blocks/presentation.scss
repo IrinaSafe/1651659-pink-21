@@ -28,11 +28,10 @@
 }
 
 .presentation__heading {
-  // @extend %p-general-style;
   @include zero-margins;
   grid-area: heading;
   text-align: center;
-  padding: 22px 20px 30px;
+  padding: 20px 20px 32px;
   line-height: 29px;
 
   @media screen and (min-width: $media-tablet) {
@@ -42,6 +41,7 @@
     grid-column: 1/2;
     z-index: 2;
     padding-top: 90px;
+    line-height: 48px;
   }
 
   @media screen and (min-width: $media-desktop) {
@@ -51,11 +51,12 @@
 }
 
 .presentation__list {
-  // @extend %ul-general-style;
   @include list-style;
-  margin: 10px 0 12px;
+  @include zero-margins;
+  margin: 12px 0 10px;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 
   @media screen and (min-width: $media-tablet) {
     margin: 10px 0 22px;
@@ -85,8 +86,6 @@
   color: $presentation-text-color;
   font-size: $presentation-text-font-size;
   font-weight: $presentation-text-font-weight;
-  // padding: 0;
-  // margin: 0;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $presentation-text-font-size--tablet;

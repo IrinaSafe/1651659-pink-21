@@ -20,7 +20,7 @@
 .form-publish__fieldset-image {
   grid-area: image;
   margin: 0 auto;
-  padding: 20px 20px 0;
+  padding: 20px 0 0;
   border: none;
   text-align: center;
 
@@ -41,8 +41,8 @@
 
 .form-publish__fieldset-filters {
   grid-area: filters;
-  margin: 0;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 20px 0;
   border: none;
   text-align: center;
   padding-top: 43px;
@@ -56,25 +56,9 @@
 
   @media screen and (min-width: $media-desktop) {
     justify-content: flex-start;
+    margin: 0;
   }
 }
-
-
-// .form-publish__container {
-//   // grid-template-areas: "icons";
-//   border-bottom: 1px solid rgba($color-blue, 0.1);
-
-//   @media screen and (min-width: $media-tablet) {
-//     display: flex;
-//     border-bottom: none;
-//   }
-// }
-
-// .form-publish__list {
-//   @include list-style;
-//   @include zero-margins;
-//   grid-area: icons;
-// }
 
 .form-publish__button {
   display: flex;
