@@ -33,17 +33,24 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    grid-template-columns: 450px 1fr 1fr;
+    // grid-template-columns: 450px 1fr 1fr;
     grid-template-rows: 110px auto;
-    grid-template-areas:
-      "top nav nav"
-      "heading . ."
-      "download . ."
-      "image image image";
+    // grid-template-areas:
+    //   "top nav nav"
+    //   "heading . ."
+    //   "download . ."
+    //   "image image image";
     background: url("../img/back-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+
+    grid-template-columns: calc((100% - 940px) / 2) 1fr 1fr 1fr calc((100% - 940px) / 2);
+    grid-template-areas:
+      "top top nav nav nav"
+      ". heading . . ."
+      ". download . . ."
+      ". image image image .";
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
@@ -229,8 +236,10 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    grid-column: 1/5;
+    // grid-column: 1/5;
     padding: 61px 130px 87px 130px;
+
+    grid-column: 1/6;
   }
 
   &--form {
@@ -267,7 +276,10 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    margin-left: 145px;
+    // margin-left: 145px;
     margin-top: 95px;
+
+    grid-column: 2/5;
+    margin-left: 19px;
   }
 }

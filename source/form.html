@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -72,7 +78,7 @@
       </nav>
       <p class="heading page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
-    <script>
+    <!-- <script>
       let button = document.querySelector('.page-header__toggle');
       let nav = document.querySelector('.main-nav');
       let color = document.querySelector('.page-header__head-line');
@@ -82,7 +88,7 @@
         nav.classList.toggle('main-nav--opened');
         color.classList.toggle('page-header__head-line--opened');
       })
-    </script>
+    </script> -->
     <main class="page-main">
       <div class="page-main__title-wrapper">
         <span class="page-main__title">
@@ -296,5 +302,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
