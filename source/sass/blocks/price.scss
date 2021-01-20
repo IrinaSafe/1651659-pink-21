@@ -30,7 +30,11 @@
 
   @media screen and (min-width: $media-desktop) {
     padding: 144px 130px 50px;
-    width: auto;
+    // width: auto;
+
+    max-width: 940px;
+    width: 100%;
+    margin: auto;
   }
 }
 
