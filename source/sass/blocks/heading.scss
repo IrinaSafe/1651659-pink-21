@@ -1,5 +1,4 @@
 .heading {
-  // @include zero-margins;
   color: $heading-color;
   font-size: $heading-font-size;
   font-weight: $heading-font-weight;
@@ -15,9 +14,9 @@
   }
 
   &--blue {
-    // @extend %p-general-style;
     @include zero-margins;
     color: $color-blue;
+    line-height: 120%;
 
     @media screen and (min-width: $media-tablet) {
       line-height: 54px;
@@ -29,7 +28,7 @@
   }
 
   &--contacts {
-    margin-bottom: 29px;
+    margin-bottom: 32px;
 
     @media screen and (min-width: $media-tablet) {
       margin-bottom: 0;

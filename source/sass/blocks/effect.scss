@@ -72,7 +72,6 @@
 }
 
 .effect__text {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $effect-text-font-size;
   font-weight: $effect-text-font-weight;
@@ -97,7 +96,6 @@
 }
 
 .effect__link {
-  // @extend %a-general-style;
   @include decoration;
   font-size: $effect-link-font-size;
   font-weight: $effect-link-font-weight;

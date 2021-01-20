@@ -4,43 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
-    <link rel="preload" href="fonts/opensans.woff" as="font">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "../img/Mobile-catalog.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 660px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "../img/Tablet-catalog.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1200px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "../img/Desktop-catalog.png" );
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__head-line">
-        <a class="page-header__link">
+        <a class="page-header__link" href="index.html">
           <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
             <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
           </svg>
@@ -79,17 +51,6 @@
       </nav>
       <p class="heading page-header__title page-header__title--catalog">Фотографии<br> пользователей</p>
     </header>
-    <!-- <script>
-      let button = document.querySelector('.page-header__toggle');
-      let nav = document.querySelector('.main-nav');
-      let color = document.querySelector('.page-header__head-line');
-
-      button.addEventListener('click', () => {
-        button.classList.toggle('page-header__toggle--opened');
-        nav.classList.toggle('main-nav--opened');
-        color.classList.toggle('page-header__head-line--opened');
-      })
-    </script> -->
     <main class="page-main">
       <div class="page-main__title-wrapper page-main__title-wrapper--catalog ">
         <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи!&nbsp;<br>Видите, как не хватает ваших?</p>

@@ -5,10 +5,10 @@
 .contacts__list {
   @include list-style;
   @include zero-margins;
-  padding: 45px 20px 35px;
+  padding: 43px 20px 33px;
   display: grid;
   grid-template-areas: "title" "phone" "email" "adress";
-  gap: 17px;
+  gap: 13px;
 
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
@@ -16,8 +16,8 @@
       "title title"
       "phone email"
       "adress adress";
-    padding: 44px 20px 22px 20px;
-    gap: 32px;
+    padding: 45px 23px 23px 24px;
+    gap: 35px;
   }
 
   @media screen and (min-width: $media-desktop) {
@@ -25,7 +25,7 @@
     grid-template-areas:
       "title title title"
       "phone adress email";
-    padding: 60px 130px 20px;
+    padding: 60px 130px 15px;
     row-gap: 38px;
     column-gap: 23px;
 
@@ -40,7 +40,7 @@
 
   &--title {
     grid-area: title;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 
     @media screen and (min-width: $media-tablet) {
       margin: 0;
@@ -60,7 +60,7 @@
     margin-top: 5px;
 
     @media screen and (min-width: $media-tablet) {
-      margin-top: 10px;
+      // margin-top: 10px;
 
       @media screen and (min-width: $media-desktop) {
         margin-top: 0;
@@ -80,21 +80,21 @@
   margin: 0;
 
   @media screen and (min-width: $media-tablet) {
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 }
 
 .contacts__link {
-  // @extend %a-general-style;
   @include decoration;
   font-size: $contacts__link-font-size;
   font-weight: $contacts__link-font-weight;
   color: $contacts__link-color;
   cursor: pointer;
+  line-height: 33px;
 
   &:hover {
     color: $color-blue;

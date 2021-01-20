@@ -100,7 +100,6 @@
 }
 
 .advantages__list {
-  // @extend %ul-general-style;
   @include list-style;
   @include zero-margins;
   text-align: center;
@@ -110,7 +109,7 @@
   margin-top: 77px;
 
   li:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
 
   @media screen and (min-width: $media-tablet) {
@@ -154,10 +153,17 @@
     line-height: 30px;
     margin-bottom: 23px;
   }
+
+  &--br {
+    display: none;
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
+  }
 }
 
 .advantages__description {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $advantages-description-font-size;
   font-weight: $advantages-description-font-weight;

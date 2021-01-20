@@ -22,6 +22,7 @@
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
+    column-gap: 65px;
   }
 }
 
@@ -36,12 +37,15 @@
 
   @media screen and (min-width: $media-tablet) {
     border: 2px solid $color-grey;
-    // padding: 20px 60px;
     padding: 42px 60px 55px;
 
     &:nth-of-type(even) {
       background-color: $color-white;
     }
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 42px 20px 55px;
   }
 
   &--name {
@@ -68,7 +72,7 @@
     }
 
     @media screen and (min-width: $media-desktop) {
-      padding-bottom: 57px;
+      padding: 43px 20px 55px 58px;
     }
   }
 
@@ -82,12 +86,16 @@
     }
 
     @media screen and (min-width: $media-desktop) {
-      padding-bottom: 14px;
+      padding: 35px 60px 14px;
     }
   }
 
   &--app {
     grid-area: app;
+
+    @media screen and (min-width: $media-desktop) {
+      padding: 42px 20px 55px 15px;
+    }
   }
 
   &--emotions {
@@ -96,13 +104,12 @@
     @media screen and (min-width: $media-tablet) {
       margin-top: 20px;
       padding-bottom: 46px;
-      padding-top: 40px;
+      padding-top: 35px;
     }
 
     @media screen and (min-width: $media-desktop) {
       margin-top: 17px;
-      padding-bottom: 40px;
-      padding-top: 35px;
+      padding: 35px 57px 40px;
     }
   }
 }
@@ -119,7 +126,7 @@
 
   @media screen and (min-width: $media-tablet) {
     position: inherit;
-    padding: 0 10px;
+    padding: 0 36px;
     width: max-content;
   }
 
@@ -127,7 +134,7 @@
     padding: 20px 40px 0 48px;
 
     @media screen and (min-width: $media-tablet) {
-      padding: 0 10px;
+      padding: 0 36px;
     }
   }
 
@@ -138,10 +145,21 @@
       display: block;
     }
   }
+
+  &--app {
+    @media screen and (min-width: $media-desktop) {
+      padding: 0 10px 0 20px;
+    }
+  }
+
+  &--progress {
+    @media screen and (min-width: $media-desktop) {
+      padding: 0 45px 0 10px;
+    }
+  }
 }
 
 .form__fieldset-textarea {
-  // width: -webkit-fill-available;
   box-sizing: border-box;
   height: 197px;
   font-weight: 400;

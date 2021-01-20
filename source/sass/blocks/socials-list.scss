@@ -1,5 +1,4 @@
 .socials-list {
-  // @extend %ul-general-style;
   @include list-style;
   @include zero-margins;
   display: flex;
@@ -33,7 +32,6 @@
 }
 
 .socials-list__link {
-  // @extend %a-general-style;
   @include decoration;
   display: block;
   width: 51px;

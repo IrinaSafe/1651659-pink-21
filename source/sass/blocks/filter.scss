@@ -32,7 +32,7 @@
       background-image: url("../img/crop.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 3px;
+      left: 0;
       width: 22px;
       height: 22px;
     }
@@ -43,7 +43,7 @@
       background-image: url("../img/fill.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 3px;
+      left: 0;
       width: 24px;
       height: 22px;
     }
@@ -54,7 +54,7 @@
       background-image: url("../img/contrast.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 6px;
+      left: 1px;
       width: 16px;
       height: 16px;
     }
@@ -84,6 +84,7 @@
     &:nth-of-type(3)::before {
       width: 32px;
       height: 32px;
+      left: 6px;
     }
   }
 }
