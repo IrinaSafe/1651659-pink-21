@@ -4,7 +4,7 @@
 
 .footer__wrapper {
   text-align: center;
-  padding: 40px 20px 40px;
+  padding: 39px 20px 40px;
   display: flex;
   flex-direction: column;
 
@@ -39,17 +39,12 @@
 }
 
 .footer__link {
-  // @extend %a-general-style;
   @include decoration;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   @media screen and (min-width: $media-tablet) {
     margin-bottom: 0;
   }
-}
-
-.footer-social {
-  //Nothing
 }
 
 .footer__developer {
@@ -59,7 +54,6 @@
 }
 
 .footer__developer-link {
-  // @extend %a-general-style;
   @include decoration;
   display: flex;
   align-items: center;

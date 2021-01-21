@@ -33,24 +33,17 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    // grid-template-columns: 450px 1fr 1fr;
-    grid-template-rows: 110px auto;
-    // grid-template-areas:
-    //   "top nav nav"
-    //   "heading . ."
-    //   "download . ."
-    //   "image image image";
-    background: url("../img/back-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-
     grid-template-columns: calc((100% - 940px) / 2) 1fr 1fr 1fr calc((100% - 940px) / 2);
     grid-template-areas:
       "top top nav nav nav"
       ". heading . . ."
       ". download . . ."
       ". image image image .";
+    grid-template-rows: 110px auto;
+    background: url("../img/back-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
@@ -254,7 +247,6 @@
     padding: 25px 20px 77px;
 
     @media screen and (min-width: $media-tablet) {
-      // padding: 61px 80px 88px;
       padding: 61px 80px 128px;
     }
 
@@ -276,10 +268,8 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    // margin-left: 145px;
-    margin-top: 95px;
-
     grid-column: 2/5;
+    margin-top: 95px;
     margin-left: 19px;
   }
 }

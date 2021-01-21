@@ -1,7 +1,6 @@
 .field {
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 20px;*/
 
   @media screen and (min-width: $media-tablet) {
     flex-direction: column-reverse;

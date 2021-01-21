@@ -4,40 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение «Pink»</title>
-    <link rel="preload" href="fonts/opensans.woff" as="font">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "../img/Mobile-form.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 660px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "../img/Tablet-form.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1200px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "../img/Desktop-form.png" );
-        }
-      }
-    </style>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__head-line">
-        <a class="page-header__link">
+        <a class="page-header__link" href="index.html">
           <picture>
             <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
               <use xlink:href="img/header-logo-mobile.svg#headerLogoMobile"></use>
@@ -78,17 +53,6 @@
       </nav>
       <p class="heading page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
-    <!-- <script>
-      let button = document.querySelector('.page-header__toggle');
-      let nav = document.querySelector('.main-nav');
-      let color = document.querySelector('.page-header__head-line');
-
-      button.addEventListener('click', () => {
-        button.classList.toggle('page-header__toggle--opened');
-        nav.classList.toggle('main-nav--opened');
-        color.classList.toggle('page-header__head-line--opened');
-      })
-    </script> -->
     <main class="page-main">
       <div class="page-main__title-wrapper">
         <span class="page-main__title">
@@ -126,7 +90,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--progress form__fieldset--background-color">
-          <legend class="form__fieldset-legend">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__fieldset-legend form__fieldset-legend--progress">Ваши безбашенные достижения в путешествии</legend>
             <ul class="fieldset-list fieldset-list--choice fieldset-list--grid">
               <li>
                 <label class="inline-field">
@@ -151,7 +115,7 @@
                   <input
                     class="inline-field__input-checkbox"
                     type="checkbox">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Видел Чака Нориса</span>
+                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Видел Чака Норриса</span>
                 </label>
               </li>
               <li>
@@ -199,13 +163,13 @@
                 class="field__input field__input--contacts field__input--mail-image"
                 type="email"
                 name="email"
-                placeholder="Введите почту*">
+                placeholder="Введите почту *">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--app form__fieldset--background-color  context-class__fieldset context-class__fieldset--app">
-          <legend class="form__fieldset-legend form__fieldset-legend--aplication-hidden">С каким приложением путешествовали?</legend>
+          <legend class="form__fieldset-legend form__fieldset-legend--app">С каким приложением путешествовали?</legend>
             <ul class="fieldset-list fieldset-list--radio">
               <li>
                 <label class="inline-field">

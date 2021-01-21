@@ -67,7 +67,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 80px;
+    gap: 0;
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
@@ -84,6 +84,14 @@
 
   @media screen and (min-width: $media-desktop) {
     margin-top: -77px;
+
+    &:first-child {
+      margin-left: -40px;
+    }
+
+    &:last-child {
+      margin-right: -40px;
+    }
   }
 }
 
@@ -100,7 +108,6 @@
 }
 
 .advantages__list {
-  // @extend %ul-general-style;
   @include list-style;
   @include zero-margins;
   text-align: center;
@@ -110,7 +117,7 @@
   margin-top: 77px;
 
   li:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
 
   @media screen and (min-width: $media-tablet) {
@@ -154,10 +161,17 @@
     line-height: 30px;
     margin-bottom: 23px;
   }
+
+  &--br {
+    display: none;
+
+    @media screen and (min-width: $media-desktop) {
+      display: inline;
+    }
+  }
 }
 
 .advantages__description {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $advantages-description-font-size;
   font-weight: $advantages-description-font-weight;

@@ -7,8 +7,6 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    // padding: 35px 130px;
-
     margin: auto;
     padding: 35px 130px;
     max-width: 940px;
@@ -55,7 +53,6 @@
 }
 
 .reviews__author-name {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $author-name-font-size;
   font-weight: $author-name-font-weight;
@@ -74,7 +71,6 @@
 }
 
 .reviews__author-age-profession {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $author-age-profession-font-size;
   font-weight: $author-age-profession-font-weight;
@@ -98,13 +94,12 @@
 }
 
 .reviews__author-text {
-  // @extend %p-general-style;
   @include zero-margins;
   font-size: $author-text-font-size;
   font-weight: $author-text-font-weight;
   color: $author-text-color;
   line-height: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media screen and (min-width: $media-tablet) {
     font-size: $author-text-font-size--tablet;
