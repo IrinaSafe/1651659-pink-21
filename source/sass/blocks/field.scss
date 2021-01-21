@@ -72,7 +72,7 @@
   &--mail-image {
     @media screen and (min-width: $media-tablet) {
       width: auto;
-      background: url("../img/mail_icone.svg");
+      background-image: url("../img/mail_icone.svg");
       background-repeat: no-repeat;
       background-position: 100%;
       padding-right: 60px;
