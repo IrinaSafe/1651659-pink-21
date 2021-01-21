@@ -217,7 +217,7 @@ const build = gulp.series(
     stylesCopy,
     fonts,
     scripts,
-    minjs,
+    // minjs,
     images,
     createWebp,
     sprite),
