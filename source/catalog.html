@@ -8,6 +8,7 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -24,31 +25,32 @@
           </svg>
         </a>
         <button class="page-header__toggle logo" type="button"></button>
+
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
       <p class="heading page-header__title page-header__title--catalog">Фотографии<br> пользователей</p>
     </header>
     <main class="page-main">
@@ -63,10 +65,10 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x"/>
-                <source srcset="img/panorama-mob@1x.webp 1x, img/panorama-mob@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/panorama-mob@1x.webp 1x, img/panorama-mob@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x"/>
-                <img class="card__image card__image--panorama" src="img/panorama-mob@1x.jpg 1x" srcset="img/panorama-mob@2x.jpg 2x" alt="Панорама">
+                <img class="card__image card__image--panorama" src="img/panorama-mob@1x.jpg" srcset="img/panorama-mob@2x.jpg 2x" alt="Панорама">
               </picture>
             </a>
             <div class="card__description card__description--panorama">
@@ -90,11 +92,11 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x"/>
-                <source srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-1-mobile@1x.jpg 1x" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
-            </picture>
+                <img class="card__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="card__description">
               <span class="card__name">
@@ -111,17 +113,17 @@
                 </span>
               </div>
             </div>
-          </div>
+          </li>
 
           <li class="cards-list__item card">
             <a class="card__link-image-area">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x"/>
-                <source srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-2-mobile@1x.jpg 1x" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото">
+                <img class="card__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото">
               </picture>
             </a>
             <div class="card__description">
@@ -146,10 +148,10 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x"/>
-                <source srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-3-mobile@1x.jpg 1x" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото">
+                <img class="card__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото">
               </picture>
             </a>
             <div class="card__description">
@@ -174,10 +176,10 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x"/>
-                <source srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-4-mobile@1x.jpg 1x" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото">
+                <img class="card__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото">
               </picture>
             </a>
             <div class="card__description">
@@ -203,10 +205,10 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.webp 1x, img/photo-5-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.webp 1x, img/photo-5-tablet@2x.webp 2x"/>
-                <source srcset="img/photo-5-mobile@1x.webp 1x, img/photo-5-mobile@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/photo-5-mobile@1x.webp 1x, img/photo-5-mobile@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-5-mobile@1x.jpg 1x" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото">
+                <img class="card__image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото">
               </picture>
             </a>
             <div class="card__description">
@@ -231,10 +233,10 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.webp 1x, img/photo-6-desktop@2x.webp 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.webp 1x, img/photo-6-tablet@2x.webp 2x"/>
-                <source srcset="img/photo-6-mobile@1x.webp 1x, img/photo-6-mobile@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/photo-6-mobile@1x.webp 1x, img/photo-6-mobile@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x"/>
-                <img class="card__image" src="img/photo-6-mobile@1x.jpg 1x" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото">
+                <img class="card__image" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото">
               </picture>
             </a>
             <div class="card__description">
@@ -256,6 +258,7 @@
         </ul>
       </section>
       <section class="publish">
+        <h2 class="visually-hidden">Публикация фото</h2>
         <p class="publish__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         <div class="publish__form-wrapper">
           <form class="form-publish" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
@@ -265,48 +268,44 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.webp 1x, img/photo-7-desktop@2x.webp 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.webp 1x, img/photo-7-tablet@2x.webp 2x"/>
-                  <source srcset="img/photo-7-mobile@1x.webp 1x, img/photo-7-mobile@2x.webp 2x"/>
+                  <source media="(min-width: 320px)" srcset="img/photo-7-mobile@1x.webp 1x, img/photo-7-mobile@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x"/>
-                  <img class="card__image card__image--post" src="img/photo-7-mobile@1x.jpg 1x" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото">
+                  <img class="card__image card__image--post" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фото">
                 </picture>
               </label>
             </fieldset>
 
             <fieldset class="form-publish__fieldset form-publish__fieldset-filters">
               <div class="form-publish__container filter">
-                <div class="filter-icon">
-                  <button class="filter-button" type="button" aria-label="Обрезка">
-                    <svg class="filter-button__image filter-button__image--crop" width="44" height="44">
-                      <use xlink:href="img/sprite.svg#crop"></use>
-                    </svg>
-                  </button>
-                  <button class="filter-button" type="button" aria-label="Заливка">
-                    <svg class="filter-button__image filter-button__image--fill" width="48" height="43">
-                      <use xlink:href="img/sprite.svg#fill"></use>
-                    </svg>
-                  </button>
-                  <button class="filter-button" type="button" aria-label="Контраст">
-                    <svg class="filter-button__image filter-button__image--contrast" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#contrast"></use>
-                    </svg>
-                  </button>
+                <div class="filter__row filter__row--crop">
+                  <svg class="filter__image filter__image--crop filter__image--active" width="44" height="44">
+                    <use xlink:href="../img/sprite.svg#crop"></use>
+                  </svg>
                 </div>
-                <div class="filter-ranges">
-                  <div class="filter__range">
-                    <div class="filter__line">
-                      <span class="filter__circle filter__circle--crop"></span>
-                    </div>
+                <div class="filter__row filter__row--fill">
+                <svg class="filter__image filter__image--fill" width="48" height="43">
+                  <use xlink:href="../img/sprite.svg#fill"></use>
+                </svg>
+              </div>
+                <div class="filter__row filter__row--contrast">
+                <svg class="filter__image filter__image--contrast" width="32" height="32">
+                  <use xlink:href="../img/sprite.svg#contrast"></use>
+                </svg>
+              </div>
+                <div class="filter__range filter__range--crop">
+                  <div class="filter__line">
+                    <span class="filter__circle filter__circle--active filter__circle--crop"></span>
                   </div>
-                  <div class="filter__range">
-                    <div class="filter__line">
-                      <span class="filter__circle filter__circle--fill"></span>
-                    </div>
+                </div>
+                <div class="filter__range filter__range--fill">
+                  <div class="filter__line">
+                    <span class="filter__circle filter__circle--fill"></span>
                   </div>
-                  <div class="filter__range">
-                    <div class="filter__line">
-                      <span class="filter__circle filter__circle--contrast"></span>
-                    </div>
+                </div>
+                <div class="filter__range filter__range--contrast">
+                  <div class="filter__line">
+                    <span class="filter__circle filter__circle--contrast"></span>
                   </div>
                 </div>
               </div>

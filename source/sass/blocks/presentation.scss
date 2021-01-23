@@ -1,11 +1,4 @@
 .presentation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: $color-lightgrey;
-}
-
-.presentation__wrapper {
   grid-area: download;
   display: flex;
   flex-direction: column;

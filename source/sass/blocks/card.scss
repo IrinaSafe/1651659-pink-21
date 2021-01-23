@@ -19,6 +19,17 @@
 
   &--post {
     width: auto;
+
+    @media screen and (min-width: $media-tablet) {
+      min-width: 300px;
+      height: 100%;
+    }
+
+    @media screen and (min-width: $media-desktop) {
+      width: 300px;
+      height: 400px;
+      margin-top: 8px;
+    }
   }
 }
 

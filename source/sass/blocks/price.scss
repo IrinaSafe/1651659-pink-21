@@ -2,13 +2,17 @@
   overflow-x: hidden;
   background-image: url("../img/table-background.svg");
   background-repeat: no-repeat;
-  background-position: 95% 0;
+  // background-position: 95% 0;
+  background-position: 100% 0%;
   background-size: cover;
   padding-top: 40px;
   padding-bottom: 48px;
 
   @media screen and (min-width: $media-tablet) {
-    padding-top: 38px;
+    // padding-top: 38px;
+    // padding-bottom: 25px;
+
+    padding-top: 65px;
     padding-bottom: 25px;
   }
 
@@ -22,21 +26,23 @@
 .price__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 66px 20px 0;
+  // padding: 66px 20px 0;
+  padding: 65px 20px 0;
 
   @media screen and (min-width: $media-tablet) {
     padding: 40px 20px;
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 144px 130px 50px;
+    // padding: 144px 130px 50px;
+    padding: 180px 130px 50px;
     max-width: 940px;
     width: 100%;
     margin: auto;
   }
 }
 
-.price-toggles {
+.price__toggles {
   @media screen and (min-width: $media-tablet) {
     display: none;
   }
