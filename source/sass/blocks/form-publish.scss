@@ -7,12 +7,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "image filters";
     gap: 45px;
-    padding: 40px 20px 35px;
+    padding: 33px 20px 35px;
   }
 
   @media screen and (min-width: $media-desktop) {
     gap: 90px;
-    padding: 50px 60px 50px 77px;
+    padding: 40px 60px 40px 67px;
     grid-template-columns: 300px 1fr;
   }
 }
@@ -25,13 +25,16 @@
   text-align: center;
 
   @media screen and (min-width: $media-tablet) {
-    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    min-width: 300px;
   }
 
   @media screen and (min-width: $media-desktop) {
     text-align: left;
     margin: 0;
     padding-top: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -72,11 +75,14 @@
     border-top: none;
     padding-top: 65px;
     margin: 0;
+    padding-bottom: 0;
   }
 
   @media screen and (min-width: $media-desktop) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 145px;
+    padding-top: 140px;
+    padding-bottom: 0;
+    padding-left: 10px;
   }
 }

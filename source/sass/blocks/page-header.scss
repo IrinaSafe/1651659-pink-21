@@ -1,80 +1,71 @@
 .page-header {
   color: $color-white;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "top" "nav" "heading" "image" "download";
-  grid-template-rows: 69px auto;
-  background-image: url("../img/back-mobile.jpg");
+  grid-template-areas: "top" "heading" "image" "download";
+  grid-template-columns: auto;
+  background-color: $color-blue;
+  background-image: image-set("../img/back-mobile@2x.webp" 2x, "../img/back-mobile@1x.webp" 1x, "../img/back-mobile@2x.jpg" 2x, "../img/back-mobile.jpg" 1x);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 50% 0%;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
-  }
-
   @media screen and (min-width: $media-tablet) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 110px auto;
-    grid-template-areas:
-      "top top"
-      "nav nav"
-      "heading ."
-      "download ."
-      "image image";
-    background: url("../img/back-tablet.jpg");
+    grid-template-rows: auto;
+    grid-template-areas: "top top" "heading heading" "download image";
+    background: image-set("../img/back-tablet@2x.webp" 2x, "../img/back-tablet.webp" 1x, "../img/back-tablet@2x.jpg", "../img/back-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet@2x.jpg");
-    }
   }
 
   @media screen and (min-width: $media-desktop) {
     grid-template-columns: calc((100% - 940px) / 2) 1fr 1fr 1fr calc((100% - 940px) / 2);
-    grid-template-areas:
-      "top top nav nav nav"
-      ". heading . . ."
-      ". download . . ."
-      ". image image image .";
+    grid-template-areas: "top top top top top" ". heading . . ." ". download . . ." ". image image image .";
     grid-template-rows: 110px auto;
-    background: url("../img/back-desktop.jpg");
+    background: image-set("../img/back-desktop@2x.webp" 2x, "../img/back-desktop.webp" 1x, "../img/back-desktop@2x.jpg" 2x, "../img/back-desktop.jpg" 1x);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
-    }
   }
 }
 
 .page-header__link {
   @include decoration;
+  grid-area: logo;
+  padding-left: 20px;
+
+  @media screen and (min-width: $media-desktop) {
+    padding: 0;
+  }
 }
 
 .page-header__head-line {
   grid-area: top;
-  background-color: $color-blue;
-  padding: 20px;
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
   justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "logo button" "nav nav";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 69px auto;
+  box-sizing: border-box;
 
   @media screen and (min-width: $media-tablet) {
-    padding: 0 20px 0;
     align-items: center;
+    width: 100%;
+    grid-template-rows: 110px auto;
   }
 
   @media screen and (min-width: $media-desktop) {
-    padding: 0 0 0 130px;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
+    grid-template-areas: ". logo nav nav .";
+    grid-template-columns: calc((100% - 940px) / 2) 1fr 1fr 1fr calc((100% - 940px) / 2);
   }
 
   &--opened {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $color-blue;
   }
 }
 
@@ -85,88 +76,95 @@
   height: 24px;
   background-color: transparent;
   color: #ffffff;
-  width: 30px;
-
-  @media screen and (min-width: $media-desktop) {
-    display: none;
-  }
+  position: absolute;
+  // top: 24px;
+  top: 22px;
+  right: 18px;
+  width: 50px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 31px;
-    right: 18px;
-    width: 30px;
+    width: 50px;
     height: 4px;
-    background-color: #ffffff;
-    box-shadow: none;
-    transform: rotate(45deg);
-
-    @media screen and (min-width: $media-tablet) {
-      top: 52px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 31px;
-    right: 18px;
-    width: 30px;
-    height: 4px;
-    background-color: #ffffff;
-    box-shadow: none;
-    transform: rotate(-45deg);
-
-    @media screen and (min-width: $media-tablet) {
-      top: 52px;
-    }
+    background-color: $color-white;
+    box-shadow: 0 8px 0 0 $color-white, 0 16px 0 0 $color-white;
+    transform: none;
+    top: 0;
+    right: 0;
   }
 
   &:hover::before {
     background-color: $color-pink;
-    box-shadow: none;
-  }
-
-  &:hover::after {
-    background-color: $color-pink;
+    box-shadow: 0 8px 0 0 $color-pink, 0 16px 0 0 $color-pink;
   }
 
   &:active::before {
     opacity: 0.3;
   }
 
-  &:active::after {
-    opacity: 0.3;
+  @media screen and (min-width: $media-tablet) {
+    top: 45px;
+  }
+
+  @media screen and (min-width: $media-desktop) {
+    display: none;
   }
 
   &--opened {
-    &::after {
-      display: none;
+    width: 30px;
+    top: 23px;
+
+    @media screen and (min-width: $media-tablet) {
+      top: 46px;
     }
 
     &::before {
       content: "";
       position: absolute;
-      width: 50px;
-      top: 22px;
-      right: 20px;
+      width: 30px;
       height: 4px;
-      background-color: $color-white;
-      box-shadow: 0 8px 0 0 $color-white, 0 16px 0 0 $color-white;
-      transform: none;
+      background-color: #ffffff;
+      box-shadow: none;
+      transform: rotate(45deg);
+      top: 9px;
+      right: 0;
 
       @media screen and (min-width: $media-tablet) {
-        top: 45px;
+        // top: 11px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+      box-shadow: none;
+      transform: rotate(-45deg);
+      top: 9px;
+      right: 0;
+
+      @media screen and (min-width: $media-tablet) {
+        // top: 11px;
       }
     }
 
     &:hover::before {
       background-color: $color-pink;
-      box-shadow: 0 8px 0 0 $color-pink, 0 16px 0 0 $color-pink;
+      box-shadow: none;
+    }
+
+    &:hover::after {
+      background-color: $color-pink;
     }
 
     &:active::before {
+      opacity: 0.3;
+    }
+
+    &:active::after {
       opacity: 0.3;
     }
   }
@@ -216,10 +214,13 @@
   font-size: $page-header__title-font-size;
   font-weight: $page-header__title-font-weight;
   color: $page-header__title-color;
-  margin: 0;
   grid-area: heading;
   padding: 25px 20px 44px;
   line-height: 33px;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media screen and (min-width: $media-tablet) {
     grid-column: 1/3;
@@ -229,8 +230,7 @@
   }
 
   @media screen and (min-width: $media-desktop) {
-    // grid-column: 1/5;
-    padding: 61px 130px 87px 130px;
+    padding: 61px 0 87px 0;
 
     grid-column: 1/6;
   }
@@ -259,16 +259,18 @@
 .page-header__image {
   grid-area: image;
   line-height: 0;
+  text-align: center;
 
   @media screen and (min-width: $media-tablet) {
     grid-row: 3/5;
     grid-column: 1/3;
     z-index: 1;
     margin-top: 70px;
+    text-align: right;
   }
 
   @media screen and (min-width: $media-desktop) {
-    grid-column: 2/5;
+    grid-column: 2/6;
     margin-top: 95px;
     margin-left: 19px;
   }

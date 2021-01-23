@@ -2,7 +2,7 @@
   background-color: $color-white;
 }
 
-.advantages-wrapper {
+.advantages__wrapper {
   background-image: url("../img/grey_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +95,7 @@
   }
 }
 
-.advantages-image {
+.advantages__image {
   transform: translateY(47px);
 
   @media screen and (min-width: $media-tablet) {
@@ -162,7 +162,7 @@
     margin-bottom: 23px;
   }
 
-  &--br {
+  &-br {
     display: none;
 
     @media screen and (min-width: $media-desktop) {
@@ -183,7 +183,7 @@
     line-height: 30px;
   }
 
-  &--br {
+  &-br {
     display: none;
 
     @media screen and (min-width: $media-tablet) {

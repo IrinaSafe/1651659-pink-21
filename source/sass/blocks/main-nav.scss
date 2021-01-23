@@ -1,21 +1,27 @@
 .main-nav {
-  grid-area: nav;
-  display: block;
-  color: $main-nav-color;
-  height: max-content;
-  background-color: $color-blue;
-  line-height: 29px;
+  display: none;
 
   &--opened {
-    display: none;
+    grid-area: nav;
+    display: block;
+    color: $main-nav-color;
+    height: max-content;
+    background-color: $color-blue;
+    line-height: 29px;
+
+    @media screen and (min-width: $media-desktop) {
+      display: none;
+    }
   }
 
   @media screen and (min-width: $media-desktop) {
+    grid-area: nav;
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
-    padding: 0 130px 0 0;
+    // padding: 0 130px 0 0;
+    background-color: transparent;
   }
 }
 

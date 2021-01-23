@@ -13,69 +13,68 @@
     <header class="page-header">
       <div class="page-header__head-line">
         <a class="page-header__link">
-          <picture>
-            <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
-              <use xlink:href="img/sprite.svg#headerLogoMobile"></use>
-            </svg>
-            <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#headerLogoTablet"></use>
-            </svg>
-            <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
-              <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
-            </svg>
-          </picture>
+          <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#headerLogoMobile"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#headerLogoTablet"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
+          </svg>
         </a>
         <button class="page-header__toggle logo" type="button"></button>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
 
       <p class="heading presentation__heading">Взгляните на жизнь иначе!</p>
       <div class="page-header__image">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/phone_header_desk.png 1x, img/phone_header_desk@2x.png 2x"/>
           <source media="(min-width: 660px)" srcset="img/phone_header_tablet.png 1x, img/phone_header_tablet@2x.png 2x"/>
-          <img src="img/phone_header_mob.png" srcset="img/phone_header_mob@2x.png 2x">
+          <img src="img/phone_header_mob.png" srcset="img/phone_header_mob@2x.png 2x" alt="Phone">
         </picture>
       </div>
-      <div class="presentation__wrapper">
+      <div class="presentation">
         <button class="button button--download" type="button">Скачать приложение</button>
         <ul class="presentation__list">
           <li class="presentation__item">
             <a class="presentation__logo" href="https://www.apple.com/ru/ios/app-store/">
-              <img src="img/apple-logo.svg" width="47" height="56" alt="Приложение «Pink»">
+              <img src="img/apple-logo.svg" width="47" height="56" alt="Apple logo»">
             </a>
           </li>
           <li class="presentation__item">
             <a class="presentation__logo" href="https://play.google.com/store">
-              <img src="img/android-logo.svg" width="43" height="47" alt="Приложение «Pink»">
+              <img src="img/android-logo.svg" width="43" height="47" alt="Android logo">
             </a>
           </li>
           <li class="presentation__item">
             <a class="presentation__logo" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Приложение «Pink»">
+              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Microsoft logo">
             </a>
           </li>
         </ul>
@@ -92,19 +91,28 @@
           <p class="heading heading--blue heading--contacts">Устали от серости мегаполиса?</p>
           <p class="heading heading--blue">Нам есть, что вам<br>предложить!</p>
         </div>
-        <div class="advantages-wrapper">
+        <div class="advantages__wrapper">
           <ul class="advantages__list-image">
             <li class="advantages__item-image">
-              <img class="advantages-image" src="img/phone1_desk@1x.png" srcset="img/phone1_desk@2x.png 2x">
-            </li>
-            <li class="advantages__item-image">
-              <img class="advantages-image" src="img/phone2_desk@1x.png" srcset="img/phone2_desk@2x.png 2x">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/phone1_desk@1x.webp 1x, img/phone1_desk@2x.webp 2x"/>
+                <img class="advantages__image" src="img/phone1_desk@1x.png" srcset="img/phone1_desk@2x.png 2x" width="308" height="382" alt="Phone1">
+              </picture>
             </li>
             <li class="advantages__item-image">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/phone2_desk@1x.webp 1x, img/phone2_desk@2x.webp 2x"/>
+                <img class="advantages__image" src="img/phone2_desk@1x.png" srcset="img/phone2_desk@2x.png 2x" width="308" height="382" alt="Phone2">
+              </picture>
+            </li>
+            <li class="advantages__item-image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/phone3_desk@1x.webp 1x, img/phone3_desk@2x.webp 2x"/>
+                <source media="(min-width: 660px)" srcset="img/hone3_tablet@1x.webp 1x, img/phone3_tablet@2x.webp 2x"/>
+                <source media="(min-width: 320px)" srcset="img/phone3-mob@1x.webp 1x, img/phone3_mob@2x.webp 2x"/>
                 <source media="(min-width: 1200px)" srcset="img/phone3_desk@1x.png 1x, img/phone3_desk@2x.png 2x"/>
                 <source media="(min-width: 660px)" srcset="img/phone3_tablet@1x.png 1x, img/phone3_tablet@2x.png 2x"/>
-                <img class="advantages-image" src="img/phone3-mob@1x.png" srcset="img/phone3_mob@2x.png 2x">
+                <img class="advantages__image" src="img/phone3-mob@1x.png" srcset="img/phone3_mob@2x.png 2x" alt="Phone3">
               </picture>
             </li>
           </ul>
@@ -118,11 +126,11 @@
             <li>
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="advantages__description--br"><br></span>усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="advantages__description-br"><br></span>усилить эффект
               </p>
             </li>
             <li>
-              <h3 class="advantages__title">Заводит <span class="advantages__title--br"><br></span>новых друзей</h3>
+              <h3 class="advantages__title">Заводит <span class="advantages__title-br"><br></span>новых друзей</h3>
               <p class="advantages__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
@@ -181,7 +189,7 @@
         <div class="price__wrapper">
           <table class="table">
             <tr>
-              <th class="table--hidden"></th>
+              <th class="table__tr-hidden"></th>
               <th class="table__th">
                 <span class="table__th-text">База</span><br>
                 <span class="table__th-price">1,99 USD</span>
@@ -200,7 +208,7 @@
               <td class="table__td table__td-text table__td--not-mobile">Розовый фильтр</td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Розовый фильтр
                   </span>
                   <span>
@@ -210,7 +218,7 @@
               </td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Розовый фильтр
                   </span>
                   <span>
@@ -220,7 +228,7 @@
               </td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Розовый фильтр
                   </span>
                   <span>
@@ -234,7 +242,7 @@
               <td class="table__td table__td-text table__td--not-mobile">Смайлики</td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Смайлики
                   </span>
                   <span class="table__td-icon">
@@ -244,7 +252,7 @@
               </td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Смайлики
                   </span>
                   <span class="table__td-icon">
@@ -254,7 +262,7 @@
               </td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Смайлики
                   </span>
                   <span class="table__td-icon">
@@ -268,7 +276,7 @@
               <td class="table__td table__td-text table__td--not-mobile">Комментарии</td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Комментарии
                   </span>
                   <span class="table__td-icon">
@@ -278,7 +286,7 @@
               </td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Комментарии
                   </span>
                   <span class="table__td-icon">
@@ -288,7 +296,7 @@
               </td>
               <td class="table__td">
                 <div class="table__td-wrapper">
-                  <span class="table__td-text table__td--hidden">
+                  <span class="table__td-text table__td-text--hidden">
                     Комментарии
                   </span>
                   <span class="table__td-icon">
@@ -298,7 +306,7 @@
               </td>
             </tr>
           </table>
-          <div class="slider price-toggles">
+          <div class="slider price__toggles">
             <button class="slider__toggle"></button>
             <button class="slider__toggle slider__toggle--active"></button>
             <button class="slider__toggle"></button>
@@ -332,7 +340,10 @@
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="map__wrapper">
-          <iframe class="map__content" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3d0a4a2aecfb0830db62f78e2dad5cb10fafa62c326aabbc062091b202293c1&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          <svg class="map__image" width="1400" height="123">
+            <use xlink:href="img/sprite.svg#trfooter"></use>
+          </svg>
+          <iframe class="map__content" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b3ade41d62f1d2357355f986dfef9ba81e25d143447894ffcc78371809d4a0a&amp;source=constructor"></iframe>
         </div>
       </section>
     </main>

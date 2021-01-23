@@ -15,6 +15,23 @@
 }
 
 .field__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: $media-tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &--contacts {
+    @media screen and (min-width: $media-tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.field__title {
   font-size: $field__label-font-size;
   font-weight: $field__label-font-weight;
   color: $field__label-color;
@@ -32,7 +49,9 @@
     padding: 15px 0 0 25px;
 
     @media screen and (min-width: $media-tablet) {
-      padding: 12px 0 0 16px;
+      // padding: 12px 0 0 16px;
+      padding: 12px 0 0 31px;
+      width: 100%;
     }
   }
 }
@@ -44,6 +63,8 @@
   font-weight: $field__input-font-weight;
   color: $field__input-color;
   padding: 19px 0 18px 20px;
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
     border: 2px solid $color-blue;
@@ -61,7 +82,7 @@
 
   &--phone-image {
     @media screen and (min-width: $media-tablet) {
-      width: auto;
+      // width: auto;
       background-image: url("../img/phone_icone.svg");
       background-repeat: no-repeat;
       background-position: 100%;
@@ -71,7 +92,7 @@
 
   &--mail-image {
     @media screen and (min-width: $media-tablet) {
-      width: auto;
+      // width: auto;
       background-image: url("../img/mail_icone.svg");
       background-repeat: no-repeat;
       background-position: 100%;

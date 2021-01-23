@@ -8,49 +8,49 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__head-line">
         <a class="page-header__link" href="index.html">
-          <picture>
-            <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
-              <use xlink:href="img/sprite.svg#headerLogoMobile"></use>
-            </svg>
-            <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#headerLogoTablet"></use>
-            </svg>
-            <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
-              <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
-            </svg>
-        </picture>
+          <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#headerLogoMobile"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#headerLogoTablet"></use>
+          </svg>
+          <svg class="page-header__logo logo page-header__logo--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
+          </svg>
         </a>
         <button class="page-header__toggle logo" type="button"></button>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
       <p class="heading page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
     <main class="page-main">
@@ -60,31 +60,37 @@
         </span>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset form__fieldset--name        context-class__fieldset form__fieldset--border-hidden">
+        <fieldset class="form__fieldset form__fieldset--name">
           <ul class="fieldset-list">
             <li class="field field--row">
-              <label class="field__label">Фамилия:</label>
-              <input
-                class="field__input"
-                type="text"
-                name="name"
-                placeholder="Укажите фамилию*">
+              <label class="field__label">
+                <span class="field__title">Фамилия:</span>
+                <input
+                  class="field__input"
+                  type="text"
+                  name="name"
+                  placeholder="Укажите фамилию*">
+                </label>
             </li>
             <li class="field field--row">
-              <label class="field__label">Имя:</label>
-              <input
-                class="field__input"
-                type="text"
-                name="name"
-                placeholder="Введите ваше имя*">
+              <label class="field__label">
+                <span class="field__title">Имя:</span>
+                <input
+                  class="field__input"
+                  type="text"
+                  name="name"
+                  placeholder="Введите ваше имя*">
+              </label>
             </li>
             <li class="field field--row">
-              <label class="field__label">Отчество:</label>
-              <input
-                class="field__input"
-                type="text"
-                name="name"
-                placeholder="Ну и отчество тоже">
+              <label class="field__label">
+                <span class="field__title">Отчество:</span>
+                <input
+                  class="field__input"
+                  type="text"
+                  name="name"
+                  placeholder="Ну и отчество тоже">
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -98,7 +104,7 @@
                     class="inline-field__input-checkbox"
                     type="checkbox"
                     checked="checked">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Сделал селфи с акулой</span>
+                  <span class="inline-field__label"><span class="inline-field__label-checkbox"></span>Сделал селфи с акулой</span>
                 </label>
               </li>
               <li>
@@ -107,7 +113,7 @@
                     class="inline-field__input-checkbox"
                     type="checkbox"
                     checked="checked">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Обгорел на пляже</span>
+                  <span class="inline-field__label"><span class="inline-field__label-checkbox"></span>Обгорел на пляже</span>
                 </label>
               </li>
               <li>
@@ -115,7 +121,7 @@
                   <input
                     class="inline-field__input-checkbox"
                     type="checkbox">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Видел Чака Норриса</span>
+                  <span class="inline-field__label"><span class="inline-field__label-checkbox"></span>Видел Чака Норриса</span>
                 </label>
               </li>
               <li>
@@ -123,7 +129,7 @@
                   <input
                     class="inline-field__input-checkbox"
                     type="checkbox">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Накупил сувениров</span>
+                  <span class="inline-field__label"><span class="inline-field__label-checkbox"></span>Накупил сувениров</span>
                 </label>
               </li>
               <li>
@@ -132,7 +138,7 @@
                     class="inline-field__input-checkbox"
                     type="checkbox"
                     checked="checked">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Удержал башню</span>
+                  <span class="inline-field__label"><span class="inline-field__label-checkbox"></span>Удержал башню</span>
                 </label>
               </li>
               <li>
@@ -140,7 +146,7 @@
                   <input
                     class="inline-field__input-checkbox"
                     type="checkbox">
-                  <span class="inline-field__label"><span class="inline-field__label--checkbox"></span>Разгромил отель</span>
+                  <span class="inline-field__label"><span class="inline-field__label-checkbox"></span>Разгромил отель</span>
                 </label>
               </li>
             </ul>
@@ -150,25 +156,29 @@
           <legend class="form__fieldset-legend form__fieldset-legend--content form__fieldset-legend--contacts-hidden">Контактная информация</legend>
           <ul class="fieldset-list fieldset-list--general fieldset-list--contacts-image">
             <li class="field field--number">
-              <label class="field__label field__label--contacts">Номер телефона</label>
-              <input
-                class="field__input field__input--contacts  field__input--phone-image"
-                type="tel"
-                name="phone"
-                placeholder="Номер, пожалуйста">
+              <label class="field__label field__label--contacts">
+                <span class="field__title field__title--contacts">Номер телефона</span>
+                <input
+                  class="field__input field__input--contacts  field__input--phone-image"
+                  type="tel"
+                  name="phone"
+                  placeholder="Номер, пожалуйста">
+              </label>
             </li>
             <li class="field field--adress">
-              <label class="field__label field__label--contacts">Адрес почты</label>
-              <input
-                class="field__input field__input--contacts field__input--mail-image"
-                type="email"
-                name="email"
-                placeholder="Введите почту *">
+              <label class="field__label field__label--contacts">
+                <span class="field__title field__title--contacts">Адрес почты</span>
+                <input
+                  class="field__input field__input--contacts field__input--mail-image"
+                  type="email"
+                  name="email"
+                  placeholder="Введите почту *">
+              </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--app form__fieldset--background-color  context-class__fieldset context-class__fieldset--app">
+        <fieldset class="form__fieldset form__fieldset--app">
           <legend class="form__fieldset-legend form__fieldset-legend--app">С каким приложением путешествовали?</legend>
             <ul class="fieldset-list fieldset-list--radio">
               <li>
@@ -178,7 +188,7 @@
                     type="radio"
                     name="browser"
                     checked="checked">
-                  <span class="inline-field__label"><span class="inline-field__label--radio"></span>Pink для iOS</span>
+                  <span class="inline-field__label"><span class="inline-field__label-radio"></span>Pink для iOS</span>
                 </label>
               </li>
               <li>
@@ -187,7 +197,7 @@
                     class="inline-field__input-radio"
                     type="radio"
                     name="browser">
-                  <span class="inline-field__label"><span class="inline-field__label--radio"></span>Pink на Android</span>
+                  <span class="inline-field__label"><span class="inline-field__label-radio"></span>Pink на Android</span>
                 </label>
               </li>
               <li>
@@ -196,7 +206,7 @@
                     class="inline-field__input-radio"
                     type="radio"
                     name="browser">
-                  <span class="inline-field__label"><span class="inline-field__label--radio"></span>Windows Phone</span>
+                  <span class="inline-field__label"><span class="inline-field__label-radio"></span>Windows Phone</span>
                 </label>
               </li>
             </ul>
@@ -209,7 +219,7 @@
 
         <div class="feedback">
           <button class="button  button--square" type="submit" value="Отправить форму">Отправить форму</button>
-          <span class="feedback-text"><span class="feedback-text__icon">*</span>&nbsp;&mdash;&nbsp;Обязательные<span class="feedback-text--desk-only">&nbsp;для заполнения</span>&nbsp;поля</span>
+          <span class="feedback__text"><span class="feedback__icon">*</span>&nbsp;&mdash;&nbsp;Обязательные<span class="feedback__text feedback__text--desk-only">&nbsp;для заполнения</span>&nbsp;поля</span>
         </div>
       </form>
       <section class="modal-windows">
@@ -225,7 +235,7 @@
         <div class="modal-windows__container modal-windows__container--send">
           <h3 class="modal-windows__title">Ваша заявка отправлена</h3>
           <p class="modal-windows__description modal-windows__description--send">
-            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <span class="modal-windows__description--br"><br></span>оповестим вас.
+            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <span class="modal-windows__description-br"><br></span>оповестим вас.
           </p>
           <div class="modal-windows__footer modal-windows__footer--send">
             <button class="button button--modal-windows">Закрыть окно</button>

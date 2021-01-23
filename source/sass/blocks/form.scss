@@ -171,16 +171,18 @@
   appearance: none;
   margin-top: 58px;
   outline: none;
-  padding: 20px;
+  padding: 4px 20px;
   width: 100%;
 
   @media screen and (min-width: $media-tablet) {
     margin-top: 0;
     height: 189px;
+    padding: 14px 20px;
   }
 
   @media screen and (min-width: $media-desktop) {
     height: 124px;
+    padding: 10px 20px;
   }
 
   &:hover {
