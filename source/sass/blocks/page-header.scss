@@ -4,7 +4,7 @@
   grid-template-areas: "top" "heading" "image" "download";
   grid-template-columns: auto;
   background-color: $color-blue;
-  background-image: image-set("../img/back-mobile@2x.webp" 2x, "../img/back-mobile@1x.webp" 1x, "../img/back-mobile@2x.jpg" 2x, "../img/back-mobile.jpg" 1x);
+  background-image: image-set("../img/back-mobile@2x.webp" 2x, "../img/back-mobile.webp" 1x, "../img/back-mobile@2x.jpg" 2x, "../img/back-mobile.jpg" 1x);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -42,7 +42,7 @@
 
 .page-header__head-line {
   grid-area: top;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-blue;
   justify-content: space-between;
   align-items: center;
   display: grid;
@@ -63,13 +63,20 @@
     grid-template-areas: ". logo nav nav .";
     grid-template-columns: calc((100% - 940px) / 2) 1fr 1fr 1fr calc((100% - 940px) / 2);
   }
+}
 
-  &--opened {
-    background-color: $color-blue;
-  }
+// Дополнительный класс для реализации с js
+.page-header__head-line--close {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__toggle {
+  display: none;
+}
+
+  // Для реализации с js
+.page-header__toggle-js {
+  display: block;
   border: none;
   cursor: pointer;
   outline: none;
@@ -77,7 +84,6 @@
   background-color: transparent;
   color: #ffffff;
   position: absolute;
-  // top: 24px;
   top: 22px;
   right: 18px;
   width: 50px;

@@ -41,7 +41,7 @@
     font-size: $main-title-font-size--tablet;
   }
 
-  &--mobile-hidden {
+  &-hidden {
     display: none;
 
     @media screen and (min-width: $media-tablet) {

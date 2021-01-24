@@ -11,6 +11,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <!-- page-header__head-line--close для реализации с js -->
       <div class="page-header__head-line">
         <a class="page-header__link">
           <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
@@ -23,7 +24,9 @@
             <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
           </svg>
         </a>
+        <!-- page-header__toggle-js для реализации с js-->
         <button class="page-header__toggle logo" type="button"></button>
+        <!-- main-nav__js для реализации с js-->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -50,7 +53,7 @@
         </nav>
       </div>
 
-      <p class="heading presentation__heading">Взгляните на жизнь иначе!</p>
+      <p class="heading heading--presentation">Взгляните на жизнь иначе!</p>
       <div class="page-header__image">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/phone_header_desk.png 1x, img/phone_header_desk@2x.png 2x"/>
@@ -144,7 +147,7 @@
           <div class="effect__description">
             <h2 class="effect__heading">Эффект на&nbsp;24 часа!</h2>
 
-            <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, <span class="effect__text--br"><br></span>что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, <span class="effect__text-br"><br></span>что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
 
             <a href="#!" class="effect__link">Узнать больше об исследовании</a>
           </div>

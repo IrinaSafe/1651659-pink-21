@@ -11,6 +11,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <!-- page-header__head-line--close для реализации с js -->
       <div class="page-header__head-line">
         <a class="page-header__link" href="index.html">
           <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
@@ -23,8 +24,9 @@
             <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
           </svg>
         </a>
+        <!-- page-header__toggle-js для реализации с js-->
         <button class="page-header__toggle logo" type="button"></button>
-
+        <!-- main-nav__js для реализации с js-->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -55,7 +57,7 @@
     <main class="page-main">
       <div class="page-main__title-wrapper">
         <span class="page-main__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="page-main__title--mobile-hidden">Пожалуйста, заполните форму ниже:</span>
+          Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="page-main__title-hidden">Пожалуйста, заполните форму ниже:</span>
         </span>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">

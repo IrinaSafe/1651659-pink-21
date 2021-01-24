@@ -11,6 +11,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <!-- page-header__head-line--close для реализации с js -->
       <div class="page-header__head-line">
         <a class="page-header__link" href="index.html">
           <svg class="page-header__logo logo page-header__logo--mobile" width="74" height="23">
@@ -23,9 +24,10 @@
             <use xlink:href="img/sprite.svg#headerLogoDesktop"></use>
           </svg>
         </a>
+        <!-- page-header__toggle-js для реализации с js-->
         <button class="page-header__toggle logo" type="button"></button>
-
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <!-- main-nav__js для реализации с js-->
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">
@@ -270,7 +272,7 @@
                   <source media="(min-width: 320px)" srcset="img/photo-7-mobile@1x.webp 1x, img/photo-7-mobile@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x"/>
-                  <img class="card__image card__image--post" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фото">
+                  <img class="form-publish__image" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фото">
                 </picture>
               </label>
             </fieldset>

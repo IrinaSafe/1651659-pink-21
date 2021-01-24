@@ -18,6 +18,7 @@
 .inline-field__label {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-size: $inline-field__label-font-size;
   font-weight: $inline-field__label-font-weight;
   color: $inline-field__label-color;
@@ -26,6 +27,8 @@
 
 .inline-field__label-checkbox {
   display: inline-block;
+  min-width: 35px;
+  min-height: 35px;
   width: 35px;
   height: 35px;
   border: 2px solid $color-grey;
@@ -41,6 +44,8 @@
 .inline-field__label-radio {
   display: flex;
   align-items: center;
+  min-width: 37px;
+  min-height: 37px;
   width: 37px;
   height: 37px;
   border: 2px solid $color-grey;

@@ -1,4 +1,21 @@
 .main-nav {
+  grid-area: nav;
+  display: block;
+  color: $main-nav-color;
+  height: max-content;
+  background-color: $color-blue;
+  line-height: 29px;
+
+  @media screen and (min-width: $media-desktop) {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+  }
+}
+// main-nav__js для реализации с js
+.main-nav__js {
   display: none;
 
   &--opened {
@@ -18,9 +35,7 @@
     grid-area: nav;
     display: flex;
     align-items: center;
-    // background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
-    // padding: 0 130px 0 0;
     background-color: transparent;
   }
 }
@@ -34,6 +49,7 @@
     justify-content: space-between;
     width: 100%;
     line-height: 40px;
+    flex-wrap: wrap;
   }
 }
 
