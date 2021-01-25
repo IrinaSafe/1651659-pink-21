@@ -18,6 +18,10 @@
 .main-nav__js {
   display: none;
 
+  &--close {
+    display: none;
+  }
+
   &--opened {
     grid-area: nav;
     display: block;
